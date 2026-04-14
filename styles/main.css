@@ -894,6 +894,14 @@ ol {
   line-height: 1.45;
 }
 
+.match-score {
+  color: var(--forest);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 @media (min-width: 62rem) {
   .site-nav {
     display: flex;

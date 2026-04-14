@@ -31,22 +31,120 @@
 
       <main id="main" class="app-main">
         <section class="page-intro">
-          <p class="page-kicker">Search Results</p>
-          <h1>Specific matches for readers chasing a certain story shape.</h1>
-          <p class="page-summary">
-            This route will represent the more targeted search task, with stronger trope overlap
-            and similarity cues than the theme-based state.
-          </p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="page-kicker">Similar Search</p>
+              <h1>Results for a more exact story shape.</h1>
+              <p class="page-summary">
+                This route assumes the reader already knows the dynamic they want. The matches below
+                lean on clearer trope overlap, pacing cues, and relationship structure.
+              </p>
+              <div id="specific-results" class="chip-row">
+                <span class="chip chip--sky">rivals to allies</span>
+                <span class="chip chip--forest">team chemistry</span>
+                <span class="chip chip--gold">late-night confession energy</span>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <p class="eyebrow">Reference request</p>
+              <h2>Something like rivals-to-allies, but still soft.</h2>
+              <div class="stack-list">
+                <div class="list-card">
+                  <strong>Priority traits</strong>
+                  <span class="visually-muted">protective tension, shared team stakes, emotional payoff</span>
+                </div>
+                <div class="list-card">
+                  <strong>Not looking for</strong>
+                  <span class="visually-muted">grimdark intensity or lore-heavy onboarding</span>
+                </div>
+              </div>
+            </aside>
+          </div>
         </section>
 
-        <section class="page-panel">
-          <h2>Planned results structure</h2>
-          <div class="placeholder-stack">
-            <p>Comparison header with the requested story shape</p>
-            <p>Neon Knights and Star Circuit story cards</p>
-            <p>Specific trope overlap callouts</p>
-            <p>Shortcut into recommendations after reading</p>
+        <section class="page-block" aria-labelledby="similar-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Best Matches</p>
+              <h2 id="similar-title">Specific overlap, with the reasoning made visible.</h2>
+            </div>
           </div>
+
+          <div class="results-grid">
+            <article class="result-card">
+              <div class="story-cover">
+                <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for Static Hearts">
+              </div>
+              <div class="result-head">
+                <p class="result-kicker">Neon Knights</p>
+                <h3>Static Hearts</h3>
+              </div>
+              <p class="match-score">Closest match</p>
+              <p class="result-copy">Two rival drivers keep choosing each other in the moments that matter most.</p>
+              <div class="meta-pills">
+                <a class="meta-pill chip--sky" href="tags.html#team-rivalry">Team Rivalry</a>
+                <a class="meta-pill chip--forest" href="tags.html#protective-dynamic">Protective Dynamic</a>
+                <a class="meta-pill" href="tags.html#late-night-confession">Late-night Confession</a>
+              </div>
+              <a class="button-link" href="story.html#neon-story">Open closest match</a>
+            </article>
+
+            <article class="result-card">
+              <div class="story-cover">
+                <img src="assets/covers/cover-starcircuit-sparks.svg" alt="Cover art for Sparks Between Us">
+              </div>
+              <div class="result-head">
+                <p class="result-kicker">Star Circuit</p>
+                <h3>Sparks Between Us</h3>
+              </div>
+              <p class="match-score">High overlap</p>
+              <p class="result-copy">Fast crew dynamics, an exhausted confession, and an emotional landing after the mission.</p>
+              <div class="meta-pills">
+                <a class="meta-pill chip--sky" href="tags.html#team-rivalry">Competitive Team</a>
+                <a class="meta-pill chip--gold" href="tags.html#earned-confession">Earned Confession</a>
+              </div>
+              <a class="button-link button-link--secondary" href="recommendations.html#because-neon">See related recs</a>
+            </article>
+
+            <article class="result-card">
+              <div class="story-cover">
+                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Team Five on the Roof">
+              </div>
+              <div class="result-head">
+                <p class="result-kicker">Neon Knights</p>
+                <h3>Team Five on the Roof</h3>
+              </div>
+              <p class="match-score">Softer alternative</p>
+              <p class="result-copy">Keeps the team-emotion overlap while lowering the rivalry intensity.</p>
+              <div class="meta-pills">
+                <a class="meta-pill chip--forest" href="tags.html#found-family">Found Family</a>
+                <a class="meta-pill" href="tags.html#post-race-softness">Post-Race Softness</a>
+              </div>
+              <a class="button-link button-link--secondary" href="story.html#neon-story">Open related story</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-panel two-column" aria-labelledby="difference-title">
+          <article class="detail-card">
+            <p class="eyebrow">Why this route feels different</p>
+            <h2 id="difference-title">The cards compare story shape, not just atmosphere.</h2>
+            <p class="section-copy">
+              Similar search is for readers who want closer trope alignment, clearer pacing cues,
+              and a stronger promise that the dynamic will land where they expect.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <p class="eyebrow">Next step</p>
+            <h2>Finished reading?</h2>
+            <p class="section-copy">
+              The recommendation screen keeps the same logic going and opens adjacent stories once
+              the reader finishes a strong match.
+            </p>
+            <a class="button-link" href="recommendations.html#because-neon">Jump to related recommendations</a>
+          </article>
         </section>
       </main>
 
