@@ -31,22 +31,146 @@
 
       <main id="main" class="app-main">
         <section class="page-intro">
-          <p class="page-kicker">Profile</p>
-          <h1>Track what luna_reads is saving, loving, and returning to.</h1>
-          <p class="page-summary">
-            This screen will become the profile hub for saved fandoms, reading lists, tags, and
-            progress.
-          </p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="page-kicker">Profile</p>
+              <h1>luna_reads keeps her shelves tidy.</h1>
+              <p class="page-summary">
+                The profile gathers reading streaks, saved tags, fandom favorites, and comments in
+                one place so the prototype feels like it remembers the reader.
+              </p>
+              <div class="chip-row">
+                <a class="chip chip--lavender" href="#reading-lists">Reading lists</a>
+                <a class="chip chip--forest" href="#saved-tags">Saved tags</a>
+                <a class="chip chip--gold" href="#write-later">Write later</a>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <div class="profile-preview">
+                <div class="avatar-wrap">
+                  <img src="assets/ui/avatar-luna.svg" alt="Avatar illustration for luna_reads">
+                </div>
+                <div class="helper-stack">
+                  <div class="helper-card">
+                    <strong>@luna_reads</strong>
+                    <span>slow-burn collector · magical school loyalist</span>
+                  </div>
+                  <div class="helper-card">
+                    <strong>Current streak</strong>
+                    <span>7 nights in a row</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <strong>12</strong>
+                  <span>saved reads</span>
+                </div>
+                <div class="stat-card">
+                  <strong>5</strong>
+                  <span>favorite fandoms</span>
+                </div>
+              </div>
+            </aside>
+          </div>
         </section>
 
-        <section class="page-panel">
-          <h2>Planned profile modules</h2>
-          <div class="placeholder-stack">
-            <p>Avatar, streak, and current reading stats</p>
-            <p>Saved tags and reading lists</p>
-            <p>Badges, recent comments, and fandom shelves</p>
-            <p id="write-later">Teaser area for a future writing workflow</p>
+        <section id="reading-lists" class="page-block story-shelf" aria-labelledby="lists-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Reading Lists</p>
+              <h2 id="lists-title">Shelves with distinct moods instead of one giant bookmark pile.</h2>
+            </div>
           </div>
+
+          <div class="story-grid">
+            <a class="story-card" href="story.html#moonwake-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for the Moonwake comfort shelf">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Reading List</p>
+                <h3>Moonwake comfort shelf</h3>
+              </div>
+              <p class="story-copy">Where the observatory scenes and quiet magic stories live.</p>
+            </a>
+            <a class="story-card" href="story.html#neon-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for the team tension shelf">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Reading List</p>
+                <h3>Team tension shelf</h3>
+              </div>
+              <p class="story-copy">Protective teammates, rivalry sparks, and post-race softness.</p>
+            </a>
+            <a class="story-card" href="recommendations.html#quick-reads">
+              <div class="story-cover">
+                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for the one bus ride shelf">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Reading List</p>
+                <h3>One bus ride left</h3>
+              </div>
+              <p class="story-copy">Shorter chapters for nights when the brain is done.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="page-band two-column" aria-labelledby="saved-title">
+          <article id="saved-tags" class="detail-card">
+            <p class="eyebrow">Saved Tags</p>
+            <h2 id="saved-title">The tags luna_reads comes back to most.</h2>
+            <div class="quick-links">
+              <a class="chip chip--lavender" href="tags.html#slow-burn">Slow Burn</a>
+              <a class="chip chip--forest" href="tags.html#found-family">Found Family</a>
+              <a class="chip chip--gold" href="tags.html#magic-school">Magic School</a>
+              <a class="chip chip--sky" href="tags.html#team-rivalry">Team Rivalry</a>
+              <a class="chip" href="tags.html#comfort-read">Comfort Read</a>
+            </div>
+          </article>
+
+          <article class="detail-card">
+            <p class="eyebrow">Badges</p>
+            <h2>Reading habits worth keeping visible.</h2>
+            <div class="story-cover">
+              <img src="assets/ui/badge-night-owl.svg" alt="Night Owl badge for a seven-day reading streak">
+            </div>
+          </article>
+        </section>
+
+        <section class="page-panel" aria-labelledby="recent-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Recent Notes</p>
+              <h2 id="recent-title">Small signs that the profile belongs to a real reader.</h2>
+            </div>
+          </div>
+
+          <div class="comment-grid">
+            <blockquote class="comment-card">
+              <p>&ldquo;Saving this for the next time I want something soft but not sleepy.&rdquo;</p>
+              <cite class="visually-muted">Comment on Lanterns After Curfew</cite>
+            </blockquote>
+            <blockquote class="comment-card">
+              <p>&ldquo;Need more team-rivalry stories that still feel warm by the end.&rdquo;</p>
+              <cite class="visually-muted">Note on Static Hearts</cite>
+            </blockquote>
+          </div>
+        </section>
+
+        <section id="write-later" class="page-panel" aria-labelledby="write-later-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Future Teaser</p>
+              <h2 id="write-later-title">Write later, not right now.</h2>
+            </div>
+          </div>
+          <p class="section-copy">
+            Reader discovery stays the priority in this prototype, but the profile leaves room for
+            a future writing flow without pretending it already exists.
+          </p>
         </section>
       </main>
 
