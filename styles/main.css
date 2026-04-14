@@ -179,6 +179,12 @@ ol {
   top: 1rem;
 }
 
+section[id],
+article[id],
+div[id] {
+  scroll-margin-top: 6rem;
+}
+
 .prototype-shell {
   width: min(100% - 1.2rem, calc(var(--content-width) + 1.2rem));
   margin: 0 auto;
