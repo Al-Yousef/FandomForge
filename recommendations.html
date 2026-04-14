@@ -31,21 +31,157 @@
 
       <main id="main" class="app-main">
         <section class="page-intro">
-          <p class="page-kicker">Recommendations</p>
-          <h1>Personalized shelves that stay readable.</h1>
-          <p class="page-summary">
-            This screen will simulate recommendation logic through curated static shelves tailored
-            to the reader profile of luna_reads.
-          </p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="page-kicker">Recommendations</p>
+              <h1>Shelves that feel personal, not random.</h1>
+              <p class="page-summary">
+                These recommendations are tuned to luna_reads: slow burn, found family, magical
+                schools, protective team dynamics, and comfort-forward pacing.
+              </p>
+              <div class="chip-row">
+                <a class="chip chip--lavender" href="#because-moonwake">Because you liked Moonwake</a>
+                <a class="chip chip--sky" href="#because-neon">Because you liked Neon</a>
+                <a class="chip chip--gold" href="#quick-reads">Quick reads tonight</a>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <p class="eyebrow">Saved interests</p>
+              <h2>What is driving this feed</h2>
+              <div class="quick-links">
+                <a class="chip chip--lavender" href="tags.html#slow-burn">Slow Burn</a>
+                <a class="chip chip--forest" href="tags.html#found-family">Found Family</a>
+                <a class="chip chip--gold" href="tags.html#magic-school">Magic School</a>
+                <a class="chip chip--sky" href="tags.html#team-rivalry">Team Rivalry</a>
+              </div>
+            </aside>
+          </div>
         </section>
 
-        <section class="page-panel">
-          <h2>Planned recommendation shelves</h2>
-          <div class="placeholder-stack">
-            <p>Because you liked Moonwake Academy</p>
-            <p>Quick reads tonight</p>
-            <p>Gentle slow burns</p>
-            <p>Tags worth saving next</p>
+        <section id="because-moonwake" class="page-block story-shelf" aria-labelledby="moonwake-recs-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Because You Liked Moonwake Academy</p>
+              <h2 id="moonwake-recs-title">Stay in the soft-magic lane.</h2>
+            </div>
+          </div>
+
+          <div class="story-grid">
+            <a class="story-card" href="story.html#moonwake-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-crownfall-letters.svg" alt="Cover art for Letters at Dawn">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Crownfall Court</p>
+                <h3>Letters at Dawn</h3>
+              </div>
+              <p class="story-copy">Keeps the softness and the emotional care, but trades campus life for court letters.</p>
+            </a>
+            <a class="story-card" href="tags.html#comfort-read">
+              <div class="story-cover">
+                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Tidebound">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Witchlight Harbor</p>
+                <h3>Tidebound</h3>
+              </div>
+              <p class="story-copy">A quieter harbor fantasy that still lands on luminous comfort and closeness.</p>
+            </a>
+            <a class="story-card" href="search-theme.html#cozy-results">
+              <div class="story-cover">
+                <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for Lanterns After Curfew">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Moonwake Academy</p>
+                <h3>More cozy Moonwake results</h3>
+              </div>
+              <p class="story-copy">Stay inside the same world, but branch into adjacent emotional tones.</p>
+            </a>
+          </div>
+        </section>
+
+        <section id="because-neon" class="page-block story-shelf" aria-labelledby="neon-recs-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Because You Liked Neon Knights</p>
+              <h2 id="neon-recs-title">Keep the team chemistry, change the setting.</h2>
+            </div>
+          </div>
+
+          <div class="story-grid">
+            <a class="story-card" href="story.html#neon-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-starcircuit-sparks.svg" alt="Cover art for Sparks Between Us">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Star Circuit</p>
+                <h3>Sparks Between Us</h3>
+              </div>
+              <p class="story-copy">Fast teams, high-pressure missions, and the same emotional landing.</p>
+            </a>
+            <a class="story-card" href="story.html#neon-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for Warm Start Procedure">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Neon Knights</p>
+                <h3>Warm Start Procedure</h3>
+              </div>
+              <p class="story-copy">Same world, lower rivalry, more post-shift honesty.</p>
+            </a>
+            <a class="story-card" href="tags.html#post-race-softness">
+              <div class="story-cover">
+                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Team Five on the Roof">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Neon Knights</p>
+                <h3>Team Five on the Roof</h3>
+              </div>
+              <p class="story-copy">The best pick if the reader wants the decompression scenes most of all.</p>
+            </a>
+          </div>
+        </section>
+
+        <section id="quick-reads" class="page-band" aria-labelledby="quick-reads-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Quick Reads Tonight</p>
+              <h2 id="quick-reads-title">Shorter routes for one more chapter before bed.</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <a class="collection-card" href="story.html#moonwake-story">
+              <p class="card-kicker">Fast pick</p>
+              <h3>One lantern scene and out</h3>
+              <p class="card-copy">Short Moonwake chapters with enough softness to reset your night.</p>
+            </a>
+            <a class="collection-card" href="story.html#neon-story">
+              <p class="card-kicker">Fast pick</p>
+              <h3>One roof scene and out</h3>
+              <p class="card-copy">Neon Knights chapters built around one strong emotional beat.</p>
+            </a>
+            <a class="collection-card" href="tags.html#comfort-read">
+              <p class="card-kicker">Fast pick</p>
+              <h3>Comfort-read starter shelf</h3>
+              <p class="card-copy">When you do not want intensity to follow you offline.</p>
+            </a>
+          </div>
+        </section>
+
+        <section id="gentle-slow-burns" class="page-panel" aria-labelledby="gentle-shelf-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Gentle Slow Burns</p>
+              <h2 id="gentle-shelf-title">For when the pacing matters more than the plot fireworks.</h2>
+            </div>
+          </div>
+
+          <div class="quick-links">
+            <a class="chip chip--lavender" href="tags.html#slow-burn">Why slow burn works</a>
+            <a class="chip chip--forest" href="search-theme.html#gentle-results">Find more gentle results</a>
+            <a class="chip chip--gold" href="profile.html#saved-tags">Save this shelf to profile</a>
           </div>
         </section>
       </main>
