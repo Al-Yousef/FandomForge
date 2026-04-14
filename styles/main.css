@@ -282,6 +282,12 @@ div[id] {
     linear-gradient(180deg, rgba(255, 247, 241, 0.95), rgba(247, 230, 220, 0.95));
 }
 
+.site-nav .nav-link[href="profile.html"],
+.utility-cta,
+.mobile-dock {
+  display: none !important;
+}
+
 .utility-cta {
   display: inline-flex;
   align-items: center;
