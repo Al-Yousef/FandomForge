@@ -31,21 +31,93 @@
 
       <main id="main" class="app-main">
         <section class="page-intro">
-          <p class="page-kicker">Search</p>
-          <h1>Find a story by mood or by example.</h1>
-          <p class="page-summary">
-            This screen will simulate a reader-friendly search entry point with prompt chips and
-            clear routes into the two study tasks.
-          </p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="page-kicker">Search</p>
+              <h1>Find a story by feeling or by example.</h1>
+              <p class="page-summary">
+                Search should feel like guidance, not like homework. FandomForge separates broad
+                discovery from exact matching so readers can decide how specific they want to be.
+              </p>
+              <div class="chip-row">
+                <a class="chip chip--gold" href="#popular-prompts">Popular prompts</a>
+                <a class="chip chip--forest" href="search-theme.html#theme-results">Theme route</a>
+                <a class="chip chip--sky" href="search-similar.html#specific-results">Similar route</a>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <p class="eyebrow">Search box</p>
+              <h2>Tonight I want...</h2>
+              <div class="search-shell">
+                <div class="search-field" aria-hidden="true">
+                  soft magic school stories with found family
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="search-theme.html#cozy-results">Search by theme</a>
+                  <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Find something similar</a>
+                </div>
+              </div>
+            </aside>
+          </div>
         </section>
 
-        <section class="page-panel">
-          <h2>Planned search states</h2>
-          <div class="placeholder-stack">
-            <p>Theme-based discovery route</p>
-            <p>Similar-story matching route</p>
-            <p>Suggested prompts and popular searches</p>
-            <p>Tag education without dense filter clutter</p>
+        <section class="page-band two-column" aria-labelledby="search-routes-title">
+          <article class="collection-card">
+            <p class="card-kicker">Route One</p>
+            <h2 id="search-routes-title">Find a story by theme</h2>
+            <p class="card-copy">
+              Best when the reader knows the mood, trope, or emotional texture they want but not an
+              exact title.
+            </p>
+            <div class="quick-links">
+              <a class="chip chip--lavender" href="search-theme.html#cozy-results">Cozy fantasy</a>
+              <a class="chip chip--forest" href="search-theme.html#found-family-results">Found family</a>
+              <a class="chip chip--gold" href="search-theme.html#gentle-results">Gentle slow burn</a>
+            </div>
+            <a class="button-link" href="search-theme.html#theme-results">Open theme search</a>
+          </article>
+
+          <article class="collection-card">
+            <p class="card-kicker">Route Two</p>
+            <h2>Find something similar</h2>
+            <p class="card-copy">
+              Best when the reader has a specific story idea in mind and wants similar pacing,
+              dynamics, or trope overlap.
+            </p>
+            <div class="quick-links">
+              <a class="chip chip--sky" href="search-similar.html#specific-results">Rivals who soften</a>
+              <a class="chip chip--gold" href="search-similar.html#specific-results">Protective teammates</a>
+              <a class="chip chip--lavender" href="search-similar.html#specific-results">Late-night confession</a>
+            </div>
+            <a class="button-link" href="search-similar.html#specific-results">Open similar-story search</a>
+          </article>
+        </section>
+
+        <section id="popular-prompts" class="page-block" aria-labelledby="popular-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Popular Prompts</p>
+              <h2 id="popular-title">Tap into a search sentence instead of building filters.</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <a class="collection-card" href="search-theme.html#cozy-results">
+              <p class="card-kicker">Prompt</p>
+              <h3>I want soft fantasy with school drama and a lot of trust-building.</h3>
+              <p class="card-copy">Routes to Moonwake Academy shelves and slow-burn stories.</p>
+            </a>
+            <a class="collection-card" href="search-similar.html#specific-results">
+              <p class="card-kicker">Prompt</p>
+              <h3>I want something like rivals-to-allies but without losing the team chemistry.</h3>
+              <p class="card-copy">Routes to Neon Knights and Star Circuit overlap stories.</p>
+            </a>
+            <a class="collection-card" href="search-theme.html#found-family-results">
+              <p class="card-kicker">Prompt</p>
+              <h3>I want found family with warmth first and angst second.</h3>
+              <p class="card-copy">Routes to gentle ensemble stories and starter tags.</p>
+            </a>
           </div>
         </section>
       </main>
