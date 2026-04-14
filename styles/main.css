@@ -544,6 +544,52 @@ ul {
   color: var(--ink);
 }
 
+.system-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.system-panel {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.2rem, 3vw, 1.7rem);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 0.2rem);
+  background: linear-gradient(180deg, rgba(255, 251, 247, 0.94), rgba(244, 235, 224, 0.75));
+}
+
+.system-heading {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.comparison-points {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.system-gallery {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.system-gallery--triple {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.report-figure--framed {
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 0.35rem);
+  background: rgba(255, 250, 244, 0.75);
+}
+
+.figure-shell--small {
+  min-height: 11rem;
+}
+
 .report-figure {
   display: grid;
   gap: 0.8rem;
@@ -676,6 +722,14 @@ body:has(#references:target) .mobile-nav a[href="#references"] {
 
   .literature-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
+  }
+
+  .system-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .system-gallery:not(.system-gallery--triple) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
