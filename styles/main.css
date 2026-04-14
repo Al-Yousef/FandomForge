@@ -168,10 +168,66 @@ ul {
   display: none;
 }
 
+.mobile-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 1rem;
+  padding: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 0.3rem);
+  background: rgba(255, 248, 241, 0.82);
+  box-shadow: 0 0.65rem 1.2rem rgba(31, 26, 23, 0.08);
+  backdrop-filter: blur(0.8rem);
+}
+
+.mobile-nav ol {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.mobile-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  transition:
+    border-color var(--transition),
+    background-color var(--transition),
+    color var(--transition);
+}
+
 .chapter-nav ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.nav-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1em;
+  color: var(--accent);
+  font-family: "Concordia Serif", Georgia, serif;
+  font-size: 0.95em;
+  letter-spacing: 0;
 }
 
 .chapter-nav a {
@@ -190,10 +246,16 @@ ul {
 }
 
 .chapter-nav a:hover,
+.mobile-nav a:hover,
+.mobile-nav a:focus-visible,
 .chapter-nav a:focus-visible {
   color: var(--accent-strong);
   border-color: var(--accent);
   outline: none;
+}
+
+.chapter-nav a:hover,
+.chapter-nav a:focus-visible {
   transform: translateX(0.15rem);
 }
 
@@ -212,6 +274,7 @@ ul {
   background: linear-gradient(180deg, rgba(255, 251, 246, 0.9), rgba(255, 248, 241, 0.76));
   box-shadow: var(--shadow);
   overflow: clip;
+  scroll-margin-top: 5rem;
 }
 
 .report-section::before {
@@ -405,6 +468,37 @@ ul {
   font-size: var(--small-size);
 }
 
+body:not(:has(:target)) .chapter-nav a[href="#hero"],
+body:not(:has(:target)) .mobile-nav a[href="#hero"],
+body:has(#hero:target) .chapter-nav a[href="#hero"],
+body:has(#hero:target) .mobile-nav a[href="#hero"],
+body:has(#abstract:target) .chapter-nav a[href="#abstract"],
+body:has(#abstract:target) .mobile-nav a[href="#abstract"],
+body:has(#introduction:target) .chapter-nav a[href="#introduction"],
+body:has(#introduction:target) .mobile-nav a[href="#introduction"],
+body:has(#related-work:target) .chapter-nav a[href="#related-work"],
+body:has(#related-work:target) .mobile-nav a[href="#related-work"],
+body:has(#commercial-systems:target) .chapter-nav a[href="#commercial-systems"],
+body:has(#commercial-systems:target) .mobile-nav a[href="#commercial-systems"],
+body:has(#methods:target) .chapter-nav a[href="#methods"],
+body:has(#methods:target) .mobile-nav a[href="#methods"],
+body:has(#evaluation:target) .chapter-nav a[href="#evaluation"],
+body:has(#evaluation:target) .mobile-nav a[href="#evaluation"],
+body:has(#results:target) .chapter-nav a[href="#results"],
+body:has(#results:target) .mobile-nav a[href="#results"],
+body:has(#discussion:target) .chapter-nav a[href="#discussion"],
+body:has(#discussion:target) .mobile-nav a[href="#discussion"],
+body:has(#conclusion:target) .chapter-nav a[href="#conclusion"],
+body:has(#conclusion:target) .mobile-nav a[href="#conclusion"],
+body:has(#appendix:target) .chapter-nav a[href="#appendix"],
+body:has(#appendix:target) .mobile-nav a[href="#appendix"],
+body:has(#references:target) .chapter-nav a[href="#references"],
+body:has(#references:target) .mobile-nav a[href="#references"] {
+  color: var(--accent-strong);
+  border-color: var(--accent);
+  background: var(--accent-fade);
+}
+
 :focus-visible {
   outline: 3px solid rgba(142, 33, 48, 0.36);
   outline-offset: 0.15rem;
@@ -423,6 +517,10 @@ ul {
     position: sticky;
     top: 1.5rem;
     padding: 1.5rem 1rem 0 0;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 
   .report {
