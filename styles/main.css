@@ -228,6 +228,117 @@ ul {
   align-items: end;
 }
 
+.hero-grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.hero-header {
+  max-width: 42rem;
+}
+
+.hero-overline,
+.hero-subtitle {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  color: var(--accent);
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.hero-intro {
+  max-width: 50ch;
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+}
+
+.hero-meta {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-panel {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 0.4rem);
+  background: rgba(255, 250, 243, 0.72);
+}
+
+.hero-panel--compact {
+  max-width: 22rem;
+}
+
+.hero-panel-label {
+  margin-bottom: 0.45rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.credit-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.hero-findings {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border-radius: calc(var(--radius) - 0.2rem);
+  background: linear-gradient(145deg, rgba(91, 15, 26, 0.92), rgba(142, 33, 48, 0.82));
+  color: #fff9f2;
+}
+
+.hero-findings .section-kicker,
+.hero-findings h2,
+.hero-findings .finding-label {
+  color: inherit;
+}
+
+.hero-findings-heading {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.finding-strip {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.finding-stat {
+  display: grid;
+  gap: 0.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 248, 241, 0.22);
+}
+
+.finding-strip .finding-stat:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.finding-value {
+  font-family: "Concordia Serif", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.finding-label {
+  max-width: 18ch;
+  font-size: 0.95rem;
+}
+
 .section-header {
   display: grid;
   gap: 0.75rem;
@@ -324,6 +435,34 @@ ul {
 
   .report-section:nth-of-type(even):not(.report-section--hero) {
     grid-column: 1 / span 11;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(17rem, 0.9fr);
+    align-items: end;
+  }
+
+  .hero-findings {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+    align-items: end;
+  }
+
+  .finding-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+
+  .finding-stat {
+    min-height: 100%;
+    padding-left: 1rem;
+    border-top: 0;
+    border-left: 1px solid rgba(255, 248, 241, 0.22);
+  }
+
+  .finding-strip .finding-stat:first-child {
+    padding-left: 0;
+    border-left: 0;
   }
 }
 
