@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">AO3 homepage placeholder</title>
+  <desc id="desc">Stylized placeholder for the AO3 homepage screenshot pending exported source media.</desc>
+  <rect width="1200" height="760" fill="#fbf6ef"/>
+  <rect x="48" y="44" width="1104" height="672" rx="24" fill="#fffdf8" stroke="#d5c3b5" stroke-width="4"/>
+  <rect x="48" y="44" width="1104" height="92" rx="24" fill="#8e2130"/>
+  <text x="96" y="101" fill="#fff8f2" font-family="Georgia, serif" font-size="34" font-weight="700">AO3 Homepage</text>
+  <rect x="770" y="68" width="290" height="40" rx="20" fill="#f4e4da"/>
+  <rect x="92" y="184" width="290" height="40" rx="20" fill="#efe2d5"/>
+  <rect x="92" y="250" width="454" height="158" rx="18" fill="#f9f1e8" stroke="#dac8bb" stroke-width="3"/>
+  <rect x="570" y="250" width="474" height="158" rx="18" fill="#f5ede3" stroke="#dac8bb" stroke-width="3"/>
+  <rect x="92" y="440" width="952" height="48" rx="18" fill="#ead8ca"/>
+  <rect x="92" y="516" width="430" height="136" rx="18" fill="#f7efe6" stroke="#dac8bb" stroke-width="3"/>
+  <rect x="548" y="516" width="496" height="136" rx="18" fill="#f7efe6" stroke="#dac8bb" stroke-width="3"/>
+  <g fill="#c4a793">
+    <rect x="118" y="278" width="170" height="16" rx="8"/>
+    <rect x="118" y="314" width="390" height="12" rx="6"/>
+    <rect x="118" y="338" width="360" height="12" rx="6"/>
+    <rect x="598" y="278" width="170" height="16" rx="8"/>
+    <rect x="598" y="314" width="404" height="12" rx="6"/>
+    <rect x="598" y="338" width="336" height="12" rx="6"/>
+    <rect x="118" y="548" width="140" height="14" rx="7"/>
+    <rect x="118" y="578" width="360" height="12" rx="6"/>
+    <rect x="118" y="602" width="290" height="12" rx="6"/>
+    <rect x="574" y="548" width="164" height="14" rx="7"/>
+    <rect x="574" y="578" width="406" height="12" rx="6"/>
+    <rect x="574" y="602" width="344" height="12" rx="6"/>
+  </g>
+  <text x="84" y="704" fill="#6c594f" font-family="Trebuchet MS, sans-serif" font-size="24">Placeholder figure. Replace with exported AO3 homepage screenshot.</text>
+</svg>

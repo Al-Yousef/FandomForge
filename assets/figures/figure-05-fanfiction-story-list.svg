@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">FanFiction.net story list placeholder</title>
+  <desc id="desc">Stylized placeholder for the FanFiction.net story list screenshot pending exported source media.</desc>
+  <rect width="1200" height="760" fill="#fbf6ef"/>
+  <rect x="54" y="44" width="1092" height="672" rx="24" fill="#fffdf8" stroke="#d5c3b5" stroke-width="4"/>
+  <rect x="54" y="44" width="1092" height="86" rx="24" fill="#2f3c63"/>
+  <text x="96" y="97" fill="#f8fbff" font-family="Georgia, serif" font-size="32" font-weight="700">FanFiction.net Story List</text>
+  <rect x="94" y="178" width="1014" height="72" rx="18" fill="#eef1f6"/>
+  <g>
+    <rect x="94" y="284" width="1014" height="104" rx="18" fill="#f7efe6" stroke="#d7c7bc" stroke-width="3"/>
+    <rect x="94" y="412" width="1014" height="104" rx="18" fill="#f7efe6" stroke="#d7c7bc" stroke-width="3"/>
+    <rect x="94" y="540" width="1014" height="104" rx="18" fill="#f7efe6" stroke="#d7c7bc" stroke-width="3"/>
+    <g fill="#c4a793">
+      <rect x="128" y="314" width="214" height="14" rx="7"/>
+      <rect x="128" y="344" width="606" height="12" rx="6"/>
+      <rect x="128" y="368" width="542" height="12" rx="6"/>
+      <rect x="128" y="442" width="226" height="14" rx="7"/>
+      <rect x="128" y="472" width="598" height="12" rx="6"/>
+      <rect x="128" y="496" width="526" height="12" rx="6"/>
+      <rect x="128" y="570" width="238" height="14" rx="7"/>
+      <rect x="128" y="600" width="612" height="12" rx="6"/>
+      <rect x="128" y="624" width="536" height="12" rx="6"/>
+    </g>
+  </g>
+  <text x="100" y="704" fill="#6c594f" font-family="Trebuchet MS, sans-serif" font-size="24">Placeholder figure. Replace with exported FanFiction.net story list screenshot.</text>
+</svg>

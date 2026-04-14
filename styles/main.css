@@ -586,6 +586,18 @@ ul {
   background: rgba(255, 250, 244, 0.75);
 }
 
+.figure-media {
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 0.5rem);
+  border: 1px solid rgba(79, 67, 59, 0.12);
+  background: #fffdf9;
+}
+
+.figure-media img {
+  width: 100%;
+  height: auto;
+}
+
 .figure-shell--small {
   min-height: 11rem;
 }
@@ -644,6 +656,11 @@ ul {
 
 .band-label {
   color: var(--ink-soft);
+}
+
+.results-gallery {
+  display: grid;
+  gap: 1rem;
 }
 
 .report-figure {
@@ -803,6 +820,10 @@ body:has(#references:target) .mobile-nav a[href="#references"] {
 
   .evaluation-band {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .results-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

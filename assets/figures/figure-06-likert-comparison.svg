@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Likert comparison chart</title>
+  <desc id="desc">Bar chart comparing AO3 and FandomForge on five reported survey metrics.</desc>
+  <rect width="1200" height="760" fill="#fffaf3"/>
+  <text x="84" y="92" fill="#1f1a17" font-family="Georgia, serif" font-size="40" font-weight="700">Figure 6 · Reported Survey Averages</text>
+  <text x="84" y="130" fill="#6c594f" font-family="Trebuchet MS, sans-serif" font-size="24">Values shown only for metrics explicitly quantified in the report body.</text>
+  <g transform="translate(120 178)">
+    <line x1="0" y1="0" x2="0" y2="420" stroke="#5f4f45" stroke-width="3"/>
+    <line x1="0" y1="420" x2="940" y2="420" stroke="#5f4f45" stroke-width="3"/>
+    <g fill="#7a675c" font-family="Trebuchet MS, sans-serif" font-size="20">
+      <text x="-32" y="426">0</text>
+      <text x="-32" y="342">1</text>
+      <text x="-32" y="258">2</text>
+      <text x="-32" y="174">3</text>
+      <text x="-32" y="90">4</text>
+      <text x="-32" y="6">5</text>
+    </g>
+    <g stroke="#d9cec3" stroke-width="2">
+      <line x1="0" y1="336" x2="940" y2="336"/>
+      <line x1="0" y1="252" x2="940" y2="252"/>
+      <line x1="0" y1="168" x2="940" y2="168"/>
+      <line x1="0" y1="84" x2="940" y2="84"/>
+      <line x1="0" y1="0" x2="940" y2="0"/>
+    </g>
+    <g font-family="Trebuchet MS, sans-serif" font-size="18" fill="#6c594f">
+      <text x="24" y="458">Tags</text>
+      <text x="24" y="482">2.29 / 4.36</text>
+      <text x="214" y="458">Clarity</text>
+      <text x="214" y="482">2.50 / 4.43</text>
+      <text x="402" y="458">Recommend</text>
+      <text x="402" y="482">2.50 / 4.43</text>
+      <text x="592" y="458">Overload</text>
+      <text x="592" y="482">3.50 / 1.57</text>
+      <text x="782" y="458">Motivation</text>
+      <text x="782" y="482">2.71 / 4.36</text>
+    </g>
+    <g fill="#52453d">
+      <rect x="20" y="228" width="54" height="192" rx="8"/>
+      <rect x="102" y="54" width="54" height="366" rx="8" fill="#8e2130"/>
+      <rect x="210" y="210" width="54" height="210" rx="8"/>
+      <rect x="292" y="48" width="54" height="372" rx="8" fill="#8e2130"/>
+      <rect x="400" y="210" width="54" height="210" rx="8"/>
+      <rect x="482" y="48" width="54" height="372" rx="8" fill="#8e2130"/>
+      <rect x="590" y="126" width="54" height="294" rx="8"/>
+      <rect x="672" y="288" width="54" height="132" rx="8" fill="#8e2130"/>
+      <rect x="780" y="192" width="54" height="228" rx="8"/>
+      <rect x="862" y="54" width="54" height="366" rx="8" fill="#8e2130"/>
+    </g>
+    <g fill="#1f1a17" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="700">
+      <text x="26" y="220">2.29</text>
+      <text x="108" y="46">4.36</text>
+      <text x="216" y="202">2.50</text>
+      <text x="298" y="40">4.43</text>
+      <text x="406" y="202">2.50</text>
+      <text x="488" y="40">4.43</text>
+      <text x="596" y="118">3.50</text>
+      <text x="678" y="280">1.57</text>
+      <text x="786" y="184">2.71</text>
+      <text x="868" y="46">4.36</text>
+    </g>
+  </g>
+  <g transform="translate(864 112)" font-family="Trebuchet MS, sans-serif" font-size="22">
+    <rect x="0" y="0" width="26" height="26" rx="6" fill="#52453d"/>
+    <text x="40" y="21" fill="#52453d">AO3</text>
+    <rect x="110" y="0" width="26" height="26" rx="6" fill="#8e2130"/>
+    <text x="150" y="21" fill="#8e2130">FandomForge</text>
+  </g>
+</svg>

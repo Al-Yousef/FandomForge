@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">FanFiction.net homepage placeholder</title>
+  <desc id="desc">Stylized placeholder for the FanFiction.net homepage screenshot pending exported source media.</desc>
+  <rect width="1200" height="760" fill="#fbf6ef"/>
+  <rect x="64" y="48" width="1072" height="664" rx="24" fill="#fffdf8" stroke="#d5c3b5" stroke-width="4"/>
+  <rect x="64" y="48" width="1072" height="86" rx="24" fill="#2f3c63"/>
+  <text x="104" y="100" fill="#f8fbff" font-family="Georgia, serif" font-size="32" font-weight="700">FanFiction.net Homepage</text>
+  <rect x="104" y="180" width="996" height="74" rx="18" fill="#eef1f6"/>
+  <rect x="104" y="288" width="316" height="340" rx="18" fill="#f7efe6" stroke="#d7c7bc" stroke-width="3"/>
+  <rect x="444" y="288" width="656" height="156" rx="18" fill="#f7efe6" stroke="#d7c7bc" stroke-width="3"/>
+  <rect x="444" y="472" width="656" height="156" rx="18" fill="#f7efe6" stroke="#d7c7bc" stroke-width="3"/>
+  <g fill="#c4a793">
+    <rect x="132" y="320" width="182" height="14" rx="7"/>
+    <rect x="132" y="350" width="238" height="12" rx="6"/>
+    <rect x="132" y="380" width="218" height="12" rx="6"/>
+    <rect x="132" y="410" width="228" height="12" rx="6"/>
+    <rect x="474" y="320" width="188" height="14" rx="7"/>
+    <rect x="474" y="352" width="560" height="12" rx="6"/>
+    <rect x="474" y="376" width="484" height="12" rx="6"/>
+    <rect x="474" y="504" width="188" height="14" rx="7"/>
+    <rect x="474" y="536" width="570" height="12" rx="6"/>
+    <rect x="474" y="560" width="492" height="12" rx="6"/>
+  </g>
+  <text x="100" y="698" fill="#6c594f" font-family="Trebuchet MS, sans-serif" font-size="24">Placeholder figure. Replace with exported FanFiction.net homepage screenshot.</text>
+</svg>
