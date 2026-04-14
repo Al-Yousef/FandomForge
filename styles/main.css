@@ -578,6 +578,13 @@ ol {
   box-shadow: var(--shadow-md);
 }
 
+.collection-card,
+.mood-card,
+.list-card {
+  color: inherit;
+  text-decoration: none;
+}
+
 .story-cover,
 .hero-illustration,
 .avatar-wrap,

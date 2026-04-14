@@ -31,21 +31,211 @@
 
       <main id="main" class="app-main">
         <section class="page-intro">
-          <p class="page-kicker">Discover</p>
-          <h1>Browse fandoms by mood, world, and comfort level.</h1>
-          <p class="page-summary">
-            This route will hold curated fandom shelves, beginner-friendly paths, and collection
-            rows instead of an overwhelming wall of links.
-          </p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="page-kicker">Discover</p>
+              <h1>Browse worlds with shelves, not with clutter.</h1>
+              <p class="page-summary">
+                Every fandom gets a readable entry point: a mood, a quick explanation, and starter
+                stories that make sense even if you are brand new to the universe.
+              </p>
+              <div class="chip-row">
+                <a class="chip chip--gold" href="#start-here">Start here</a>
+                <a class="chip chip--lavender" href="#moonwake">Moonwake Academy</a>
+                <a class="chip chip--sky" href="#neon-knights">Neon Knights</a>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <p class="eyebrow">Quick routes</p>
+              <h2>Three easy ways in</h2>
+              <div class="stack-list">
+                <a class="list-card" href="search-theme.html#cozy-results">
+                  <strong>Browse by vibe</strong>
+                  <span class="visually-muted">Best if you know how you want a story to feel.</span>
+                </a>
+                <a class="list-card" href="search-similar.html#specific-results">
+                  <strong>Match a story shape</strong>
+                  <span class="visually-muted">Best if you want “something like this one.”</span>
+                </a>
+                <a class="list-card" href="tags.html#new-to-tags">
+                  <strong>Start with tag guidance</strong>
+                  <span class="visually-muted">Best if tropes still feel unfamiliar.</span>
+                </a>
+              </div>
+            </aside>
+          </div>
         </section>
 
-        <section class="page-panel">
-          <h2>Planned discover modules</h2>
-          <div class="placeholder-stack">
-            <p>Fandom worlds: Moonwake Academy, Neon Knights, Crownfall Court</p>
-            <p>Start here rails for new readers</p>
-            <p>Genre moods and collection shelves</p>
-            <p>Anchor sections for each fandom world</p>
+        <section id="start-here" class="page-band" aria-labelledby="starter-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Start Here</p>
+              <h2 id="starter-title">Beginner-friendly routes into the platform.</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <a class="collection-card" href="search-theme.html#cozy-results">
+              <p class="card-kicker">Easy to jump into</p>
+              <h3>Cozy fantasy with clear emotional stakes</h3>
+              <p class="card-copy">Moonwake stories where the tone stays gentle and the tags stay readable.</p>
+            </a>
+            <a class="collection-card" href="search-theme.html#found-family-results">
+              <p class="card-kicker">Popular with new readers</p>
+              <h3>Team stories and found-family shelves</h3>
+              <p class="card-copy">Good if you want warmth, humor, and a cast that looks out for each other.</p>
+            </a>
+            <a class="collection-card" href="search-similar.html#specific-results">
+              <p class="card-kicker">Specific match</p>
+              <h3>Already know the exact dynamic you want?</h3>
+              <p class="card-copy">Use the more targeted search path instead of guessing through filters.</p>
+            </a>
+          </div>
+        </section>
+
+        <section id="moonwake" class="page-block story-shelf" aria-labelledby="moonwake-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Fantasy School Shelf</p>
+              <h2 id="moonwake-title">Moonwake Academy</h2>
+              <p class="section-copy">
+                Magical schools, observatory roofs, study sessions that turn into confessions, and
+                beginner-friendly tags that stay soft instead of cryptic.
+              </p>
+            </div>
+            <a class="button-link button-link--secondary" href="tags.html#magic-school">Explore Moonwake tags</a>
+          </div>
+
+          <div class="story-grid">
+            <a class="story-card" href="story.html#moonwake-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for Lanterns After Curfew">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Moonwake Academy</p>
+                <h3>Lanterns After Curfew</h3>
+              </div>
+              <p class="story-copy">Scholarship roommates keep sharing the observatory after lights-out.</p>
+              <div class="meta-pills">
+                <span class="meta-pill chip--lavender">Slow Burn</span>
+                <span class="meta-pill chip--gold">Magic School</span>
+              </div>
+            </a>
+            <a class="story-card" href="story.html#moonwake-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Tea Beneath the Observatory">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Moonwake Academy</p>
+                <h3>Tea Beneath the Observatory</h3>
+              </div>
+              <p class="story-copy">A campus ghost club accidentally becomes a friendship circle.</p>
+              <div class="meta-pills">
+                <span class="meta-pill chip--forest">Found Family</span>
+                <span class="meta-pill">Soft Mystery</span>
+              </div>
+            </a>
+            <a class="story-card" href="story.html#moonwake-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-crownfall-letters.svg" alt="Cover art for Dorm Twelve's Ghost Notes">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Moonwake Academy</p>
+                <h3>Dorm Twelve&rsquo;s Ghost Notes</h3>
+              </div>
+              <p class="story-copy">Someone leaves handwritten advice in the common room every full moon.</p>
+              <div class="meta-pills">
+                <span class="meta-pill chip--gold">Epistolary</span>
+                <span class="meta-pill">Comfort Read</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section id="neon-knights" class="page-block story-shelf" aria-labelledby="neon-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Action Team Shelf</p>
+              <h2 id="neon-title">Neon Knights</h2>
+              <p class="section-copy">
+                Rival crews, race-night tension, quick banter, and team dynamics strong enough to
+                support readers who want momentum without losing emotional clarity.
+              </p>
+            </div>
+            <a class="button-link button-link--secondary" href="tags.html#team-rivalry">Explore Neon tags</a>
+          </div>
+
+          <div class="story-grid">
+            <a class="story-card" href="story.html#neon-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for Static Hearts">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Neon Knights</p>
+                <h3>Static Hearts</h3>
+              </div>
+              <p class="story-copy">A pit-lane rivalry keeps mutating into reluctant protectiveness.</p>
+              <div class="meta-pills">
+                <span class="meta-pill chip--sky">Rivals to Allies</span>
+                <span class="meta-pill chip--forest">Team Loyalty</span>
+              </div>
+            </a>
+            <a class="story-card" href="story.html#neon-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-starcircuit-sparks.svg" alt="Cover art for Warm Start Procedure">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Neon Knights</p>
+                <h3>Warm Start Procedure</h3>
+              </div>
+              <p class="story-copy">Two backup drivers get one overnight repair shift and way too much honesty.</p>
+              <div class="meta-pills">
+                <span class="meta-pill chip--sky">High Energy</span>
+                <span class="meta-pill">Late-night Confession</span>
+              </div>
+            </a>
+            <a class="story-card" href="story.html#neon-story">
+              <div class="story-cover">
+                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Team Five on the Roof">
+              </div>
+              <div class="story-title-row">
+                <p class="story-kicker">Neon Knights</p>
+                <h3>Team Five on the Roof</h3>
+              </div>
+              <p class="story-copy">The whole team decompresses after a loss and accidentally becomes closer.</p>
+              <div class="meta-pills">
+                <span class="meta-pill chip--forest">Found Family</span>
+                <span class="meta-pill">Post-Race Softness</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="page-panel" aria-labelledby="other-worlds-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Other Worlds</p>
+              <h2 id="other-worlds-title">Smaller shelves, still easy to enter.</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <a id="crownfall-court" class="collection-card" href="search-theme.html#cozy-results">
+              <p class="card-kicker">Crownfall Court</p>
+              <h3>Letters, etiquette, and hidden tenderness</h3>
+              <p class="card-copy">Court intrigue framed through emotional clarity instead of lore overload.</p>
+            </a>
+            <a id="star-circuit" class="collection-card" href="search-similar.html#specific-results">
+              <p class="card-kicker">Star Circuit</p>
+              <h3>Fast crews and soft landings</h3>
+              <p class="card-copy">Sci-fi teamwork for readers who like motion and emotional aftermath.</p>
+            </a>
+            <a id="witchlight-harbor" class="collection-card" href="search-theme.html#cozy-results">
+              <p class="card-kicker">Witchlight Harbor</p>
+              <h3>Sea-glow magic and harbor comfort</h3>
+              <p class="card-copy">A softer fantasy shelf built for luminous small-town stories.</p>
+            </a>
           </div>
         </section>
       </main>
