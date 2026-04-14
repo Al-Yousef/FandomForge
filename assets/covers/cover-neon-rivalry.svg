@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="980" viewBox="0 0 720 980" role="img" aria-labelledby="title desc">
+  <title id="title">Neon Knights cover</title>
+  <desc id="desc">Decorative action cover art for a Neon Knights story card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#132640"/>
+      <stop offset="55%" stop-color="#2e6a94"/>
+      <stop offset="100%" stop-color="#f0a45d"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="980" rx="52" fill="url(#bg)"/>
+  <path d="M80 778l176-250 110 140 132-188 140 298" fill="none" stroke="#f8d9a6" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M144 856c54-98 116-152 190-152 90 0 152 54 238 152" fill="none" stroke="#fff2d6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M454 162l34 92 92 34-92 34-34 92-34-92-92-34 92-34z" fill="#fff1c8" opacity="0.88"/>
+  <path d="M214 212l20 52 52 20-52 20-20 52-20-52-52-20 52-20z" fill="#ffd9b6" opacity="0.82"/>
+  <text x="66" y="120" fill="#fff9f1" font-family="Georgia, serif" font-size="34" letter-spacing="10">NEON KNIGHTS</text>
+  <text x="66" y="860" fill="#fff9f1" font-family="Georgia, serif" font-size="66" font-weight="700">Static Hearts</text>
+  <text x="66" y="922" fill="#fbe0c3" font-family="Trebuchet MS, sans-serif" font-size="26" letter-spacing="7">RIVALS TO ALLIES</text>
+</svg>

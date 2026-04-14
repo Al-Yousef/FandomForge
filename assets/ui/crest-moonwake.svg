@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Moonwake crest</title>
+  <desc id="desc">Decorative crest for Moonwake Academy.</desc>
+  <circle cx="120" cy="120" r="110" fill="#efe5ff"/>
+  <circle cx="120" cy="120" r="92" fill="#604f95"/>
+  <path d="M120 46l26 54 60 8-44 40 12 58-54-30-54 30 12-58-44-40 60-8z" fill="#f7edcb"/>
+  <circle cx="120" cy="92" r="18" fill="#f0d5ae"/>
+</svg>

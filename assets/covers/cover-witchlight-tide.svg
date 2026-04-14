@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="980" viewBox="0 0 720 980" role="img" aria-labelledby="title desc">
+  <title id="title">Witchlight Harbor cover</title>
+  <desc id="desc">Decorative harbor fantasy cover art for a Witchlight Harbor story card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#22483d"/>
+      <stop offset="55%" stop-color="#4f8a76"/>
+      <stop offset="100%" stop-color="#f4e3bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="980" rx="52" fill="url(#bg)"/>
+  <path d="M86 746c116-76 204-112 274-112 82 0 172 36 274 112" fill="none" stroke="#f7edd6" stroke-width="16" stroke-linecap="round"/>
+  <path d="M138 666c62-128 124-192 186-192 62 0 122 64 176 192" fill="none" stroke="#d5f0df" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="548" cy="174" r="104" fill="#f6ead0" opacity="0.54"/>
+  <path d="M206 594l42 76 88 12-64 54 18 86-84-42-84 42 18-86-64-54 88-12z" fill="#f7ecd0" opacity="0.9"/>
+  <text x="66" y="120" fill="#fffaf0" font-family="Georgia, serif" font-size="34" letter-spacing="10">WITCHLIGHT HARBOR</text>
+  <text x="66" y="858" fill="#fffaf0" font-family="Georgia, serif" font-size="66" font-weight="700">Tidebound</text>
+  <text x="66" y="922" fill="#efe0ba" font-family="Trebuchet MS, sans-serif" font-size="26" letter-spacing="7">GLOWING HARBORS, SOFT SPELLS</text>
+</svg>

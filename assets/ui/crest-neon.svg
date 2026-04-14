@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Neon crest</title>
+  <desc id="desc">Decorative crest for Neon Knights.</desc>
+  <circle cx="120" cy="120" r="110" fill="#e8f5ff"/>
+  <circle cx="120" cy="120" r="92" fill="#235376"/>
+  <path d="M120 48l18 52 54 20-54 20-18 52-18-52-54-20 54-20z" fill="#f7dfb6"/>
+  <path d="M92 162l28-78 28 78z" fill="#f5f2ea"/>
+</svg>
