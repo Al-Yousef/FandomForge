@@ -30,22 +30,147 @@
       </header>
 
       <main id="main" class="app-main">
-        <section class="page-intro">
-          <p class="page-kicker">Tags</p>
-          <h1>Explore tropes without getting buried in jargon.</h1>
-          <p class="page-summary">
-            This screen will turn tags into approachable guides grouped by feeling, theme, and
-            reading intent.
-          </p>
+        <section id="new-to-tags" class="page-intro">
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="page-kicker">Tags</p>
+              <h1>Explore tropes without needing insider shorthand.</h1>
+              <p class="page-summary">
+                Tags on FandomForge are meant to help readers, not intimidate them. Each one below
+                is written like a friendly reading cue rather than a puzzle.
+              </p>
+              <div class="chip-row">
+                <a class="chip chip--lavender" href="#slow-burn">Slow Burn</a>
+                <a class="chip chip--forest" href="#found-family">Found Family</a>
+                <a class="chip chip--gold" href="#magic-school">Magic School</a>
+                <a class="chip chip--sky" href="#team-rivalry">Team Rivalry</a>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <p class="eyebrow">New to tags?</p>
+              <h2>Use them like mood labels.</h2>
+              <div class="stack-list">
+                <div class="list-card">
+                  <strong>What tags do</strong>
+                  <span class="visually-muted">They tell you what kind of emotional experience to expect.</span>
+                </div>
+                <div class="list-card">
+                  <strong>What tags do not do</strong>
+                  <span class="visually-muted">They should not force you to decode community jargon before you can read.</span>
+                </div>
+              </div>
+            </aside>
+          </div>
         </section>
 
-        <section class="page-panel">
-          <h2>Planned tag modules</h2>
-          <div class="placeholder-stack">
-            <p>Friendly “new to tags?” introduction</p>
-            <p>Grouped trope families and content-note chips</p>
-            <p>Definitions for beginner readers</p>
-            <p>Jump paths back into search and story results</p>
+        <section class="page-band" aria-labelledby="tag-groups-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Tag Families</p>
+              <h2 id="tag-groups-title">Grouped by what a reader is usually trying to feel.</h2>
+            </div>
+          </div>
+
+          <div class="tag-groups">
+            <article class="tag-group">
+              <p class="card-kicker">Relationship Dynamics</p>
+              <h3>How people move toward each other</h3>
+              <div class="tag-cloud">
+                <a class="tag-chip" href="#slow-burn">Slow Burn</a>
+                <a class="tag-chip chip--forest" href="#found-family">Found Family</a>
+                <a class="tag-chip chip--sky" href="#team-rivalry">Team Rivalry</a>
+                <a class="tag-chip chip--gold" href="#protective-dynamic">Protective Dynamic</a>
+              </div>
+            </article>
+
+            <article class="tag-group">
+              <p class="card-kicker">Setting And Tone</p>
+              <h3>Where the story lives and how it breathes</h3>
+              <div class="tag-cloud">
+                <a class="tag-chip chip--gold" href="#magic-school">Magic School</a>
+                <a class="tag-chip" href="#comfort-read">Comfort Read</a>
+                <a class="tag-chip chip--gold" href="#soft-politics">Soft Politics</a>
+                <a class="tag-chip chip--forest" href="#post-race-softness">Post-Race Softness</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-block" aria-labelledby="definitions-title">
+          <div class="shelf-head">
+            <div>
+              <p class="eyebrow">Definitions</p>
+              <h2 id="definitions-title">Plain-language explanations for the tags used in this prototype.</h2>
+            </div>
+          </div>
+
+          <div class="tag-groups">
+            <article id="slow-burn" class="guide-card">
+              <p class="card-kicker">Slow Burn</p>
+              <p class="card-copy">The relationship builds gradually across many scenes instead of paying off immediately.</p>
+              <a class="button-link button-link--secondary" href="story.html#moonwake-story">See it on a story page</a>
+            </article>
+
+            <article id="found-family" class="guide-card">
+              <p class="card-kicker">Found Family</p>
+              <p class="card-copy">A group becomes emotionally close enough to feel like chosen family.</p>
+              <a class="button-link button-link--secondary" href="search-theme.html#found-family-results">Find matching results</a>
+            </article>
+
+            <article id="magic-school" class="guide-card">
+              <p class="card-kicker">Magic School</p>
+              <p class="card-copy">The story uses school routines, classes, or campus spaces as a main part of its appeal.</p>
+              <a class="button-link button-link--secondary" href="discover.html#moonwake">Open Moonwake shelf</a>
+            </article>
+
+            <article id="team-rivalry" class="guide-card">
+              <p class="card-kicker">Team Rivalry</p>
+              <p class="card-copy">Characters compete or clash inside a shared team context, which keeps the stakes relational.</p>
+              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Find exact-match results</a>
+            </article>
+
+            <article id="protective-dynamic" class="guide-card">
+              <p class="card-kicker">Protective Dynamic</p>
+              <p class="card-copy">One character becomes emotionally or physically protective of another without flattening their agency.</p>
+              <a class="button-link button-link--secondary" href="story.html#neon-story">See Neon example</a>
+            </article>
+
+            <article id="earned-confession" class="guide-card">
+              <p class="card-kicker">Earned Confession</p>
+              <p class="card-copy">The emotional payoff arrives after enough buildup that it feels satisfying instead of sudden.</p>
+              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">See close matches</a>
+            </article>
+
+            <article id="late-night-confession" class="guide-card">
+              <p class="card-kicker">Late-night Confession</p>
+              <p class="card-copy">The emotional shift happens in a quieter, more vulnerable scene after the main action winds down.</p>
+              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Find this dynamic</a>
+            </article>
+
+            <article id="comfort-read" class="guide-card">
+              <p class="card-kicker">Comfort Read</p>
+              <p class="card-copy">The tone is steady, reassuring, and safe to return to when the reader wants warmth more than chaos.</p>
+              <a class="button-link button-link--secondary" href="search-theme.html#cozy-results">Browse cozy results</a>
+            </article>
+
+            <article id="epistolary" class="guide-card">
+              <p class="card-kicker">Epistolary</p>
+              <p class="card-copy">The story includes letters, messages, notes, or documents as part of the narrative structure.</p>
+              <a class="button-link button-link--secondary" href="discover.html#crownfall-court">See Crownfall shelf</a>
+            </article>
+
+            <article id="soft-politics" class="guide-card">
+              <p class="card-kicker">Soft Politics</p>
+              <p class="card-copy">There is court or institutional tension, but the emotional core stays more personal than strategic.</p>
+              <a class="button-link button-link--secondary" href="search-theme.html#gentle-results">Browse gentle results</a>
+            </article>
+
+            <article id="post-race-softness" class="guide-card">
+              <p class="card-kicker">Post-Race Softness</p>
+              <p class="card-copy">The most important emotional scenes happen after the adrenaline drops and the team is left to decompress.</p>
+              <a class="button-link button-link--secondary" href="discover.html#neon-knights">Open Neon shelf</a>
+            </article>
           </div>
         </section>
       </main>
