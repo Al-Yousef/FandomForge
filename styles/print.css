@@ -1,0 +1,128 @@
+@page {
+  margin: 0.65in;
+}
+
+*,
+*::before,
+*::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+html,
+body {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+body::before,
+body::after,
+.chapter-rail,
+.mobile-nav,
+.skip-link {
+  display: none !important;
+}
+
+.site-frame {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.report {
+  display: block;
+}
+
+.report-section {
+  margin: 0 0 0.35in;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent !important;
+  overflow: visible;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.report-section::before {
+  display: none;
+}
+
+.report-section--hero {
+  min-height: auto;
+}
+
+.hero-findings,
+.hero-panel,
+.study-card,
+.band-card,
+.metric-card,
+.quote-card,
+.draft-banner,
+.draft-card,
+.report-figure--framed,
+.reference-item,
+.system-panel,
+.literature-card,
+.research-snapshot,
+.process-step {
+  border: 1px solid #cccccc !important;
+  background: #ffffff !important;
+}
+
+.hero-grid,
+.finding-strip,
+.split-copy,
+.literature-grid,
+.system-grid,
+.method-layout,
+.process-strip,
+.evaluation-grid,
+.evaluation-band,
+.results-summary,
+.results-metrics,
+.quote-wall,
+.results-gallery,
+.draft-grid,
+.appendix-grid {
+  display: block !important;
+}
+
+.hero-findings,
+.research-snapshot,
+.literature-card,
+.system-panel,
+.process-step,
+.study-card,
+.band-card,
+.metric-card,
+.quote-card,
+.draft-card,
+.reference-item,
+.report-figure--framed {
+  margin-top: 0.18in;
+}
+
+.report-figure,
+.figure-media,
+.report-figure img {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.report-figure img {
+  max-height: 7.5in;
+  object-fit: contain;
+}
+
+a,
+.reference-links a {
+  color: #111111 !important;
+  text-decoration: underline;
+}
+
+.reference-links a::after {
+  content: " (" attr(href) ")";
+  font-size: 0.82em;
+}
