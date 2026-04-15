@@ -6,7 +6,7 @@
     <title>FandomForge | Work Page</title>
     <meta
       name="description"
-      content="AO3-like work page scaffold for the FandomForge prototype."
+      content="AO3-like work page for the FandomForge prototype."
     >
     <meta name="theme-color" content="#8f2339">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -31,43 +31,259 @@
       </header>
 
       <p class="archive-notice">
-        The work page is being rebuilt to mirror AO3's structure: summary, notes, metadata, tags,
-        stats, chapters, and community feedback cues.
+        Work pages keep the AO3 reading pattern: title, author, summary, warnings, tags, chapters,
+        and feedback signals. FandomForge only simplifies hierarchy and phrasing.
       </p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Work Page</p>
-            <h1 class="page-title">AO3-like story detail shell.</h1>
+            <h1 class="page-title">AO3-style work pages with a cleaner reading hierarchy.</h1>
             <p class="page-summary">
-              This screen will stop behaving like a product detail card and instead become an
-              archive work page with the metadata blocks readers expect when choosing a fic.
+              The prototype uses one page to show two representative work states: the quieter
+              Moonwake result from theme search and the more specific Neon result from similar-story
+              search.
             </p>
+            <div class="quick-jump">
+              <a class="chip" href="#moonwake-story">Moonwake work</a>
+              <a class="chip chip--sky" href="#neon-story">Neon work</a>
+            </div>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Work scaffold</p>
-            <h2>Summary, warnings, tags, chapters, stats.</h2>
-            <p class="muted-note">The next story-specific commit will add a complete AO3-derived work layout.</p>
+            <p class="eyebrow">Work-page priorities</p>
+            <h2>Metadata first, summary second, chapters close by.</h2>
+            <p class="muted-note">
+              This keeps the page recognizable to archive readers while making it easier for newer
+              users to decide whether to open or continue a fic.
+            </p>
           </aside>
         </section>
 
-        <section class="page-section" aria-labelledby="story-shell-title">
+        <section id="moonwake-story" class="page-section" aria-labelledby="moonwake-title">
           <div class="section-heading">
-            <p class="eyebrow">Scaffold</p>
-            <h2 id="story-shell-title">Work detail modules are ready.</h2>
+            <p class="eyebrow">Opened from theme search</p>
+            <h2 id="moonwake-title">Lanterns After Curfew</h2>
+            <p class="section-copy">by Rowan Vale in <a class="text-link" href="discover.html#moonwake">Moonwake Academy</a></p>
           </div>
 
-          <div class="detail-grid">
-            <article class="detail-card">
-              <h3>Metadata column</h3>
-              <p class="helper-copy">Fandom, rating, warnings, relationships, characters, and additional tags.</p>
-            </article>
-            <article class="detail-card">
-              <h3>Reading column</h3>
-              <p class="helper-copy">Summary, notes, chapter list, stats, and a lightweight comments preview.</p>
-            </article>
+          <div class="work-detail-header">
+            <div class="cover-frame">
+              <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for Lanterns After Curfew">
+            </div>
+
+            <div class="summary-card">
+              <p class="eyebrow">Work snapshot</p>
+              <p class="helper-copy">
+                Two scholarship students keep meeting after curfew under the observatory lanterns,
+                where their guarded routines slowly become a shared one.
+              </p>
+              <div class="stats-row">
+                <span>Words: 23,400</span>
+                <span>Chapters: 8/14</span>
+                <span>Comments: 46</span>
+                <span>Bookmarks: 91</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="recommendations.html#because-moonwake">See related works</a>
+                <a class="button-link button-link--secondary" href="tags.html#magic-school">Review the tags</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="archive-layout">
+            <div>
+              <article class="detail-card">
+                <p class="eyebrow">Metadata</p>
+                <div class="key-value-grid">
+                  <div class="key-value-item">
+                    <p class="meta-label">Rating</p>
+                    <p class="meta-value">Teen and Up</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Warnings</p>
+                    <p class="meta-value">Mild magical peril, no graphic content</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Relationship</p>
+                    <p class="meta-value">Mira Solis / Elian Wren</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Characters</p>
+                    <p class="meta-value">Mira Solis, Elian Wren, Head Librarian Seo</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Additional tags</p>
+                    <div class="tag-list">
+                      <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
+                      <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
+                      <a class="tag-link" href="tags.html#slow-burn">Slow Burn</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="mini-list">
+              <article class="detail-card">
+                <p class="eyebrow">Summary and notes</p>
+                <p class="helper-copy">
+                  Mira uses the observatory roof as the only place on campus quiet enough to think.
+                  Elian is there for the exact same reason. Their accidental routine turns into the
+                  first steady thing either of them has had all term.
+                </p>
+                <p class="match-note">
+                  Author note: this fic stays low on chaos and leans on shared study scenes,
+                  rooftop conversations, and gradual trust-building.
+                </p>
+              </article>
+
+              <article class="detail-card">
+                <p class="eyebrow">Chapter list</p>
+                <ol class="chapter-list">
+                  <li class="chapter-card">
+                    <strong>1. After Curfew</strong>
+                    <p class="chapter-meta">2,900 words - first meeting under the lanterns</p>
+                  </li>
+                  <li class="chapter-card">
+                    <strong>2. Shared Notes</strong>
+                    <p class="chapter-meta">3,100 words - academic rivalry softens into routine</p>
+                  </li>
+                  <li class="chapter-card">
+                    <strong>8. Winter Rooflight</strong>
+                    <p class="chapter-meta">3,500 words - latest posted chapter</p>
+                  </li>
+                </ol>
+              </article>
+
+              <article class="detail-card">
+                <p class="eyebrow">Comments preview</p>
+                <ul class="comment-list">
+                  <li class="comment-card">
+                    <strong>nightclassnotes</strong>
+                    <p class="comment-meta">I liked that the tags were easy to understand before I opened this.</p>
+                  </li>
+                  <li class="comment-card">
+                    <strong>emberlane</strong>
+                    <p class="comment-meta">The pacing is exactly as soft as the summary promised.</p>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="neon-story" class="page-section" aria-labelledby="neon-title">
+          <div class="section-heading">
+            <p class="eyebrow">Opened from similar-story search</p>
+            <h2 id="neon-title">Static Hearts</h2>
+            <p class="section-copy">by Keira North in <a class="text-link" href="discover.html#neon-knights">Neon Knights</a></p>
+          </div>
+
+          <div class="work-detail-header">
+            <div class="cover-frame">
+              <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for Static Hearts">
+            </div>
+
+            <div class="summary-card">
+              <p class="eyebrow">Work snapshot</p>
+              <p class="helper-copy">
+                A week of escalating race pressure forces two teammates to stop pretending their
+                rivalry has not already turned into care.
+              </p>
+              <div class="stats-row">
+                <span>Words: 28,900</span>
+                <span>Chapters: 9/12</span>
+                <span>Comments: 52</span>
+                <span>Bookmarks: 104</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="recommendations.html#because-neon">See related works</a>
+                <a class="button-link button-link--secondary" href="tags.html#team-rivalry">Review the tags</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="archive-layout">
+            <div>
+              <article class="detail-card">
+                <p class="eyebrow">Metadata</p>
+                <div class="key-value-grid">
+                  <div class="key-value-item">
+                    <p class="meta-label">Rating</p>
+                    <p class="meta-value">Teen and Up</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Warnings</p>
+                    <p class="meta-value">Crash anxiety, no graphic injury</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Relationship</p>
+                    <p class="meta-value">Rae Mercer / Jun Park</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Characters</p>
+                    <p class="meta-value">Rae Mercer, Jun Park, Team Five</p>
+                  </div>
+                  <div class="key-value-item">
+                    <p class="meta-label">Additional tags</p>
+                    <div class="tag-list">
+                      <a class="tag-link chip--sky" href="tags.html#team-rivalry">Rivals to Allies</a>
+                      <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
+                      <a class="tag-link" href="tags.html#high-pressure">High-pressure week</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="mini-list">
+              <article class="detail-card">
+                <p class="eyebrow">Summary and notes</p>
+                <p class="helper-copy">
+                  Rae and Jun have spent months making each other worse in public and better in
+                  private. A brutal competition week forces them into the same repair bay long enough
+                  to admit that the rivalry already changed shape.
+                </p>
+                <p class="match-note">
+                  Author note: this fic is tenser than the Moonwake example, but the page still keeps
+                  warnings and relationship cues high in the hierarchy.
+                </p>
+              </article>
+
+              <article class="detail-card">
+                <p class="eyebrow">Chapter list</p>
+                <ol class="chapter-list">
+                  <li class="chapter-card">
+                    <strong>1. Yellow Flag</strong>
+                    <p class="chapter-meta">3,200 words - competition week begins badly</p>
+                  </li>
+                  <li class="chapter-card">
+                    <strong>5. Pit Wall</strong>
+                    <p class="chapter-meta">2,700 words - rivalry turns protective</p>
+                  </li>
+                  <li class="chapter-card">
+                    <strong>9. Static Break</strong>
+                    <p class="chapter-meta">3,100 words - latest posted chapter</p>
+                  </li>
+                </ol>
+              </article>
+
+              <article class="detail-card">
+                <p class="eyebrow">Comments preview</p>
+                <ul class="comment-list">
+                  <li class="comment-card">
+                    <strong>pitlaneink</strong>
+                    <p class="comment-meta">The warnings being right there made this much easier to choose.</p>
+                  </li>
+                  <li class="comment-card">
+                    <strong>juniperdrives</strong>
+                    <p class="comment-meta">This is the exact kind of rivals-to-allies pacing I was looking for.</p>
+                  </li>
+                </ul>
+              </article>
+            </div>
           </div>
         </section>
       </main>
