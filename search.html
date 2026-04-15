@@ -6,130 +6,75 @@
     <title>FandomForge | Search</title>
     <meta
       name="description"
-      content="Search for themes, similar stories, and curated prompts in the FandomForge prototype."
+      content="Reduced-filter search entry for the AO3-derived FandomForge prototype."
     >
-    <meta name="theme-color" content="#8e2130">
+    <meta name="theme-color" content="#8f2339">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="prototype-body page-search">
+  <body class="page-search">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="prototype-shell">
       <header class="app-topbar">
-        <a class="brand-mark" href="index.html">FandomForge</a>
+        <div class="brand-lockup">
+          <a class="brand-mark" href="index.html">FandomForge</a>
+          <p class="brand-meta">Archive-style fanfiction browsing, simplified for teen readers.</p>
+        </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="discover.html">Discover</a>
           <a class="nav-link is-active" href="search.html" aria-current="page">Search</a>
           <a class="nav-link" href="tags.html">Tags</a>
           <a class="nav-link" href="recommendations.html">Recommendations</a>
-          <a class="nav-link" href="profile.html">Profile</a>
         </nav>
-        <a class="utility-cta" href="profile.html#write-later">Write later</a>
       </header>
 
+      <p class="archive-notice">
+        Search is now being organized around the two evaluated tasks from the report rather than a
+        generic prompt-driven app search.
+      </p>
+
       <main id="main" class="app-main">
-        <section class="page-intro">
-          <div class="hero-layout">
-            <div class="hero-copy">
-              <p class="page-kicker">Search</p>
-              <h1>Find a story by feeling or by example.</h1>
-              <p class="page-summary">
-                Search should feel like guidance, not like homework. FandomForge separates broad
-                discovery from exact matching so readers can decide how specific they want to be.
-              </p>
-              <div class="chip-row">
-                <a class="chip chip--gold" href="#popular-prompts">Popular prompts</a>
-                <a class="chip chip--forest" href="search-theme.html#theme-results">Theme route</a>
-                <a class="chip chip--sky" href="search-similar.html#specific-results">Similar route</a>
-              </div>
-            </div>
-
-            <aside class="hero-card">
-              <p class="eyebrow">Search box</p>
-              <h2>Tonight I want...</h2>
-              <div class="search-shell">
-                <div class="search-field" aria-hidden="true">
-                  soft magic school stories with found family
-                </div>
-                <div class="action-row">
-                  <a class="button-link" href="search-theme.html#cozy-results">Search by theme</a>
-                  <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Find something similar</a>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section class="page-band two-column" aria-labelledby="search-routes-title">
-          <article class="collection-card">
-            <p class="card-kicker">Route One</p>
-            <h2 id="search-routes-title">Find a story by theme</h2>
-            <p class="card-copy">
-              Best when the reader knows the mood, trope, or emotional texture they want but not an
-              exact title.
+        <section class="page-hero">
+          <div>
+            <p class="page-kicker">Search</p>
+            <h1 class="page-title">Reduced filters and task-based archive entry.</h1>
+            <p class="page-summary">
+              This page will route readers into theme search or similar-story search, using clearer
+              prompts and fewer decisions than AO3's full filtering interface.
             </p>
-            <div class="quick-links">
-              <a class="chip chip--lavender" href="search-theme.html#cozy-results">Cozy fantasy</a>
-              <a class="chip chip--forest" href="search-theme.html#found-family-results">Found family</a>
-              <a class="chip chip--gold" href="search-theme.html#gentle-results">Gentle slow burn</a>
-            </div>
-            <a class="button-link" href="search-theme.html#theme-results">Open theme search</a>
-          </article>
-
-          <article class="collection-card">
-            <p class="card-kicker">Route Two</p>
-            <h2>Find something similar</h2>
-            <p class="card-copy">
-              Best when the reader has a specific story idea in mind and wants similar pacing,
-              dynamics, or trope overlap.
-            </p>
-            <div class="quick-links">
-              <a class="chip chip--sky" href="search-similar.html#specific-results">Rivals who soften</a>
-              <a class="chip chip--gold" href="search-similar.html#specific-results">Protective teammates</a>
-              <a class="chip chip--lavender" href="search-similar.html#specific-results">Late-night confession</a>
-            </div>
-            <a class="button-link" href="search-similar.html#specific-results">Open similar-story search</a>
-          </article>
-        </section>
-
-        <section id="popular-prompts" class="page-block" aria-labelledby="popular-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Popular Prompts</p>
-              <h2 id="popular-title">Tap into a search sentence instead of building filters.</h2>
-            </div>
           </div>
 
-          <div class="collection-grid">
-            <a class="collection-card" href="search-theme.html#cozy-results">
-              <p class="card-kicker">Prompt</p>
-              <h3>I want soft fantasy with school drama and a lot of trust-building.</h3>
-              <p class="card-copy">Routes to Moonwake Academy shelves and slow-burn stories.</p>
-            </a>
-            <a class="collection-card" href="search-similar.html#specific-results">
-              <p class="card-kicker">Prompt</p>
-              <h3>I want something like rivals-to-allies but without losing the team chemistry.</h3>
-              <p class="card-copy">Routes to Neon Knights and Star Circuit overlap stories.</p>
-            </a>
-            <a class="collection-card" href="search-theme.html#found-family-results">
-              <p class="card-kicker">Prompt</p>
-              <h3>I want found family with warmth first and angst second.</h3>
-              <p class="card-copy">Routes to gentle ensemble stories and starter tags.</p>
-            </a>
+          <aside class="search-panel">
+            <p class="eyebrow">Search shell</p>
+            <h2>Theme first or similar-story first.</h2>
+            <div class="search-input">soft magic school stories with found family</div>
+            <div class="action-row">
+              <a class="button-link" href="search-theme.html">Theme route</a>
+              <a class="button-link button-link--secondary" href="search-similar.html">Similar route</a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="page-section" aria-labelledby="search-shell-title">
+          <div class="section-heading">
+            <p class="eyebrow">Next Build</p>
+            <h2 id="search-shell-title">Task cards and reduced filters come next.</h2>
+          </div>
+
+          <div class="task-grid">
+            <article class="task-card">
+              <h3>FindStoryByTheme</h3>
+              <p class="helper-copy">Broad mood and trope prompts for readers who know the feeling they want.</p>
+            </article>
+            <article class="task-card">
+              <h3>FindSimilarStory</h3>
+              <p class="helper-copy">Reference-story matching for readers who want specific overlap and clearer reasoning.</p>
+            </article>
           </div>
         </section>
       </main>
-
-      <nav class="mobile-dock" aria-label="Primary">
-        <a class="dock-link" href="index.html">Home</a>
-        <a class="dock-link" href="discover.html">Discover</a>
-        <a class="dock-link is-active" href="search.html" aria-current="page">Search</a>
-        <a class="dock-link" href="tags.html">Tags</a>
-        <a class="dock-link" href="recommendations.html">Recs</a>
-        <a class="dock-link" href="profile.html">Profile</a>
-      </nav>
     </div>
   </body>
 </html>

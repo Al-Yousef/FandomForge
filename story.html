@@ -3,234 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FandomForge | Story</title>
+    <title>FandomForge | Work Page</title>
     <meta
       name="description"
-      content="Story detail, chapter preview, and tags inside the FandomForge prototype."
+      content="AO3-like work page scaffold for the FandomForge prototype."
     >
-    <meta name="theme-color" content="#8e2130">
+    <meta name="theme-color" content="#8f2339">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="prototype-body page-story">
+  <body class="page-story">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="prototype-shell">
       <header class="app-topbar">
-        <a class="brand-mark" href="index.html">FandomForge</a>
+        <div class="brand-lockup">
+          <a class="brand-mark" href="index.html">FandomForge</a>
+          <p class="brand-meta">Archive-style fanfiction browsing, simplified for teen readers.</p>
+        </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="discover.html">Discover</a>
           <a class="nav-link" href="search.html">Search</a>
           <a class="nav-link" href="tags.html">Tags</a>
           <a class="nav-link" href="recommendations.html">Recommendations</a>
-          <a class="nav-link" href="profile.html">Profile</a>
         </nav>
-        <a class="utility-cta" href="profile.html#write-later">Write later</a>
       </header>
 
+      <p class="archive-notice">
+        The work page is being rebuilt to mirror AO3's structure: summary, notes, metadata, tags,
+        stats, chapters, and community feedback cues.
+      </p>
+
       <main id="main" class="app-main">
-        <section id="moonwake-story" class="page-intro">
-          <div class="story-layout">
-            <div class="story-cover">
-              <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for Lanterns After Curfew">
-            </div>
-
-            <div class="hero-copy">
-              <p class="page-kicker">Story Page</p>
-              <h1>Lanterns After Curfew</h1>
-              <p class="page-summary">
-                In Moonwake Academy&rsquo;s east observatory, two scholarship roommates keep meeting
-                after lights-out and pretending the lanterns are the only reason they stayed.
-              </p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--lavender" href="tags.html#slow-burn">Slow Burn</a>
-                <a class="meta-pill chip--gold" href="tags.html#magic-school">Magic School</a>
-                <a class="meta-pill chip--forest" href="tags.html#found-family">Found Family</a>
-              </div>
-              <div class="action-row">
-                <a class="button-link" href="recommendations.html#because-moonwake">Because you liked this</a>
-                <a class="button-link button-link--secondary" href="tags.html#magic-school">Explore related tags</a>
-              </div>
-              <div class="note-box">
-                Content notes: after-curfew sneaking, emotional vulnerability, low-stakes magical peril.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="page-band two-column" aria-labelledby="moonwake-details-title">
-          <article class="detail-card">
-            <p class="eyebrow">Reader Snapshot</p>
-            <h2 id="moonwake-details-title">Why this page works for beginners</h2>
-            <p class="section-copy">
-              The story card keeps the pitch simple: clear summary, visible tags, and content notes
-              that explain the tone without requiring archive fluency.
+        <section class="page-hero">
+          <div>
+            <p class="page-kicker">Work Page</p>
+            <h1 class="page-title">AO3-like story detail shell.</h1>
+            <p class="page-summary">
+              This screen will stop behaving like a product detail card and instead become an
+              archive work page with the metadata blocks readers expect when choosing a fic.
             </p>
-            <div class="stat-grid">
-              <div class="stat-card">
-                <strong>14</strong>
-                <span>chapters</span>
-              </div>
-              <div class="stat-card">
-                <strong>4.8k</strong>
-                <span>saves</span>
-              </div>
-            </div>
-          </article>
+          </div>
 
-          <article class="detail-card">
-            <p class="eyebrow">Story Notes</p>
-            <h2>Best fit for readers who want</h2>
-            <div class="quick-links">
-              <a class="chip chip--lavender" href="tags.html#slow-burn">soft buildup</a>
-              <a class="chip chip--gold" href="tags.html#magic-school">school fantasy</a>
-              <a class="chip chip--forest" href="tags.html#comfort-read">comfort read energy</a>
-            </div>
-          </article>
+          <aside class="search-panel">
+            <p class="eyebrow">Work scaffold</p>
+            <h2>Summary, warnings, tags, chapters, stats.</h2>
+            <p class="muted-note">The next story-specific commit will add a complete AO3-derived work layout.</p>
+          </aside>
         </section>
 
-        <section class="page-block" aria-labelledby="chapters-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Chapter Preview</p>
-              <h2 id="chapters-title">Readable chapter list with no clutter.</h2>
-            </div>
+        <section class="page-section" aria-labelledby="story-shell-title">
+          <div class="section-heading">
+            <p class="eyebrow">Scaffold</p>
+            <h2 id="story-shell-title">Work detail modules are ready.</h2>
           </div>
 
-          <div class="chapter-list">
-            <div class="chapter-item">
-              <span class="chapter-count">01</span>
-              <div>
-                <strong>House Lights</strong>
-                <p class="visually-muted">A curfew violation leads to a shared telescope key.</p>
-              </div>
-              <a href="story.html#moonwake-story">Preview</a>
-            </div>
-            <div class="chapter-item">
-              <span class="chapter-count">02</span>
-              <div>
-                <strong>Study Hour, Revised</strong>
-                <p class="visually-muted">The library plan falls apart and the observatory becomes plan B.</p>
-              </div>
-              <a href="story.html#moonwake-story">Preview</a>
-            </div>
-            <div class="chapter-item">
-              <span class="chapter-count">03</span>
-              <div>
-                <strong>Lantern Logic</strong>
-                <p class="visually-muted">No one admits they keep returning for the same reasons.</p>
-              </div>
-              <a href="story.html#moonwake-story">Preview</a>
-            </div>
-            <div class="chapter-item">
-              <span class="chapter-count">04</span>
-              <div>
-                <strong>Snow on the East Roof</strong>
-                <p class="visually-muted">The closest thing to a confession so far.</p>
-              </div>
-              <a href="story.html#moonwake-story">Preview</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="page-panel" aria-labelledby="comments-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Comment Preview</p>
-              <h2 id="comments-title">Community warmth without noise.</h2>
-            </div>
-          </div>
-
-          <div class="comment-grid">
-            <blockquote class="comment-card">
-              <p>&ldquo;The observatory scenes feel so safe. I needed this after school today.&rdquo;</p>
-              <cite class="visually-muted">starlitbean</cite>
-            </blockquote>
-            <blockquote class="comment-card">
-              <p>&ldquo;This is exactly the kind of slow-burn tag I wish more sites explained clearly.&rdquo;</p>
-              <cite class="visually-muted">quietorbit</cite>
-            </blockquote>
-          </div>
-        </section>
-
-        <section id="neon-story" class="page-block" aria-labelledby="neon-story-title">
-          <div class="story-layout">
-            <div class="story-cover">
-              <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for Static Hearts">
-            </div>
-
-            <div class="hero-copy">
-              <p class="page-kicker">Alternate Story Anchor</p>
-              <h2 id="neon-story-title">Static Hearts</h2>
-              <p class="page-summary">
-                Two rival drivers stop acting like rivals the second one of them is actually in
-                trouble, and the whole team notices before they do.
-              </p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--sky" href="tags.html#team-rivalry">Team Rivalry</a>
-                <a class="meta-pill chip--forest" href="tags.html#protective-dynamic">Protective Dynamic</a>
-                <a class="meta-pill chip--gold" href="tags.html#earned-confession">Earned Confession</a>
-              </div>
-              <div class="action-row">
-                <a class="button-link" href="recommendations.html#because-neon">See related recommendations</a>
-                <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Back to exact-match results</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="page-block story-shelf" aria-labelledby="next-up-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Because You Liked This</p>
-              <h2 id="next-up-title">The next shelf should feel one click away.</h2>
-            </div>
-          </div>
-
-          <div class="story-grid">
-            <a class="story-card" href="recommendations.html#because-moonwake">
-              <div class="story-cover">
-                <img src="assets/covers/cover-crownfall-letters.svg" alt="Cover art for Letters at Dawn">
-              </div>
-              <div class="story-title-row">
-                <p class="story-kicker">Crownfall Court</p>
-                <h3>Letters at Dawn</h3>
-              </div>
-              <p class="story-copy">A softer, more epistolary next step for readers staying in a gentle mood.</p>
-            </a>
-            <a class="story-card" href="recommendations.html#because-neon">
-              <div class="story-cover">
-                <img src="assets/covers/cover-starcircuit-sparks.svg" alt="Cover art for Sparks Between Us">
-              </div>
-              <div class="story-title-row">
-                <p class="story-kicker">Star Circuit</p>
-                <h3>Sparks Between Us</h3>
-              </div>
-              <p class="story-copy">Keeps the team dynamic and the late emotional payoff in place.</p>
-            </a>
-            <a class="story-card" href="tags.html#slow-burn">
-              <div class="story-cover">
-                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Tidebound">
-              </div>
-              <div class="story-title-row">
-                <p class="story-kicker">Witchlight Harbor</p>
-                <h3>Tidebound</h3>
-              </div>
-              <p class="story-copy">Switch worlds without losing the softness.</p>
-            </a>
+          <div class="detail-grid">
+            <article class="detail-card">
+              <h3>Metadata column</h3>
+              <p class="helper-copy">Fandom, rating, warnings, relationships, characters, and additional tags.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Reading column</h3>
+              <p class="helper-copy">Summary, notes, chapter list, stats, and a lightweight comments preview.</p>
+            </article>
           </div>
         </section>
       </main>
-
-      <nav class="mobile-dock" aria-label="Primary">
-        <a class="dock-link" href="index.html">Home</a>
-        <a class="dock-link" href="discover.html">Discover</a>
-        <a class="dock-link" href="search.html">Search</a>
-        <a class="dock-link" href="tags.html">Tags</a>
-        <a class="dock-link" href="recommendations.html">Recs</a>
-        <a class="dock-link" href="profile.html">Profile</a>
-      </nav>
     </div>
   </body>
 </html>

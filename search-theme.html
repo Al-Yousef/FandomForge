@@ -3,156 +3,80 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FandomForge | Theme Search</title>
+    <title>FandomForge | Theme Results</title>
     <meta
       name="description"
-      content="Preset theme-based discovery results inside the FandomForge prototype."
+      content="Theme-based archive results for the AO3-derived FandomForge prototype."
     >
-    <meta name="theme-color" content="#8e2130">
+    <meta name="theme-color" content="#8f2339">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="prototype-body page-search-theme">
+  <body class="page-search-theme">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="prototype-shell">
       <header class="app-topbar">
-        <a class="brand-mark" href="index.html">FandomForge</a>
+        <div class="brand-lockup">
+          <a class="brand-mark" href="index.html">FandomForge</a>
+          <p class="brand-meta">Archive-style fanfiction browsing, simplified for teen readers.</p>
+        </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="discover.html">Discover</a>
           <a class="nav-link is-active" href="search.html" aria-current="page">Search</a>
           <a class="nav-link" href="tags.html">Tags</a>
           <a class="nav-link" href="recommendations.html">Recommendations</a>
-          <a class="nav-link" href="profile.html">Profile</a>
         </nav>
-        <a class="utility-cta" href="profile.html#write-later">Write later</a>
       </header>
 
+      <p class="archive-notice">
+        Theme search results will use archive-style listings with reduced filters, clearer metadata,
+        and plain-language match explanations.
+      </p>
+
       <main id="main" class="app-main">
-        <section class="page-intro">
-          <div class="hero-layout">
-            <div class="hero-copy">
-              <p class="page-kicker">Theme Search</p>
-              <h1>Results for a softer kind of search.</h1>
-              <p class="page-summary">
-                This route is for readers who know the feeling they want. Instead of demanding
-                exact tags, FandomForge explains why each story fits the mood.
-              </p>
-              <div id="theme-results" class="chip-row">
-                <span class="chip chip--gold">soft magic school stories</span>
-                <span class="chip chip--forest">found family warmth</span>
-                <span class="chip chip--lavender">gentle slow burn</span>
-              </div>
-            </div>
-
-            <aside class="hero-card">
-              <p class="eyebrow">How theme search works</p>
-              <h2>Broad first, specific later.</h2>
-              <p class="section-copy">
-                The cards below lean on atmosphere and reader intent. If you want sharper matching,
-                switch to the “find something similar” route instead.
-              </p>
-              <div class="quick-links">
-                <a class="chip chip--sky" href="search-similar.html#specific-results">Need more precise matching?</a>
-                <a class="chip chip--forest" href="tags.html#new-to-tags">New to tags?</a>
-              </div>
-            </aside>
+        <section class="page-hero">
+          <div>
+            <p class="page-kicker">Theme Search</p>
+            <h1 class="page-title">Theme-based results shell.</h1>
+            <p class="page-summary">
+              This route will support the report's `FindStoryByTheme` task by showing broad archive
+              matches without requiring advanced tag literacy.
+            </p>
           </div>
+
+          <aside class="search-panel">
+            <p class="eyebrow">Current query</p>
+            <div class="search-input">soft magic school stories with found family</div>
+            <p class="muted-note">Filters and result rows will be added in the next result-specific commit.</p>
+          </aside>
         </section>
 
-        <section class="page-block" aria-labelledby="cozy-title">
-          <div class="shelf-head">
-            <div>
-              <p id="cozy-results" class="eyebrow">Cozy Results</p>
-              <h2 id="cozy-title">Stories that match the feeling of quiet magic and trust-building.</h2>
+        <section class="results-layout" aria-labelledby="theme-results-title">
+          <aside class="filter-sidebar">
+            <div class="section-heading">
+              <p class="eyebrow">Reduced Filters</p>
+              <h2 id="theme-results-title">Filter sidebar scaffold</h2>
             </div>
-          </div>
+            <div class="pill-stack">
+              <div class="filter-pill">Tone: gentle</div>
+              <div class="filter-pill">Warnings: beginner-safe</div>
+              <div class="filter-pill">Length: short to medium</div>
+            </div>
+          </aside>
 
-          <div class="results-grid">
-            <article class="result-card">
-              <div class="story-cover">
-                <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for Lanterns After Curfew">
-              </div>
-              <div class="result-head">
-                <p class="result-kicker">Moonwake Academy</p>
-                <h3>Lanterns After Curfew</h3>
-              </div>
-              <p class="result-copy">A slow-burn observatory story with study sessions, secrets, and gentle pacing.</p>
-              <p class="match-note">Matches because it shares soft fantasy, school intimacy, and low-chaos emotional build.</p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--lavender" href="tags.html#slow-burn">Slow Burn</a>
-                <a class="meta-pill chip--gold" href="tags.html#magic-school">Magic School</a>
-              </div>
-              <a class="button-link" href="story.html#moonwake-story">Open story</a>
-            </article>
-
-            <article class="result-card">
-              <div class="story-cover">
-                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Tea Beneath the Observatory">
-              </div>
-              <div class="result-head">
-                <p class="result-kicker">Moonwake Academy</p>
-                <h3>Tea Beneath the Observatory</h3>
-              </div>
-              <p class="result-copy">A cozy ensemble story about shared routines, old corridors, and accidental belonging.</p>
-              <p class="match-note">Matches because it emphasizes comfort, friendship, and easy entry into the world.</p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--forest" href="tags.html#found-family">Found Family</a>
-                <a class="meta-pill" href="tags.html#comfort-read">Comfort Read</a>
-              </div>
-              <a class="button-link button-link--secondary" href="tags.html#found-family">See related tags</a>
-            </article>
-
-            <article class="result-card">
-              <div class="story-cover">
-                <img src="assets/covers/cover-crownfall-letters.svg" alt="Cover art for Letters at Dawn">
-              </div>
-              <div class="result-head">
-                <p class="result-kicker">Crownfall Court</p>
-                <h3>Letters at Dawn</h3>
-              </div>
-              <p class="result-copy">Courtly pressure and hidden tenderness for readers who want softness with a little ache.</p>
-              <p class="match-note">Matches because it keeps the emotional texture gentle even when the setting feels formal.</p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--gold" href="tags.html#epistolary">Epistolary</a>
-                <a class="meta-pill" href="tags.html#soft-politics">Soft Politics</a>
-              </div>
-              <a class="button-link button-link--secondary" href="story.html#moonwake-story">Read nearest match</a>
+          <div class="work-list">
+            <article class="work-card empty-state">
+              <h3 class="work-title">Theme results will be rebuilt here.</h3>
+              <p class="helper-copy">
+                The final listing will use AO3-style metadata blocks and short plain-language
+                reasons for why each story matches the requested theme.
+              </p>
             </article>
           </div>
-        </section>
-
-        <section id="found-family-results" class="page-panel two-column" aria-labelledby="gentle-title">
-          <article class="detail-card">
-            <p class="eyebrow">Why these fit</p>
-            <h2 id="gentle-title">Theme search explains the overlap in plain language.</h2>
-            <p class="section-copy">
-              These results are not claiming to be exact twins. They are offering nearby stories
-              with the same emotional temperature, tone, and entry comfort.
-            </p>
-          </article>
-
-          <article id="gentle-results" class="detail-card">
-            <p class="eyebrow">Next step</p>
-            <h2>Want narrower matching?</h2>
-            <p class="section-copy">
-              If you already know the precise shape you want, jump into the similar-story route for
-              stronger trope overlap and more explicit comparisons.
-            </p>
-            <a class="button-link" href="search-similar.html#specific-results">Switch to specific matching</a>
-          </article>
         </section>
       </main>
-
-      <nav class="mobile-dock" aria-label="Primary">
-        <a class="dock-link" href="index.html">Home</a>
-        <a class="dock-link" href="discover.html">Discover</a>
-        <a class="dock-link is-active" href="search.html" aria-current="page">Search</a>
-        <a class="dock-link" href="tags.html">Tags</a>
-        <a class="dock-link" href="recommendations.html">Recs</a>
-        <a class="dock-link" href="profile.html">Profile</a>
-      </nav>
     </div>
   </body>
 </html>

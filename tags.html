@@ -3,199 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FandomForge | Tags</title>
+    <title>FandomForge | Tag Guide</title>
     <meta
       name="description"
-      content="Friendly tag exploration and trope guidance inside the FandomForge prototype."
+      content="Simplified AO3-style tag guidance for the FandomForge prototype."
     >
-    <meta name="theme-color" content="#8e2130">
+    <meta name="theme-color" content="#8f2339">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="prototype-body page-tags">
+  <body class="page-tags">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="prototype-shell">
       <header class="app-topbar">
-        <a class="brand-mark" href="index.html">FandomForge</a>
+        <div class="brand-lockup">
+          <a class="brand-mark" href="index.html">FandomForge</a>
+          <p class="brand-meta">Archive-style fanfiction browsing, simplified for teen readers.</p>
+        </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="discover.html">Discover</a>
           <a class="nav-link" href="search.html">Search</a>
           <a class="nav-link is-active" href="tags.html" aria-current="page">Tags</a>
           <a class="nav-link" href="recommendations.html">Recommendations</a>
-          <a class="nav-link" href="profile.html">Profile</a>
         </nav>
-        <a class="utility-cta" href="profile.html#write-later">Write later</a>
       </header>
 
+      <p class="archive-notice">
+        Tags will be explained in plain language so beginners can use archive discovery without
+        already knowing AO3's community shorthand.
+      </p>
+
       <main id="main" class="app-main">
-        <section id="new-to-tags" class="page-intro">
-          <div class="hero-layout">
-            <div class="hero-copy">
-              <p class="page-kicker">Tags</p>
-              <h1>Explore tropes without needing insider shorthand.</h1>
-              <p class="page-summary">
-                Tags on FandomForge are meant to help readers, not intimidate them. Each one below
-                is written like a friendly reading cue rather than a puzzle.
-              </p>
-              <div class="chip-row">
-                <a class="chip chip--lavender" href="#slow-burn">Slow Burn</a>
-                <a class="chip chip--forest" href="#found-family">Found Family</a>
-                <a class="chip chip--gold" href="#magic-school">Magic School</a>
-                <a class="chip chip--sky" href="#team-rivalry">Team Rivalry</a>
-              </div>
-            </div>
-
-            <aside class="hero-card">
-              <p class="eyebrow">New to tags?</p>
-              <h2>Use them like mood labels.</h2>
-              <div class="stack-list">
-                <div class="list-card">
-                  <strong>What tags do</strong>
-                  <span class="visually-muted">They tell you what kind of emotional experience to expect.</span>
-                </div>
-                <div class="list-card">
-                  <strong>What tags do not do</strong>
-                  <span class="visually-muted">They should not force you to decode community jargon before you can read.</span>
-                </div>
-              </div>
-            </aside>
+        <section class="page-hero">
+          <div>
+            <p class="page-kicker">Tags</p>
+            <h1 class="page-title">Plain-language tag helper shell.</h1>
+            <p class="page-summary">
+              The final tag page will explain archive labels, show include and exclude examples, and
+              keep warnings readable for younger users.
+            </p>
           </div>
+
+          <aside class="search-panel">
+            <p class="eyebrow">Tag help</p>
+            <h2>Archive meaning without archive confusion.</h2>
+            <p class="muted-note">Definitions, grouped tags, and filter examples will land in the next tag-specific commit.</p>
+          </aside>
         </section>
 
-        <section class="page-band" aria-labelledby="tag-groups-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Tag Families</p>
-              <h2 id="tag-groups-title">Grouped by what a reader is usually trying to feel.</h2>
-            </div>
+        <section class="page-section" aria-labelledby="tag-shell-title">
+          <div class="section-heading">
+            <p class="eyebrow">Scaffold</p>
+            <h2 id="tag-shell-title">Tag guidance modules are ready.</h2>
           </div>
 
-          <div class="tag-groups">
-            <article class="tag-group">
-              <p class="card-kicker">Relationship Dynamics</p>
-              <h3>How people move toward each other</h3>
-              <div class="tag-cloud">
-                <a class="tag-chip" href="#slow-burn">Slow Burn</a>
-                <a class="tag-chip chip--forest" href="#found-family">Found Family</a>
-                <a class="tag-chip chip--sky" href="#team-rivalry">Team Rivalry</a>
-                <a class="tag-chip chip--gold" href="#protective-dynamic">Protective Dynamic</a>
-              </div>
+          <div class="glossary-grid">
+            <article class="definition-card">
+              <h3>What a tag tells you</h3>
+              <p class="helper-copy">Meaning, tone, and reading expectations in beginner-safe language.</p>
             </article>
-
-            <article class="tag-group">
-              <p class="card-kicker">Setting And Tone</p>
-              <h3>Where the story lives and how it breathes</h3>
-              <div class="tag-cloud">
-                <a class="tag-chip chip--gold" href="#magic-school">Magic School</a>
-                <a class="tag-chip" href="#comfort-read">Comfort Read</a>
-                <a class="tag-chip chip--gold" href="#soft-politics">Soft Politics</a>
-                <a class="tag-chip chip--forest" href="#post-race-softness">Post-Race Softness</a>
-              </div>
+            <article class="definition-card">
+              <h3>How to use include and exclude</h3>
+              <p class="helper-copy">Simple examples that turn archive filtering into a readable decision instead of a puzzle.</p>
             </article>
-          </div>
-        </section>
-
-        <section class="page-block" aria-labelledby="definitions-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Definitions</p>
-              <h2 id="definitions-title">Plain-language explanations for the tags used in this prototype.</h2>
-            </div>
-          </div>
-
-          <div class="tag-groups">
-            <article id="slow-burn" class="guide-card">
-              <p class="card-kicker">Slow Burn</p>
-              <p class="card-copy">The relationship builds gradually across many scenes instead of paying off immediately.</p>
-              <a class="button-link button-link--secondary" href="story.html#moonwake-story">See it on a story page</a>
-            </article>
-
-            <article id="found-family" class="guide-card">
-              <p class="card-kicker">Found Family</p>
-              <p class="card-copy">A group becomes emotionally close enough to feel like chosen family.</p>
-              <a class="button-link button-link--secondary" href="search-theme.html#found-family-results">Find matching results</a>
-            </article>
-
-            <article id="magic-school" class="guide-card">
-              <p class="card-kicker">Magic School</p>
-              <p class="card-copy">The story uses school routines, classes, or campus spaces as a main part of its appeal.</p>
-              <a class="button-link button-link--secondary" href="discover.html#moonwake">Open Moonwake shelf</a>
-            </article>
-
-            <article id="team-rivalry" class="guide-card">
-              <p class="card-kicker">Team Rivalry</p>
-              <p class="card-copy">Characters compete or clash inside a shared team context, which keeps the stakes relational.</p>
-              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Find exact-match results</a>
-            </article>
-
-            <article id="protective-dynamic" class="guide-card">
-              <p class="card-kicker">Protective Dynamic</p>
-              <p class="card-copy">One character becomes emotionally or physically protective of another without flattening their agency.</p>
-              <a class="button-link button-link--secondary" href="story.html#neon-story">See Neon example</a>
-            </article>
-
-            <article id="earned-confession" class="guide-card">
-              <p class="card-kicker">Earned Confession</p>
-              <p class="card-copy">The emotional payoff arrives after enough buildup that it feels satisfying instead of sudden.</p>
-              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">See close matches</a>
-            </article>
-
-            <article id="late-night-confession" class="guide-card">
-              <p class="card-kicker">Late-night Confession</p>
-              <p class="card-copy">The emotional shift happens in a quieter, more vulnerable scene after the main action winds down.</p>
-              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Find this dynamic</a>
-            </article>
-
-            <article id="comfort-read" class="guide-card">
-              <p class="card-kicker">Comfort Read</p>
-              <p class="card-copy">The tone is steady, reassuring, and safe to return to when the reader wants warmth more than chaos.</p>
-              <a class="button-link button-link--secondary" href="search-theme.html#cozy-results">Browse cozy results</a>
-            </article>
-
-            <article id="epistolary" class="guide-card">
-              <p class="card-kicker">Epistolary</p>
-              <p class="card-copy">The story includes letters, messages, notes, or documents as part of the narrative structure.</p>
-              <a class="button-link button-link--secondary" href="discover.html#crownfall-court">See Crownfall shelf</a>
-            </article>
-
-            <article id="soft-politics" class="guide-card">
-              <p class="card-kicker">Soft Politics</p>
-              <p class="card-copy">There is court or institutional tension, but the emotional core stays more personal than strategic.</p>
-              <a class="button-link button-link--secondary" href="search-theme.html#gentle-results">Browse gentle results</a>
-            </article>
-
-            <article id="post-race-softness" class="guide-card">
-              <p class="card-kicker">Post-Race Softness</p>
-              <p class="card-copy">The most important emotional scenes happen after the adrenaline drops and the team is left to decompress.</p>
-              <a class="button-link button-link--secondary" href="discover.html#neon-knights">Open Neon shelf</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="page-panel">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Next Step</p>
-              <h2>Turn tag knowledge into recommendations.</h2>
-            </div>
-          </div>
-          <div class="quick-links">
-            <a class="button-link" href="recommendations.html#gentle-slow-burns">See recommendation shelves</a>
-            <a class="button-link button-link--secondary" href="profile.html#saved-tags">Save tags to profile</a>
           </div>
         </section>
       </main>
-
-      <nav class="mobile-dock" aria-label="Primary">
-        <a class="dock-link" href="index.html">Home</a>
-        <a class="dock-link" href="discover.html">Discover</a>
-        <a class="dock-link" href="search.html">Search</a>
-        <a class="dock-link is-active" href="tags.html" aria-current="page">Tags</a>
-        <a class="dock-link" href="recommendations.html">Recs</a>
-        <a class="dock-link" href="profile.html">Profile</a>
-      </nav>
     </div>
   </body>
 </html>

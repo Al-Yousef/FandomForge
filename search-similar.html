@@ -3,159 +3,80 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FandomForge | Similar Search</title>
+    <title>FandomForge | Similar Story Results</title>
     <meta
       name="description"
-      content="Preset similar-story matching results inside the FandomForge prototype."
+      content="Similar-story archive results for the AO3-derived FandomForge prototype."
     >
-    <meta name="theme-color" content="#8e2130">
+    <meta name="theme-color" content="#8f2339">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="prototype-body page-search-similar">
+  <body class="page-search-similar">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="prototype-shell">
       <header class="app-topbar">
-        <a class="brand-mark" href="index.html">FandomForge</a>
+        <div class="brand-lockup">
+          <a class="brand-mark" href="index.html">FandomForge</a>
+          <p class="brand-meta">Archive-style fanfiction browsing, simplified for teen readers.</p>
+        </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="discover.html">Discover</a>
           <a class="nav-link is-active" href="search.html" aria-current="page">Search</a>
           <a class="nav-link" href="tags.html">Tags</a>
           <a class="nav-link" href="recommendations.html">Recommendations</a>
-          <a class="nav-link" href="profile.html">Profile</a>
         </nav>
-        <a class="utility-cta" href="profile.html#write-later">Write later</a>
       </header>
 
+      <p class="archive-notice">
+        Similar-story search will expose explicit overlap reasoning so readers can understand why a
+        result matches the example they have in mind.
+      </p>
+
       <main id="main" class="app-main">
-        <section class="page-intro">
-          <div class="hero-layout">
-            <div class="hero-copy">
-              <p class="page-kicker">Similar Search</p>
-              <h1>Results for a more exact story shape.</h1>
-              <p class="page-summary">
-                This route assumes the reader already knows the dynamic they want. The matches below
-                lean on clearer trope overlap, pacing cues, and relationship structure.
+        <section class="page-hero">
+          <div>
+            <p class="page-kicker">Similar Story Search</p>
+            <h1 class="page-title">Specific-match results shell.</h1>
+            <p class="page-summary">
+              This route supports the report's `FindSimilarStory` task by comparing relationship
+              dynamics, pacing, and trope overlap more directly than the theme search route.
+            </p>
+          </div>
+
+          <aside class="search-panel">
+            <p class="eyebrow">Reference idea</p>
+            <div class="search-input">rivals who get protective during one high-pressure race week</div>
+            <p class="muted-note">The next result commit will convert this into archive rows with tighter metadata.</p>
+          </aside>
+        </section>
+
+        <section class="results-layout" aria-labelledby="similar-results-title">
+          <aside class="filter-sidebar">
+            <div class="section-heading">
+              <p class="eyebrow">Reduced Filters</p>
+              <h2 id="similar-results-title">Specific-match sidebar scaffold</h2>
+            </div>
+            <div class="pill-stack">
+              <div class="filter-pill">Dynamic: rivals to allies</div>
+              <div class="filter-pill">Energy: medium-high</div>
+              <div class="filter-pill">Warnings: clear labels only</div>
+            </div>
+          </aside>
+
+          <div class="work-list">
+            <article class="work-card empty-state">
+              <h3 class="work-title">Similar-story results will be rebuilt here.</h3>
+              <p class="helper-copy">
+                The final listing will foreground overlap notes and clearer choice-making than the
+                current generic card layout.
               </p>
-              <div id="specific-results" class="chip-row">
-                <span class="chip chip--sky">rivals to allies</span>
-                <span class="chip chip--forest">team chemistry</span>
-                <span class="chip chip--gold">late-night confession energy</span>
-              </div>
-            </div>
-
-            <aside class="hero-card">
-              <p class="eyebrow">Reference request</p>
-              <h2>Something like rivals-to-allies, but still soft.</h2>
-              <div class="stack-list">
-                <div class="list-card">
-                  <strong>Priority traits</strong>
-                  <span class="visually-muted">protective tension, shared team stakes, emotional payoff</span>
-                </div>
-                <div class="list-card">
-                  <strong>Not looking for</strong>
-                  <span class="visually-muted">grimdark intensity or lore-heavy onboarding</span>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section class="page-block" aria-labelledby="similar-title">
-          <div class="shelf-head">
-            <div>
-              <p class="eyebrow">Best Matches</p>
-              <h2 id="similar-title">Specific overlap, with the reasoning made visible.</h2>
-            </div>
-          </div>
-
-          <div class="results-grid">
-            <article class="result-card">
-              <div class="story-cover">
-                <img src="assets/covers/cover-neon-rivalry.svg" alt="Cover art for Static Hearts">
-              </div>
-              <div class="result-head">
-                <p class="result-kicker">Neon Knights</p>
-                <h3>Static Hearts</h3>
-              </div>
-              <p class="match-score">Closest match</p>
-              <p class="result-copy">Two rival drivers keep choosing each other in the moments that matter most.</p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--sky" href="tags.html#team-rivalry">Team Rivalry</a>
-                <a class="meta-pill chip--forest" href="tags.html#protective-dynamic">Protective Dynamic</a>
-                <a class="meta-pill" href="tags.html#late-night-confession">Late-night Confession</a>
-              </div>
-              <a class="button-link" href="story.html#neon-story">Open closest match</a>
-            </article>
-
-            <article class="result-card">
-              <div class="story-cover">
-                <img src="assets/covers/cover-starcircuit-sparks.svg" alt="Cover art for Sparks Between Us">
-              </div>
-              <div class="result-head">
-                <p class="result-kicker">Star Circuit</p>
-                <h3>Sparks Between Us</h3>
-              </div>
-              <p class="match-score">High overlap</p>
-              <p class="result-copy">Fast crew dynamics, an exhausted confession, and an emotional landing after the mission.</p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--sky" href="tags.html#team-rivalry">Competitive Team</a>
-                <a class="meta-pill chip--gold" href="tags.html#earned-confession">Earned Confession</a>
-              </div>
-              <a class="button-link button-link--secondary" href="recommendations.html#because-neon">See related recs</a>
-            </article>
-
-            <article class="result-card">
-              <div class="story-cover">
-                <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Team Five on the Roof">
-              </div>
-              <div class="result-head">
-                <p class="result-kicker">Neon Knights</p>
-                <h3>Team Five on the Roof</h3>
-              </div>
-              <p class="match-score">Softer alternative</p>
-              <p class="result-copy">Keeps the team-emotion overlap while lowering the rivalry intensity.</p>
-              <div class="meta-pills">
-                <a class="meta-pill chip--forest" href="tags.html#found-family">Found Family</a>
-                <a class="meta-pill" href="tags.html#post-race-softness">Post-Race Softness</a>
-              </div>
-              <a class="button-link button-link--secondary" href="story.html#neon-story">Open related story</a>
             </article>
           </div>
-        </section>
-
-        <section class="page-panel two-column" aria-labelledby="difference-title">
-          <article class="detail-card">
-            <p class="eyebrow">Why this route feels different</p>
-            <h2 id="difference-title">The cards compare story shape, not just atmosphere.</h2>
-            <p class="section-copy">
-              Similar search is for readers who want closer trope alignment, clearer pacing cues,
-              and a stronger promise that the dynamic will land where they expect.
-            </p>
-          </article>
-
-          <article class="detail-card">
-            <p class="eyebrow">Next step</p>
-            <h2>Finished reading?</h2>
-            <p class="section-copy">
-              The recommendation screen keeps the same logic going and opens adjacent stories once
-              the reader finishes a strong match.
-            </p>
-            <a class="button-link" href="recommendations.html#because-neon">Jump to related recommendations</a>
-          </article>
         </section>
       </main>
-
-      <nav class="mobile-dock" aria-label="Primary">
-        <a class="dock-link" href="index.html">Home</a>
-        <a class="dock-link" href="discover.html">Discover</a>
-        <a class="dock-link is-active" href="search.html" aria-current="page">Search</a>
-        <a class="dock-link" href="tags.html">Tags</a>
-        <a class="dock-link" href="recommendations.html">Recs</a>
-        <a class="dock-link" href="profile.html">Profile</a>
-      </nav>
     </div>
   </body>
 </html>
