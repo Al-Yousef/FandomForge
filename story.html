@@ -12,7 +12,7 @@
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body class="compact-page story-page">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="prototype-shell">
@@ -34,35 +34,51 @@
         </div>
       </header>
 
-      <main id="main" class="app-main">
+      <main id="main" class="app-main compact-main">
         <section class="page-hero">
-          <div>
+          <div class="hero-copy-grid">
             <p class="page-kicker">Story Page</p>
-            <h1 class="page-title">Know the tone before chapter one.</h1>
+            <h1 class="page-title">See the story summary before you open anything.</h1>
             <p class="page-summary">
-              Read the summary, content notes, and tag language before you commit to the first chapter.
+              Every sample page shows the tone, content notes, chapter preview, and next step before you commit.
             </p>
-            <div class="quick-jump">
-              <a class="chip chip--gold" href="#moonwake-work">Moonwake</a>
-              <a class="chip" href="#witchlight-work">Witchlight</a>
-              <a class="chip chip--gold" href="#crownfall-work">Crownfall</a>
-              <a class="chip chip--sky" href="#neon-work">Neon</a>
-              <a class="chip chip--sky" href="#star-work">Star Circuit</a>
-            </div>
           </div>
 
-          <aside class="search-panel">
-            <p class="eyebrow">What Stays Visible</p>
-            <h2>Summary, content notes, tags, chapters, next step.</h2>
-            <p class="muted-note">If a tag is unfamiliar, the <a class="text-link" href="tags.html#starter-sets">tag guide</a> stays one click away while tone and content notes remain visible here.</p>
+          <aside class="search-panel page-shortcuts" aria-labelledby="story-jump-title">
+            <div class="section-heading shortcut-heading">
+              <p class="eyebrow">Sample Stories</p>
+              <h2 id="story-jump-title">Jump to the kind of story you want to preview.</h2>
+            </div>
+            <div class="shortcut-grid">
+              <a class="shortcut-card" href="#moonwake-work">
+                <strong>Warm fantasy school</strong>
+                <span>Moonwake Academy</span>
+              </a>
+              <a class="shortcut-card" href="#witchlight-work">
+                <strong>Cozy harbor mystery</strong>
+                <span>Witchlight Harbor</span>
+              </a>
+              <a class="shortcut-card" href="#crownfall-work">
+                <strong>Quiet court drama</strong>
+                <span>Crownfall Court</span>
+              </a>
+              <a class="shortcut-card" href="#neon-work">
+                <strong>Sharper rivalry story</strong>
+                <span>Neon Knights</span>
+              </a>
+              <a class="shortcut-card" href="#star-work">
+                <strong>Softer team rivalry</strong>
+                <span>Star Circuit</span>
+              </a>
+            </div>
           </aside>
         </section>
 
         <section id="moonwake-work" class="page-section" aria-labelledby="moonwake-title">
           <div class="section-heading">
-            <p class="eyebrow">Story</p>
+            <p class="eyebrow">Sample Story</p>
             <h2 id="moonwake-title">Moonwake Academy: Lanterns</h2>
-            <p class="section-copy">A gentle fantasy-school entry point.</p>
+            <p class="section-copy">Warm fantasy school with close friendships.</p>
           </div>
 
           <div class="work-detail-header">
@@ -72,8 +88,8 @@
               alt="Moonwake Academy decorative cover art"
             >
             <div class="search-panel">
-              <p class="eyebrow">Read this if you want</p>
-              <p class="helper-copy">Found family, magical school routines, and a slow emotional build with clear stakes.</p>
+              <p class="eyebrow">Best If You Want</p>
+              <p class="helper-copy">Close friendships that slowly start feeling like family, magical school routines, and a slow emotional build with clear stakes.</p>
               <div class="stats-row">
                 <span>15k words</span>
                 <span>8 chapters</span>
@@ -87,7 +103,7 @@
               <p class="eyebrow">Metadata</p>
               <div class="key-value-grid">
                 <div class="key-value-item">
-                  <p class="meta-label">Category</p>
+                  <p class="meta-label">Story type</p>
                   <p class="meta-value">Fantasy School</p>
                 </div>
                 <div class="key-value-item">
@@ -99,20 +115,16 @@
                   <p class="meta-value">Mild peril, panic spells, no graphic violence</p>
                 </div>
                 <div class="key-value-item">
-                  <p class="meta-label">Tags</p>
-                  <div class="tag-list">
-                    <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
-                    <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
-                    <a class="tag-link" href="tags.html#slow-burn">Slow Burn</a>
-                  </div>
+                  <p class="meta-label">Helpful labels</p>
+                  <p class="meta-value">Fantasy school, chosen-family story, slow romance</p>
                 </div>
               </div>
             </article>
 
             <div class="mini-list">
               <article class="detail-card">
-                <p class="eyebrow">Why it works</p>
-                <p class="helper-copy">The summary tells the reader exactly what kind of emotional journey this is before the first click into chapters.</p>
+                <p class="eyebrow">Why You Might Pick It</p>
+                <p class="helper-copy">This is the clearest soft-entry story on the page: warm tone, readable warnings, and an easy chapter-one premise.</p>
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Chapters</p>
@@ -130,7 +142,7 @@
               <article class="detail-card">
                 <p class="eyebrow">Next step</p>
                 <p class="helper-copy">If you like the warmth here, the safest follow-up is Witchlight Harbor.</p>
-                <a class="text-link" href="recommendations.html#safe-start-lane">Open safe-start lane</a>
+                <a class="text-link" href="recommendations.html#safe-start-lane">Go to gentler follow-up picks</a>
               </article>
             </div>
           </div>
@@ -138,9 +150,9 @@
 
         <section id="witchlight-work" class="page-section" aria-labelledby="witchlight-title">
           <div class="section-heading">
-            <p class="eyebrow">Story</p>
+            <p class="eyebrow">Sample Story</p>
             <h2 id="witchlight-title">Witchlight Harbor: Tidebound</h2>
-            <p class="section-copy">A softer mystery result with clear comfort cues.</p>
+            <p class="section-copy">Cozy mystery with a gentler level of suspense.</p>
           </div>
 
           <div class="work-detail-header">
@@ -150,8 +162,8 @@
               alt="Witchlight Harbor decorative cover art"
             >
             <div class="search-panel">
-              <p class="eyebrow">Read this if you want</p>
-              <p class="helper-copy">Atmospheric harbor magic, chosen crew dynamics, and suspense that stays readable rather than brutal.</p>
+              <p class="eyebrow">Best If You Want</p>
+              <p class="helper-copy">Atmospheric harbor magic, a close-knit crew, and suspense that stays readable rather than brutal.</p>
               <div class="stats-row">
                 <span>12k words</span>
                 <span>5 chapters</span>
@@ -165,7 +177,7 @@
               <p class="eyebrow">Metadata</p>
               <div class="key-value-grid">
                 <div class="key-value-item">
-                  <p class="meta-label">Category</p>
+                  <p class="meta-label">Story type</p>
                   <p class="meta-value">Harbor Mystery</p>
                 </div>
                 <div class="key-value-item">
@@ -177,20 +189,16 @@
                   <p class="meta-value">Storm danger, suspense, no graphic injury</p>
                 </div>
                 <div class="key-value-item">
-                  <p class="meta-label">Tags</p>
-                  <div class="tag-list">
-                    <a class="tag-link chip--pine" href="tags.html#comfort-read">Comfort Read</a>
-                    <a class="tag-link" href="tags.html#harbor-mystery">Harbor Mystery</a>
-                    <a class="tag-link" href="tags.html#found-family">Found Family</a>
-                  </div>
+                  <p class="meta-label">Helpful labels</p>
+                  <p class="meta-value">Cozy mystery, harbor setting, close-knit crew</p>
                 </div>
               </div>
             </article>
 
             <div class="mini-list">
               <article class="detail-card">
-                <p class="eyebrow">Why it works</p>
-                <p class="helper-copy">This page surfaces the suspense level up front so the reader can tell that the story is tense but still relatively soft.</p>
+                <p class="eyebrow">Why You Might Pick It</p>
+                <p class="helper-copy">This is a useful bridge if you want a mystery but do not want to jump straight into harsher thriller energy.</p>
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Chapters</p>
@@ -208,7 +216,7 @@
               <article class="detail-card">
                 <p class="eyebrow">Next step</p>
                 <p class="helper-copy">If the mystery tone works, follow it with Crownfall for more emotional tension and letters.</p>
-                <a class="text-link" href="recommendations.html#because-theme">Open theme follow-ups</a>
+                <a class="text-link" href="recommendations.html#because-theme">Go to warm follow-up picks</a>
               </article>
             </div>
           </div>
@@ -216,9 +224,9 @@
 
         <section id="crownfall-work" class="page-section" aria-labelledby="crownfall-title">
           <div class="section-heading">
-            <p class="eyebrow">Story</p>
+            <p class="eyebrow">Sample Story</p>
             <h2 id="crownfall-title">Crownfall Court: Letters at Dawn</h2>
-            <p class="section-copy">A slower emotional drama with very legible tags.</p>
+            <p class="section-copy">Court drama with letters and slow relationship tension.</p>
           </div>
 
           <div class="work-detail-header">
@@ -228,7 +236,7 @@
               alt="Crownfall Court decorative cover art"
             >
             <div class="search-panel">
-              <p class="eyebrow">Read this if you want</p>
+              <p class="eyebrow">Best If You Want</p>
               <p class="helper-copy">Courtly tension, private letters, and a relationship that changes through written honesty before public trust.</p>
               <div class="stats-row">
                 <span>14k words</span>
@@ -243,7 +251,7 @@
               <p class="eyebrow">Metadata</p>
               <div class="key-value-grid">
                 <div class="key-value-item">
-                  <p class="meta-label">Category</p>
+                  <p class="meta-label">Story type</p>
                   <p class="meta-value">Court Drama</p>
                 </div>
                 <div class="key-value-item">
@@ -255,20 +263,16 @@
                   <p class="meta-value">Arguments, political tension, no graphic violence</p>
                 </div>
                 <div class="key-value-item">
-                  <p class="meta-label">Tags</p>
-                  <div class="tag-list">
-                    <a class="tag-link chip--gold" href="tags.html#epistolary">Epistolary</a>
-                    <a class="tag-link chip--pine" href="tags.html#soft-politics">Soft Politics</a>
-                    <a class="tag-link" href="tags.html#slow-burn">Slow Burn</a>
-                  </div>
+                  <p class="meta-label">Helpful labels</p>
+                  <p class="meta-value">Letter-based romance, court drama, slow relationship build</p>
                 </div>
               </div>
             </article>
 
             <div class="mini-list">
               <article class="detail-card">
-                <p class="eyebrow">Why it works</p>
-                <p class="helper-copy">Even though the setting is more political, the page keeps the tone clear and the tags simple enough for newer readers.</p>
+                <p class="eyebrow">Why You Might Pick It</p>
+                <p class="helper-copy">This is the best choice if you want readable emotional tension and a slower relationship build without losing clarity.</p>
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Chapters</p>
@@ -285,8 +289,8 @@
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Next step</p>
-                <p class="helper-copy">If the relationship pace is the best part, move back toward Moonwake for a softer version of slow burn.</p>
-                <a class="text-link" href="recommendations.html#because-theme">Open theme follow-ups</a>
+                <p class="helper-copy">If the relationship pace is the best part, move back toward Moonwake for a softer, slower romance.</p>
+                <a class="text-link" href="recommendations.html#because-theme">Go to warm follow-up picks</a>
               </article>
             </div>
           </div>
@@ -294,9 +298,9 @@
 
         <section id="neon-work" class="page-section" aria-labelledby="neon-title">
           <div class="section-heading">
-            <p class="eyebrow">Story</p>
+            <p class="eyebrow">Sample Story</p>
             <h2 id="neon-title">Neon Knights: Static Hearts</h2>
-            <p class="section-copy">The most exact rivalry-under-pressure match.</p>
+            <p class="section-copy">Sharper rivalry story with higher pressure.</p>
           </div>
 
           <div class="work-detail-header">
@@ -306,7 +310,7 @@
               alt="Neon Knights decorative cover art"
             >
             <div class="search-panel">
-              <p class="eyebrow">Read this if you want</p>
+              <p class="eyebrow">Best If You Want</p>
               <p class="helper-copy">Direct rivalry, fast competition pacing, and protective choices that make the emotional turn feel earned.</p>
               <div class="stats-row">
                 <span>18k words</span>
@@ -321,7 +325,7 @@
               <p class="eyebrow">Metadata</p>
               <div class="key-value-grid">
                 <div class="key-value-item">
-                  <p class="meta-label">Category</p>
+                  <p class="meta-label">Story type</p>
                   <p class="meta-value">Team Competition</p>
                 </div>
                 <div class="key-value-item">
@@ -333,20 +337,16 @@
                   <p class="meta-value">Crash anxiety, performance pressure</p>
                 </div>
                 <div class="key-value-item">
-                  <p class="meta-label">Tags</p>
-                  <div class="tag-list">
-                    <a class="tag-link chip--sky" href="tags.html#team-rivalry">Rivals to Allies</a>
-                    <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
-                    <a class="tag-link" href="tags.html#high-pressure">High-pressure Week</a>
-                  </div>
+                  <p class="meta-label">Helpful labels</p>
+                  <p class="meta-value">Rival teammates, teammates protecting each other, competition-week pressure</p>
                 </div>
               </div>
             </article>
 
             <div class="mini-list">
               <article class="detail-card">
-                <p class="eyebrow">Why it works</p>
-                <p class="helper-copy">The high-pressure dynamic is clear, and the warnings make the intensity legible before the reader enters the story.</p>
+                <p class="eyebrow">Why You Might Pick It</p>
+                <p class="helper-copy">This is the closest match if you want pressure, rivalry, and a faster pace without guessing what the tone will be.</p>
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Chapters</p>
@@ -364,7 +364,7 @@
               <article class="detail-card">
                 <p class="eyebrow">Next step</p>
                 <p class="helper-copy">If you want the same pressure with a softer landing, Star Circuit is the better follow-up.</p>
-                <a class="text-link" href="recommendations.html#because-similar">Open similar-story follow-ups</a>
+                <a class="text-link" href="recommendations.html#because-similar">Go to rivalry follow-up picks</a>
               </article>
             </div>
           </div>
@@ -372,9 +372,9 @@
 
         <section id="star-work" class="page-section" aria-labelledby="star-title">
           <div class="section-heading">
-            <p class="eyebrow">Story</p>
+            <p class="eyebrow">Sample Story</p>
             <h2 id="star-title">Star Circuit: Sparks Between Us</h2>
-            <p class="section-copy">A high-energy result with a gentler emotional finish.</p>
+            <p class="section-copy">Team pressure with a softer emotional finish.</p>
           </div>
 
           <div class="work-detail-header">
@@ -384,7 +384,7 @@
               alt="Star Circuit decorative cover art"
             >
             <div class="search-panel">
-              <p class="eyebrow">Read this if you want</p>
+              <p class="eyebrow">Best If You Want</p>
               <p class="helper-copy">Tournament pressure, team loyalty, and a more hopeful payoff than the harsher rivalry shelf.</p>
               <div class="stats-row">
                 <span>16k words</span>
@@ -399,7 +399,7 @@
               <p class="eyebrow">Metadata</p>
               <div class="key-value-grid">
                 <div class="key-value-item">
-                  <p class="meta-label">Category</p>
+                  <p class="meta-label">Story type</p>
                   <p class="meta-value">Team Competition</p>
                 </div>
                 <div class="key-value-item">
@@ -411,20 +411,16 @@
                   <p class="meta-value">Emotional burnout, performance stress</p>
                 </div>
                 <div class="key-value-item">
-                  <p class="meta-label">Tags</p>
-                  <div class="tag-list">
-                    <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
-                    <a class="tag-link" href="tags.html#late-night-confession">Late-night Confession</a>
-                    <a class="tag-link" href="tags.html#found-family">Found Family</a>
-                  </div>
+                  <p class="meta-label">Helpful labels</p>
+                  <p class="meta-value">Protective teammates, late-night emotional reveal, close-knit friend group</p>
                 </div>
               </div>
             </article>
 
             <div class="mini-list">
               <article class="detail-card">
-                <p class="eyebrow">Why it works</p>
-                <p class="helper-copy">This page makes the tonal difference explicit: still high-pressure, but less combative and easier to recover from emotionally.</p>
+                <p class="eyebrow">Why You Might Pick It</p>
+                <p class="helper-copy">This is the easier version of the rivalry-and-pressure lane: same energy, less emotional abrasion.</p>
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Chapters</p>
@@ -435,14 +431,14 @@
                   </li>
                   <li class="chapter-card">
                     <strong>Chapter 2: Quiet Dock</strong>
-                    <p class="chapter-meta">late-night honesty shifts the dynamic</p>
+                    <p class="chapter-meta">late-night honesty shifts the relationship</p>
                   </li>
                 </ol>
               </article>
               <article class="detail-card">
                 <p class="eyebrow">Next step</p>
                 <p class="helper-copy">If this is still too intense, the gentlest next move is back to Moonwake or Witchlight.</p>
-                <a class="text-link" href="recommendations.html#safe-start-lane">Open safe-start lane</a>
+                <a class="text-link" href="recommendations.html#safe-start-lane">Go to gentler follow-up picks</a>
               </article>
             </div>
           </div>

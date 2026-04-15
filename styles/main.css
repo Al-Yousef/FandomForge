@@ -488,7 +488,7 @@ div[id] {
 }
 
 .home-hero .page-title {
-  max-width: 9ch;
+  max-width: 12ch;
   font-size: clamp(2.35rem, 5vw, 4rem);
 }
 
@@ -583,6 +583,204 @@ div[id] {
 
 .home-support-card .mini-note {
   font-size: 0.92rem;
+}
+
+.discover-main {
+  gap: 1rem;
+}
+
+.discover-hero {
+  gap: 1rem;
+}
+
+.discover-hero-copy {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.discover-hero .page-title {
+  max-width: 12ch;
+  font-size: clamp(2.2rem, 5vw, 3.85rem);
+}
+
+.discover-hero .page-summary {
+  max-width: 34rem;
+  font-size: 0.98rem;
+}
+
+.discover-start-panel {
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+.discover-start-heading {
+  margin-bottom: 0;
+}
+
+.discover-start-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.discover-start-card {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+
+.discover-start-card strong {
+  color: var(--ink);
+  font-family: "Concordia Serif", Georgia, serif;
+  font-size: 1.02rem;
+  line-height: 1.12;
+}
+
+.discover-start-card span {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+}
+
+.discover-start-card:hover,
+.discover-start-card:focus-visible {
+  border-color: rgba(141, 39, 64, 0.28);
+  transform: translateY(-1px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.discover-section {
+  padding: 1rem;
+}
+
+.discover-page .section-heading {
+  gap: 0.25rem;
+  margin-bottom: 0.85rem;
+}
+
+.discover-page .category-grid,
+.discover-page .quick-grid {
+  gap: 0.85rem;
+}
+
+.discover-page .browse-card,
+.discover-page .guide-card {
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.discover-browse-copy {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.discover-page .story-cover {
+  aspect-ratio: 0.78;
+}
+
+.discover-support-card .mini-note {
+  font-size: 0.92rem;
+}
+
+.compact-main {
+  gap: 1rem;
+}
+
+.compact-page .page-hero {
+  gap: 1rem;
+}
+
+.compact-page .page-title {
+  max-width: 12ch;
+  font-size: clamp(2.2rem, 5vw, 3.95rem);
+}
+
+.compact-page .page-summary {
+  max-width: 34rem;
+  font-size: 0.98rem;
+}
+
+.compact-page .page-section,
+.compact-page .search-panel,
+.compact-page .filter-sidebar,
+.compact-page .work-card,
+.compact-page .task-card,
+.compact-page .detail-card,
+.compact-page .example-panel,
+.compact-page .guide-card,
+.compact-page .recommendation-card {
+  padding: 1rem;
+}
+
+.compact-page .section-heading {
+  gap: 0.25rem;
+  margin-bottom: 0.85rem;
+}
+
+.compact-page .task-grid,
+.compact-page .quick-grid,
+.compact-page .results-layout,
+.compact-page .archive-layout,
+.compact-page .detail-grid,
+.compact-page .glossary-grid,
+.compact-page .recommendation-grid {
+  gap: 0.85rem;
+}
+
+.compact-page .story-cover {
+  aspect-ratio: 0.78;
+}
+
+.hero-copy-grid,
+.card-copy-grid {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.page-shortcuts {
+  gap: 0.9rem;
+}
+
+.shortcut-heading {
+  margin-bottom: 0;
+}
+
+.shortcut-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.shortcut-card {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+
+.shortcut-card strong {
+  color: var(--ink);
+  font-family: "Concordia Serif", Georgia, serif;
+  font-size: 1.02rem;
+  line-height: 1.12;
+}
+
+.shortcut-card span {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+}
+
+.shortcut-card:hover,
+.shortcut-card:focus-visible {
+  border-color: rgba(141, 39, 64, 0.28);
+  transform: translateY(-1px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .search-input,
@@ -969,6 +1167,11 @@ div[id] {
   .page-hero {
     grid-template-columns: minmax(0, 1.45fr) minmax(19rem, 25rem);
     padding: 1.6rem;
+  }
+
+  .compact-page .page-hero {
+    grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 22rem);
+    padding: 1.3rem;
   }
 
   .quick-grid,
