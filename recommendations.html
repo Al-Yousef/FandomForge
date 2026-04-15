@@ -31,41 +31,157 @@
       </header>
 
       <p class="archive-notice">
-        Recommendations stay in scope, but only as a follow-up archive view after readers browse
-        fandoms, run a search task, or open a work page.
+        Recommendations happen after a reader has context. Each suggestion below is tied to a work
+        or tag path the user just explored, not to a generic feed.
       </p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Recommendations</p>
-            <h1 class="page-title">Guided recommendation archive shell.</h1>
+            <h1 class="page-title">Guided follow-up reads, still presented like archive results.</h1>
             <p class="page-summary">
-              This page will become a secondary listing page tied to recently viewed works and saved
-              interests instead of a social feed or profile-based dashboard.
+              The report mentions personalized recommendations, but they work best after a reader
+              has opened something. This page keeps that logic secondary and transparent.
             </p>
+            <div class="quick-jump">
+              <a class="chip" href="#because-moonwake">Because you opened Moonwake</a>
+              <a class="chip chip--sky" href="#because-neon">Because you opened Neon</a>
+              <a class="chip chip--muted" href="#gentle-slow-burns">Gentle slow burns</a>
+            </div>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Follow-up browsing</p>
-            <h2>Recommendations after a work is opened.</h2>
-            <p class="muted-note">The final page will use archive rows, not app cards, and explain why each work is being suggested.</p>
+            <p class="eyebrow">Recommendation rule</p>
+            <h2>Always explain why the archive is suggesting something.</h2>
+            <p class="muted-note">
+              Each recommendation row keeps the same metadata and warning cues as the search pages,
+              then adds one sentence explaining the connection.
+            </p>
           </aside>
         </section>
 
-        <section class="page-section" aria-labelledby="rec-shell-title">
+        <section id="because-moonwake" class="page-section" aria-labelledby="because-moonwake-title">
           <div class="section-heading">
-            <p class="eyebrow">Scaffold</p>
-            <h2 id="rec-shell-title">Recommendation listing modules are ready.</h2>
+            <p class="eyebrow">Because you opened Lanterns After Curfew</p>
+            <h2 id="because-moonwake-title">Quiet fantasy and trust-building follow-ups.</h2>
           </div>
 
-          <article class="work-card empty-state">
-            <h3 class="work-title">Recommendation rows will be rebuilt here.</h3>
-            <p class="helper-copy">
-              Suggestions will be phrased as follow-up archive matches tied to the stories and tags
-              the reader just explored.
-            </p>
-          </article>
+          <div class="work-list">
+            <article class="work-card">
+              <div class="work-topline">
+                <div>
+                  <h3 class="work-title">Dorm Twelve's Ghost Notes</h3>
+                  <p class="byline">by P. Everdawn</p>
+                </div>
+                <p class="eyebrow">Moonwake follow-up</p>
+              </div>
+              <p class="summary-text">
+                Anonymous notes left in a dorm common room slowly pull a lonely floor of students
+                into the same orbit.
+              </p>
+              <p class="match-note">
+                Why this was suggested: same softer school setting, same slow trust-building, but a
+                larger found-family ensemble.
+              </p>
+              <div class="tag-list">
+                <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
+                <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
+                <a class="tag-link" href="tags.html#comfort-read">Comfort Read</a>
+              </div>
+              <div class="stats-row">
+                <span>Words: 13,200</span>
+                <span>Chapters: 5/5</span>
+                <span>Bookmarks: 48</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="story.html#moonwake-story">Open nearest work page</a>
+                <a class="button-link button-link--secondary" href="search-theme.html#theme-results">Back to theme results</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="because-neon" class="page-section" aria-labelledby="because-neon-title">
+          <div class="section-heading">
+            <p class="eyebrow">Because you opened Static Hearts</p>
+            <h2 id="because-neon-title">High-pressure rivalry follow-ups.</h2>
+          </div>
+
+          <div class="work-list">
+            <article class="work-card">
+              <div class="work-topline">
+                <div>
+                  <h3 class="work-title">After the Yellow Flag</h3>
+                  <p class="byline">by Wren Calder</p>
+                </div>
+                <p class="eyebrow">Neon follow-up</p>
+              </div>
+              <p class="summary-text">
+                A crash scare at the start of finals week forces two rivals to keep watch over each
+                other when neither one wants to admit they are scared.
+              </p>
+              <p class="match-note">
+                Why this was suggested: same rivalry, same protective shift, slightly calmer pacing
+                than Static Hearts.
+              </p>
+              <div class="tag-list">
+                <a class="tag-link chip--sky" href="tags.html#team-rivalry">Rivals to Allies</a>
+                <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
+                <a class="tag-link" href="tags.html#high-pressure">High-pressure week</a>
+              </div>
+              <div class="stats-row">
+                <span>Words: 16,400</span>
+                <span>Chapters: 6/6</span>
+                <span>Bookmarks: 58</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="story.html#neon-story">Open nearest work page</a>
+                <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Back to similar-story results</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="gentle-slow-burns" class="page-section" aria-labelledby="gentle-title">
+          <div class="section-heading">
+            <p class="eyebrow">Gentle slow burns</p>
+            <h2 id="gentle-title">A lighter recommendation lane for readers who want low overload.</h2>
+          </div>
+
+          <div class="work-list">
+            <article class="work-card">
+              <div class="work-topline">
+                <div>
+                  <h3 class="work-title">Harbor Lights, Second Floor</h3>
+                  <p class="byline">by Mira Fen</p>
+                </div>
+                <p class="eyebrow">Tag-based follow-up</p>
+              </div>
+              <p class="summary-text">
+                Two bookstore volunteers keep missing each other by minutes until one storm night
+                finally forces them to stay and talk.
+              </p>
+              <p class="match-note">
+                Why this was suggested: it matches the slow-burn and comfort-read tags without the
+                academic setting of Moonwake.
+              </p>
+              <div class="tag-list">
+                <a class="tag-link chip--pine" href="tags.html#slow-burn">Slow Burn</a>
+                <a class="tag-link" href="tags.html#comfort-read">Comfort Read</a>
+                <a class="tag-link chip--gold" href="tags.html#found-family">Found Family</a>
+              </div>
+              <div class="stats-row">
+                <span>Words: 12,100</span>
+                <span>Chapters: 4/4</span>
+                <span>Bookmarks: 44</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="tags.html#slow-burn">Review the tag path</a>
+                <a class="button-link button-link--secondary" href="index.html">Return to home</a>
+              </div>
+            </article>
+          </div>
         </section>
       </main>
     </div>
