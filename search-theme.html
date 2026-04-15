@@ -31,48 +31,261 @@
       </header>
 
       <p class="archive-notice">
-        Theme search results will use archive-style listings with reduced filters, clearer metadata,
-        and plain-language match explanations.
+        Theme search stays broad on purpose. It shows stories with the same feeling and explains the
+        overlap in plain language, instead of requiring highly specific tag knowledge first.
       </p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
-            <p class="page-kicker">Theme Search</p>
-            <h1 class="page-title">Theme-based results shell.</h1>
+            <p class="page-kicker">Theme Search Results</p>
+            <h1 class="page-title">Results for soft magic school stories with found family.</h1>
             <p class="page-summary">
-              This route will support the report's `FindStoryByTheme` task by showing broad archive
-              matches without requiring advanced tag literacy.
+              This page represents the `FindStoryByTheme` task from the study. The filters stay
+              visible, but the result rows do most of the explanatory work.
             </p>
+            <div class="chip-row">
+              <span class="chip chip--gold">Soft magic</span>
+              <span class="chip chip--pine">Found family</span>
+              <span class="chip chip--muted">Low overload</span>
+            </div>
           </div>
 
           <aside class="search-panel">
             <p class="eyebrow">Current query</p>
             <div class="search-input">soft magic school stories with found family</div>
-            <p class="muted-note">Filters and result rows will be added in the next result-specific commit.</p>
+            <div class="action-row">
+              <a class="button-link" href="search.html#theme-task">Edit search</a>
+              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Need a more exact match?</a>
+            </div>
           </aside>
         </section>
 
-        <section class="results-layout" aria-labelledby="theme-results-title">
+        <section id="theme-results" class="results-layout" aria-labelledby="theme-results-title">
           <aside class="filter-sidebar">
             <div class="section-heading">
               <p class="eyebrow">Reduced Filters</p>
-              <h2 id="theme-results-title">Filter sidebar scaffold</h2>
+              <h2 id="theme-results-title">Start narrow enough to feel safe, not narrow enough to get lost.</h2>
             </div>
-            <div class="pill-stack">
-              <div class="filter-pill">Tone: gentle</div>
-              <div class="filter-pill">Warnings: beginner-safe</div>
-              <div class="filter-pill">Length: short to medium</div>
+
+            <div class="filter-block">
+              <p class="meta-label">Fandom lane</p>
+              <ul class="filter-list">
+                <li>Moonwake Academy</li>
+                <li>Crownfall Court</li>
+                <li>Witchlight Harbor</li>
+              </ul>
+            </div>
+
+            <div class="filter-block">
+              <p class="meta-label">Tone</p>
+              <ul class="filter-list">
+                <li>Gentle</li>
+                <li>Comforting</li>
+                <li>Trust-building</li>
+              </ul>
+            </div>
+
+            <div class="filter-block">
+              <p class="meta-label">Ratings and warnings</p>
+              <ul class="filter-list">
+                <li>General or Teen</li>
+                <li>Warnings shown early</li>
+                <li>No hidden heavy content</li>
+              </ul>
+            </div>
+
+            <div class="filter-block">
+              <p class="meta-label">Need help with tags?</p>
+              <a class="text-link" href="tags.html#new-to-tags">Open the plain-language tag guide</a>
             </div>
           </aside>
 
           <div class="work-list">
-            <article class="work-card empty-state">
-              <h3 class="work-title">Theme results will be rebuilt here.</h3>
-              <p class="helper-copy">
-                The final listing will use AO3-style metadata blocks and short plain-language
-                reasons for why each story matches the requested theme.
+            <article class="work-card">
+              <div class="work-topline">
+                <div>
+                  <h2 class="work-title">Lanterns After Curfew</h2>
+                  <p class="byline">by Rowan Vale</p>
+                </div>
+                <p class="eyebrow">Best match</p>
+              </div>
+
+              <div class="work-shell">
+                <a class="cover-thumb" href="story.html#moonwake-story">
+                  <img src="assets/covers/cover-moonwake-lanterns.svg" alt="Cover art for Lanterns After Curfew">
+                </a>
+
+                <div class="work-meta-grid">
+                  <div class="meta-group">
+                    <p class="meta-label">Fandom</p>
+                    <p class="meta-value">Moonwake Academy</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Rating and warnings</p>
+                    <p class="meta-value">Teen and Up, mild magical peril, no graphic content</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Relationships</p>
+                    <p class="meta-value">Mira Solis / Elian Wren</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Characters</p>
+                    <p class="meta-value">Mira Solis, Elian Wren, Head Librarian Seo</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Additional tags</p>
+                    <div class="tag-list">
+                      <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
+                      <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
+                      <a class="tag-link" href="tags.html#slow-burn">Slow Burn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="summary-text">
+                Two scholarship students keep crossing paths under the observatory lanterns after
+                curfew, and the campus spaces that once felt lonely start to feel shared.
               </p>
+              <p class="match-note">
+                Why this matches: it keeps the setting magical, the pacing soft, and the emotional
+                growth centered on trust instead of chaos.
+              </p>
+              <div class="stats-row">
+                <span>Words: 23,400</span>
+                <span>Chapters: 8/14</span>
+                <span>Comments: 46</span>
+                <span>Bookmarks: 91</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="story.html#moonwake-story">Open work</a>
+                <a class="button-link button-link--secondary" href="recommendations.html#because-moonwake">See follow-up recommendations</a>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-topline">
+                <div>
+                  <h2 class="work-title">Tea Beneath the Observatory</h2>
+                  <p class="byline">by June Holloway</p>
+                </div>
+                <p class="eyebrow">Easy entry</p>
+              </div>
+
+              <div class="work-shell">
+                <a class="cover-thumb" href="story.html#moonwake-story">
+                  <img src="assets/covers/cover-witchlight-tide.svg" alt="Cover art for Tea Beneath the Observatory">
+                </a>
+
+                <div class="work-meta-grid">
+                  <div class="meta-group">
+                    <p class="meta-label">Fandom</p>
+                    <p class="meta-value">Moonwake Academy</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Rating and warnings</p>
+                    <p class="meta-value">General Audience, no major warnings</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Relationships</p>
+                    <p class="meta-value">Ari Keene &amp; Nessa Vale</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Characters</p>
+                    <p class="meta-value">Ari Keene, Nessa Vale, the Ghost Club</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Additional tags</p>
+                    <div class="tag-list">
+                      <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
+                      <a class="tag-link" href="tags.html#comfort-read">Comfort Read</a>
+                      <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="summary-text">
+                A school ghost club turns into a tea-sharing ritual after two students realize they
+                keep showing up to the same forgotten corner of the observatory.
+              </p>
+              <p class="match-note">
+                Why this matches: it keeps the magic gentle, the cast supportive, and the tags easy
+                to read for someone new to archive browsing.
+              </p>
+              <div class="stats-row">
+                <span>Words: 11,800</span>
+                <span>Chapters: 4/4</span>
+                <span>Comments: 19</span>
+                <span>Bookmarks: 57</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="story.html#moonwake-story">Open nearest work page</a>
+                <a class="button-link button-link--secondary" href="tags.html#found-family">Review related tags</a>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-topline">
+                <div>
+                  <h2 class="work-title">Letters at Dawn</h2>
+                  <p class="byline">by Sable Winter</p>
+                </div>
+                <p class="eyebrow">Cross-fandom fit</p>
+              </div>
+
+              <div class="work-shell">
+                <a class="cover-thumb" href="story.html#moonwake-story">
+                  <img src="assets/covers/cover-crownfall-letters.svg" alt="Cover art for Letters at Dawn">
+                </a>
+
+                <div class="work-meta-grid">
+                  <div class="meta-group">
+                    <p class="meta-label">Fandom</p>
+                    <p class="meta-value">Crownfall Court</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Rating and warnings</p>
+                    <p class="meta-value">Teen and Up, social pressure, no graphic violence</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Relationships</p>
+                    <p class="meta-value">Iria Vale / Tomas Ren</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Characters</p>
+                    <p class="meta-value">Iria Vale, Tomas Ren, Lady Merrow</p>
+                  </div>
+                  <div class="meta-group">
+                    <p class="meta-label">Additional tags</p>
+                    <div class="tag-list">
+                      <a class="tag-link chip--gold" href="tags.html#epistolary">Epistolary</a>
+                      <a class="tag-link" href="tags.html#soft-politics">Soft Politics</a>
+                      <a class="tag-link chip--pine" href="tags.html#slow-burn">Slow Burn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="summary-text">
+                A pair of court rivals exchange unsigned letters that slowly become the only place
+                either of them can be honest.
+              </p>
+              <p class="match-note">
+                Why this matches: it is less school-based, but it keeps the same low-chaos tone and
+                trust-first relationship arc as the main query.
+              </p>
+              <div class="stats-row">
+                <span>Words: 18,200</span>
+                <span>Chapters: 6/6</span>
+                <span>Comments: 27</span>
+                <span>Bookmarks: 63</span>
+              </div>
+              <div class="action-row">
+                <a class="button-link" href="story.html#moonwake-story">Open sample work page</a>
+                <a class="button-link button-link--secondary" href="recommendations.html#gentle-slow-burns">See gentle follow-ups</a>
+              </div>
             </article>
           </div>
         </section>
