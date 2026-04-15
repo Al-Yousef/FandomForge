@@ -31,54 +31,159 @@
       </header>
 
       <p class="archive-notice">
-        FandomForge is being corrected into an AO3-derived prototype: archive entry, reduced
-        filters, clearer tags, and guided routes for the two discovery tasks from the report.
+        FandomForge keeps the archive logic readers use on AO3, but reduces clutter through guided
+        entry points, clearer metadata, and beginner-safe defaults.
       </p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Home</p>
-            <h1 class="page-title">A calmer archive entry for fanfiction discovery.</h1>
+            <h1 class="page-title">Search first. Browse second. Never get dropped into clutter.</h1>
             <p class="page-summary">
-              This shared shell replaces the old product-app framing. The next commits rebuild the
-              home page around search-first archive browsing, safe defaults, and beginner routes
-              into fandoms and tags.
+              This home screen is built for the report's audience: adolescents who need a calmer
+              entry into archive browsing without losing the usefulness of fandoms, tags, and work
+              metadata.
             </p>
+            <div class="chip-row">
+              <a class="chip" href="search.html#theme-task">FindStoryByTheme</a>
+              <a class="chip chip--sky" href="search.html#similar-task">FindSimilarStory</a>
+              <a class="chip chip--muted" href="tags.html#new-to-tags">New to tags?</a>
+            </div>
             <div class="action-row">
-              <a class="button-link" href="search.html">Open search flow</a>
-              <a class="button-link button-link--secondary" href="discover.html">Open fandom directory</a>
+              <a class="button-link" href="search.html">Open guided search</a>
+              <a class="button-link button-link--secondary" href="discover.html#media-directory">Browse fandom categories</a>
             </div>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Archive shell</p>
-            <h2>Search and browse are now the primary entry points.</h2>
-            <p class="muted-note">
-              The final home screen will lead with a search bar, curated fandom categories, and
-              task-based shortcuts instead of profile and lifestyle UI.
-            </p>
+            <p class="eyebrow">Quick archive search</p>
+            <h2>Start with a readable sentence.</h2>
+            <div class="search-input">slow-burn magic school story with found family</div>
+            <div class="action-row">
+              <a class="button-link" href="search-theme.html#theme-results">Search by theme</a>
+              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Search by similar story</a>
+            </div>
+            <div class="stats-row">
+              <span class="inline-stat">14 participants</span>
+              <span class="inline-stat">93% theme-task success</span>
+              <span class="inline-stat">60.5% motivation gain</span>
+            </div>
           </aside>
         </section>
 
-        <section class="page-section" aria-labelledby="home-shell-title">
+        <section class="page-section" aria-labelledby="start-here-title">
           <div class="section-heading">
-            <p class="eyebrow">Next Build</p>
-            <h2 id="home-shell-title">Home-specific archive modules come next.</h2>
+            <p class="eyebrow">Start Here</p>
+            <h2 id="start-here-title">Three clean ways into the archive.</h2>
+            <p class="section-copy">
+              The report describes a simpler onboarding flow than AO3. These routes put the two
+              study tasks and the fandom directory at the front instead of burying them behind a
+              dense interface.
+            </p>
+          </div>
+
+          <div class="quick-grid">
+            <a class="task-card" href="discover.html#media-directory">
+              <p class="eyebrow">Browse fandoms</p>
+              <h3>Start with a familiar world.</h3>
+              <p class="helper-copy">
+                Use grouped media categories and beginner-friendly fandom entries instead of a long
+                scrolling directory.
+              </p>
+            </a>
+            <a id="theme-task" class="task-card" href="search-theme.html#theme-results">
+              <p class="eyebrow">Theme task</p>
+              <h3>Find a story by theme.</h3>
+              <p class="helper-copy">
+                Best for mood-based searching: soft fantasy, found family, rivals to allies, or
+                other broad reading intentions.
+              </p>
+            </a>
+            <a id="similar-task" class="task-card" href="search-similar.html#specific-results">
+              <p class="eyebrow">Specific task</p>
+              <h3>Find something similar.</h3>
+              <p class="helper-copy">
+                Best for readers who already know the exact type of relationship or pacing they want
+                and need close matches.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="fandom-entry-title">
+          <div class="section-heading">
+            <p class="eyebrow">Curated Entry Points</p>
+            <h2 id="fandom-entry-title">Fandom starts that feel closer to shelf labels than search puzzles.</h2>
+          </div>
+
+          <div class="category-grid">
+            <a class="category-card" href="discover.html#moonwake">
+              <p class="eyebrow">Fantasy school</p>
+              <h3>Moonwake Academy</h3>
+              <p class="helper-copy">Good first stop for slow burn, magical schools, and quiet trust-building.</p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Magic School</span>
+                <span class="tag-link chip--pine">Found Family</span>
+              </div>
+            </a>
+            <a class="category-card" href="discover.html#neon-knights">
+              <p class="eyebrow">Action team</p>
+              <h3>Neon Knights</h3>
+              <p class="helper-copy">Good first stop for rivals, team dynamics, and fast-moving emotional beats.</p>
+              <div class="tag-list">
+                <span class="tag-link chip--sky">Rivals to Allies</span>
+                <span class="tag-link chip--pine">Team Loyalty</span>
+              </div>
+            </a>
+            <a class="category-card" href="discover.html#crownfall">
+              <p class="eyebrow">Court drama</p>
+              <h3>Crownfall Court</h3>
+              <p class="helper-copy">Good first stop for letters, political softness, and gentle romantic tension.</p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Epistolary</span>
+                <span class="tag-link chip--muted">Soft Politics</span>
+              </div>
+            </a>
+            <a class="category-card" href="discover.html#star-circuit">
+              <p class="eyebrow">Racing archive</p>
+              <h3>Star Circuit</h3>
+              <p class="helper-copy">Good first stop for pit-lane stress, fast dialogue, and protective teammates.</p>
+              <div class="tag-list">
+                <span class="tag-link chip--sky">High Pressure</span>
+                <span class="tag-link chip--pine">Protective Team</span>
+              </div>
+            </a>
+            <a class="category-card" href="discover.html#witchlight">
+              <p class="eyebrow">Harbor mystery</p>
+              <h3>Witchlight Harbor</h3>
+              <p class="helper-copy">Good first stop for quiet magic, local legends, and lower-intensity mysteries.</p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Coastal Magic</span>
+                <span class="tag-link chip--muted">Soft Mystery</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="defaults-title">
+          <div class="section-heading">
+            <p class="eyebrow">Safe Defaults</p>
+            <h2 id="defaults-title">What changes compared with AO3.</h2>
           </div>
 
           <div class="quick-grid">
             <article class="notice-card">
-              <h3>Search-first entry</h3>
-              <p class="helper-copy">The home page will lead with a search field and guided task routes.</p>
+              <h3>Warnings appear early</h3>
+              <p class="helper-copy">Readers see ratings and warnings near the top of results and work pages.</p>
             </article>
             <article class="notice-card">
-              <h3>Beginner-safe categories</h3>
-              <p class="helper-copy">Curated media groups will replace overwhelming open-ended directories.</p>
+              <h3>Tags get translated</h3>
+              <p class="helper-copy">Archive labels stay useful, but unfamiliar shorthand gets plain-language help.</p>
             </article>
             <article class="notice-card">
-              <h3>AO3-inspired structure</h3>
-              <p class="helper-copy">The interaction model stays archive-based even while the styling becomes clearer.</p>
+              <h3>Recommendations come later</h3>
+              <p class="helper-copy">Suggestions appear after a reader opens a work, not before they have context.</p>
             </article>
           </div>
         </section>
