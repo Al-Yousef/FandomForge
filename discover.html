@@ -31,55 +31,172 @@
       </header>
 
       <p class="archive-notice">
-        The fandom directory is being rebuilt to feel like a shorter, friendlier AO3 browse page:
-        grouped media categories, quick jumps, and fewer first-step decisions.
+        This directory keeps AO3's fandom-browse idea, but breaks it into shorter grouped sections
+        so new readers are not forced to scan a giant page before they can start.
       </p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Discover</p>
-            <h1 class="page-title">Fandom directory shell for archive-style browsing.</h1>
+            <h1 class="page-title">A shorter fandom directory, not an endless archive wall.</h1>
             <p class="page-summary">
-              This screen will become the simplified browse page that supports new readers who want
-              to enter through fandom categories before they touch filters.
+              The report positions FandomForge as a cleaner entry point than AO3. This page keeps
+              the archive directory pattern but compresses it into quick jumps, grouped media
+              buckets, and obvious beginner starting points.
             </p>
             <div class="quick-jump">
-              <a class="chip" href="#directory-groups">Directory groups</a>
-              <a class="chip chip--muted" href="search.html">Search tasks</a>
+              <a class="chip" href="#media-directory">Media groups</a>
+              <a class="chip chip--muted" href="#starter-fandoms">Starter fandoms</a>
+              <a class="chip chip--sky" href="#new-reader-routes">New reader routes</a>
             </div>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Quick jump</p>
-            <h2>Grouped, not endless.</h2>
-            <p class="muted-note">
-              The final version will use media buckets and starter paths so readers do not have to
-              scan a single long archive list.
-            </p>
+            <p class="eyebrow">Quick jumps</p>
+            <h2>Go where you recognize something.</h2>
+            <div class="mini-list">
+              <a class="text-link" href="#moonwake">Moonwake Academy</a>
+              <a class="text-link" href="#neon-knights">Neon Knights</a>
+              <a class="text-link" href="#crownfall">Crownfall Court</a>
+              <a class="text-link" href="#star-circuit">Star Circuit</a>
+              <a class="text-link" href="#witchlight">Witchlight Harbor</a>
+            </div>
           </aside>
         </section>
 
-        <section id="directory-groups" class="page-section" aria-labelledby="directory-shell-title">
+        <section id="media-directory" class="page-section" aria-labelledby="media-directory-title">
           <div class="section-heading">
-            <p class="eyebrow">Scaffold</p>
-            <h2 id="directory-shell-title">Directory groups are ready to be filled.</h2>
+            <p class="eyebrow">Media Directory</p>
+            <h2 id="media-directory-title">Browse by media group before you touch search filters.</h2>
           </div>
 
           <div class="directory-columns">
             <article class="directory-group">
-              <h3>Television and Streaming</h3>
+              <h3>Streaming and Team Series</h3>
               <ul class="directory-list">
-                <li><a href="search-theme.html">Starter archive route</a></li>
-                <li><a href="search-similar.html">Specific-match route</a></li>
+                <li><a href="#neon-knights">Neon Knights</a></li>
+                <li><a href="#star-circuit">Star Circuit</a></li>
+                <li><a href="search-similar.html#specific-results">Need a close match instead?</a></li>
               </ul>
             </article>
             <article class="directory-group">
-              <h3>Books and Comics</h3>
+              <h3>School, Magic, and Quiet Fantasy</h3>
               <ul class="directory-list">
-                <li><a href="tags.html">Tag helper</a></li>
-                <li><a href="recommendations.html">Recommendation archive</a></li>
+                <li><a href="#moonwake">Moonwake Academy</a></li>
+                <li><a href="#witchlight">Witchlight Harbor</a></li>
+                <li><a href="search-theme.html#theme-results">Browse by theme instead</a></li>
               </ul>
+            </article>
+            <article class="directory-group">
+              <h3>Letters, Courts, and Political Drama</h3>
+              <ul class="directory-list">
+                <li><a href="#crownfall">Crownfall Court</a></li>
+                <li><a href="tags.html#soft-politics">Learn the softer political tags</a></li>
+                <li><a href="recommendations.html#because-moonwake">See guided follow-up reads</a></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="starter-fandoms" class="page-section" aria-labelledby="starter-fandoms-title">
+          <div class="section-heading">
+            <p class="eyebrow">Starter Fandoms</p>
+            <h2 id="starter-fandoms-title">Five entry points with a short explanation instead of archive shorthand.</h2>
+          </div>
+
+          <div class="category-grid">
+            <a id="moonwake" class="category-card" href="search-theme.html#theme-results">
+              <p class="eyebrow">Fantasy school</p>
+              <h3>Moonwake Academy</h3>
+              <p class="helper-copy">
+                Good for readers who want gentle magic, study sessions, and relationship-building
+                that moves slowly.
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Magic School</span>
+                <span class="tag-link chip--pine">Slow Burn</span>
+              </div>
+            </a>
+            <a id="neon-knights" class="category-card" href="search-similar.html#specific-results">
+              <p class="eyebrow">Action team</p>
+              <h3>Neon Knights</h3>
+              <p class="helper-copy">
+                Good for readers who want rivalry, banter, and teammates who protect each other when
+                the pressure spikes.
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--sky">Rivals to Allies</span>
+                <span class="tag-link chip--pine">Team Loyalty</span>
+              </div>
+            </a>
+            <a id="crownfall" class="category-card" href="search-theme.html#theme-results">
+              <p class="eyebrow">Court drama</p>
+              <h3>Crownfall Court</h3>
+              <p class="helper-copy">
+                Good for readers who want emotional softness inside a more formal setting with
+                letters, secrets, and careful romance.
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Epistolary</span>
+                <span class="tag-link chip--muted">Soft Politics</span>
+              </div>
+            </a>
+            <a id="star-circuit" class="category-card" href="search-similar.html#specific-results">
+              <p class="eyebrow">Racing archive</p>
+              <h3>Star Circuit</h3>
+              <p class="helper-copy">
+                Good for readers who want fast plot movement, one-night repair shifts, and high
+                pressure scenes that still keep emotional clarity.
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--sky">High Pressure</span>
+                <span class="tag-link chip--pine">Protective Team</span>
+              </div>
+            </a>
+            <a id="witchlight" class="category-card" href="search-theme.html#theme-results">
+              <p class="eyebrow">Harbor mystery</p>
+              <h3>Witchlight Harbor</h3>
+              <p class="helper-copy">
+                Good for readers who want local legends, quiet investigation, and lower-stakes magic
+                with clearer warning labels.
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Coastal Magic</span>
+                <span class="tag-link chip--muted">Soft Mystery</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section id="new-reader-routes" class="page-section" aria-labelledby="new-reader-title">
+          <div class="section-heading">
+            <p class="eyebrow">New Reader Routes</p>
+            <h2 id="new-reader-title">If you do not know where to start, use one of these.</h2>
+          </div>
+
+          <div class="quick-grid">
+            <article class="notice-card">
+              <h3>Start with Moonwake</h3>
+              <p class="helper-copy">
+                The easiest first archive path if you want calm pacing and readable tags.
+              </p>
+              <a class="text-link" href="search-theme.html#theme-results">Open the Moonwake-style results</a>
+            </article>
+            <article class="notice-card">
+              <h3>Use similar-story search for action fandoms</h3>
+              <p class="helper-copy">
+                It is easier to explain a rivalry dynamic than to guess all the tags for it.
+              </p>
+              <a class="text-link" href="search-similar.html#specific-results">Open the specific-match route</a>
+            </article>
+            <article class="notice-card">
+              <h3>Read the tag guide before filtering</h3>
+              <p class="helper-copy">
+                FandomForge keeps archive tags, but it also explains them before asking readers to
+                rely on them.
+              </p>
+              <a class="text-link" href="tags.html#new-to-tags">Open the tag guide</a>
             </article>
           </div>
         </section>
