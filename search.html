@@ -31,47 +31,129 @@
       </header>
 
       <p class="archive-notice">
-        Search is now being organized around the two evaluated tasks from the report rather than a
-        generic prompt-driven app search.
+        This search page separates the two report tasks on purpose: one route for broad themes and
+        one route for specific story similarity.
       </p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Search</p>
-            <h1 class="page-title">Reduced filters and task-based archive entry.</h1>
+            <h1 class="page-title">Choose how specific you want to be before the archive gets dense.</h1>
             <p class="page-summary">
-              This page will route readers into theme search or similar-story search, using clearer
-              prompts and fewer decisions than AO3's full filtering interface.
+              AO3 expects readers to already know how they want to search. FandomForge makes that
+              decision explicit first, then keeps the filters short and readable.
             </p>
+            <div class="chip-row">
+              <a class="chip" href="#theme-task">Theme route</a>
+              <a class="chip chip--sky" href="#similar-task">Specific-match route</a>
+              <a class="chip chip--muted" href="tags.html#new-to-tags">Tag help first</a>
+            </div>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Search shell</p>
-            <h2>Theme first or similar-story first.</h2>
-            <div class="search-input">soft magic school stories with found family</div>
+            <p class="eyebrow">Search sentence</p>
+            <h2>Try a full idea instead of a blank field.</h2>
+            <div class="search-input">soft magic school story with found family and low stress</div>
             <div class="action-row">
-              <a class="button-link" href="search-theme.html">Theme route</a>
-              <a class="button-link button-link--secondary" href="search-similar.html">Similar route</a>
+              <a class="button-link" href="search-theme.html#theme-results">Run theme search</a>
+              <a class="button-link button-link--secondary" href="search-similar.html#specific-results">Run similar-story search</a>
             </div>
           </aside>
         </section>
 
-        <section class="page-section" aria-labelledby="search-shell-title">
+        <section class="page-section" aria-labelledby="task-chooser-title">
           <div class="section-heading">
-            <p class="eyebrow">Next Build</p>
-            <h2 id="search-shell-title">Task cards and reduced filters come next.</h2>
+            <p class="eyebrow">Task Chooser</p>
+            <h2 id="task-chooser-title">Pick the search route that matches the way you think.</h2>
           </div>
 
           <div class="task-grid">
-            <article class="task-card">
-              <h3>FindStoryByTheme</h3>
-              <p class="helper-copy">Broad mood and trope prompts for readers who know the feeling they want.</p>
+            <article id="theme-task" class="task-card">
+              <p class="eyebrow">FindStoryByTheme</p>
+              <h3>Use this when you know the feeling, not the exact fic.</h3>
+              <p class="helper-copy">
+                Good for prompts like "quiet fantasy with school drama" or "found family with low
+                angst and a clear ending."
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--gold">Soft magic</span>
+                <span class="tag-link chip--pine">Found family</span>
+                <span class="tag-link chip--muted">Comfort read</span>
+              </div>
+              <a class="button-link" href="search-theme.html#theme-results">Open theme results</a>
             </article>
-            <article class="task-card">
-              <h3>FindSimilarStory</h3>
-              <p class="helper-copy">Reference-story matching for readers who want specific overlap and clearer reasoning.</p>
+
+            <article id="similar-task" class="task-card">
+              <p class="eyebrow">FindSimilarStory</p>
+              <h3>Use this when you already know the dynamic or plot shape you want.</h3>
+              <p class="helper-copy">
+                Good for prompts like "rivals who protect each other during a race week" or "roommates
+                who only open up during late-night study sessions."
+              </p>
+              <div class="tag-list">
+                <span class="tag-link chip--sky">Rivals to allies</span>
+                <span class="tag-link chip--pine">Protective team</span>
+                <span class="tag-link chip--muted">Late-night confession</span>
+              </div>
+              <a class="button-link" href="search-similar.html#specific-results">Open specific-match results</a>
             </article>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="reduced-filters-title">
+          <div class="section-heading">
+            <p class="eyebrow">Reduced Filters</p>
+            <h2 id="reduced-filters-title">The archive still has filters. It just does not make you learn all of them at once.</h2>
+          </div>
+
+          <div class="quick-grid">
+            <article class="detail-card">
+              <h3>Ratings and warnings first</h3>
+              <ul class="filter-list">
+                <li>General audience</li>
+                <li>Teen and up</li>
+                <li>Clear content notes</li>
+              </ul>
+            </article>
+            <article class="detail-card">
+              <h3>Length and pace</h3>
+              <ul class="filter-list">
+                <li>Quick read</li>
+                <li>Multi-chapter</li>
+                <li>Slow build</li>
+              </ul>
+            </article>
+            <article class="detail-card">
+              <h3>Entry point</h3>
+              <ul class="filter-list">
+                <li>Start with a fandom</li>
+                <li>Start with a theme</li>
+                <li>Start with a similar story</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="search-prompts-title">
+          <div class="section-heading">
+            <p class="eyebrow">Popular Search Sentences</p>
+            <h2 id="search-prompts-title">Shortcut prompts for readers who do not want to build filters at all.</h2>
+          </div>
+
+          <div class="category-grid">
+            <a class="category-card" href="search-theme.html#theme-results">
+              <p class="eyebrow">Theme prompt</p>
+              <h3>I want magical school stories with trust-building and a soft ending.</h3>
+            </a>
+            <a class="category-card" href="search-similar.html#specific-results">
+              <p class="eyebrow">Specific-match prompt</p>
+              <h3>I want something like rivals-to-allies without losing the team chemistry.</h3>
+            </a>
+            <a class="category-card" href="tags.html#new-to-tags">
+              <p class="eyebrow">Need help first?</p>
+              <h3>I do not know which tags mean what yet.</h3>
+            </a>
           </div>
         </section>
       </main>
