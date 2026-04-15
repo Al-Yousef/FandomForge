@@ -466,6 +466,125 @@ div[id] {
   font-size: 1.65rem;
 }
 
+.home-main {
+  gap: 1rem;
+}
+
+.home-hero {
+  gap: 1rem;
+}
+
+.home-hero-copy {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.home-hero::after {
+  top: -4rem;
+  right: -3rem;
+  width: 13rem;
+  height: 13rem;
+}
+
+.home-hero .page-title {
+  max-width: 9ch;
+  font-size: clamp(2.35rem, 5vw, 4rem);
+}
+
+.home-hero .page-summary {
+  max-width: 30rem;
+  font-size: 0.98rem;
+}
+
+.home-quick-start {
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+.home-quick-heading {
+  margin-bottom: 0;
+}
+
+.home-quick-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.home-jump-card {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+
+.home-jump-card strong {
+  color: var(--ink);
+  font-family: "Concordia Serif", Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+
+.home-jump-card span {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+}
+
+.home-jump-card:hover,
+.home-jump-card:focus-visible {
+  border-color: rgba(141, 39, 64, 0.28);
+  transform: translateY(-1px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.home-section {
+  padding: 1rem;
+}
+
+.home-page .section-heading {
+  gap: 0.25rem;
+  margin-bottom: 0.85rem;
+}
+
+.home-page .story-grid,
+.home-page .quick-grid {
+  gap: 0.85rem;
+}
+
+.home-shelf-card,
+.home-support-card {
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.home-shelf-copy,
+.home-shelf-head {
+  display: grid;
+}
+
+.home-shelf-copy {
+  gap: 0.75rem;
+}
+
+.home-shelf-head {
+  gap: 0.2rem;
+}
+
+.home-page .story-cover {
+  aspect-ratio: 0.78;
+}
+
+.home-page .tag-list {
+  gap: 0.5rem;
+}
+
+.home-support-card .mini-note {
+  font-size: 0.92rem;
+}
+
 .search-input,
 .filter-pill {
   display: flex;
@@ -843,6 +962,7 @@ div[id] {
     grid-template-columns: minmax(9rem, 11rem) minmax(0, 1fr);
     align-items: start;
   }
+
 }
 
 @media (min-width: 64rem) {
@@ -863,6 +983,11 @@ div[id] {
 
   .directory-columns {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-hero {
+    grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 22rem);
+    padding: 1.3rem;
   }
 }
 
