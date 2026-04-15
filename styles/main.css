@@ -140,6 +140,12 @@ ol {
   top: 1rem;
 }
 
+section[id],
+article[id],
+div[id] {
+  scroll-margin-top: 6.75rem;
+}
+
 .prototype-shell {
   width: min(calc(100% - 1rem), var(--content-width));
   margin: 0 auto;
@@ -704,6 +710,10 @@ ol {
 }
 
 @media (max-width: 47.99rem) {
+  .app-topbar {
+    position: static;
+  }
+
   .brand-meta {
     max-width: none;
   }
@@ -713,7 +723,29 @@ ol {
   }
 
   .nav-link {
-    flex: 1 1 9rem;
+    flex: 1 1 8.5rem;
+    min-height: 2.45rem;
+    font-size: 0.82rem;
+  }
+
+  .page-hero,
+  .page-section,
+  .filter-sidebar,
+  .work-card,
+  .task-card,
+  .category-card,
+  .directory-group,
+  .notice-card,
+  .detail-card,
+  .chapter-card,
+  .comment-card,
+  .definition-card,
+  .example-panel {
+    padding: 1rem;
+  }
+
+  .work-topline {
+    align-items: start;
   }
 }
 
