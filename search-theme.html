@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FandomForge | Theme Results Prototype</title>
+    <title>FandomForge | Theme Results</title>
     <meta
       name="description"
-      content="Low-fidelity theme-search results prototype for FandomForge."
+      content="FandomForge theme-based search results."
     >
     <meta name="theme-color" content="#8b2437">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
       <header class="app-topbar">
         <div class="brand-lockup">
           <a class="brand-mark" href="index.html">FandomForge</a>
-          <p class="brand-meta">Low-fidelity clickable prototype based on simplified AO3 archive flow.</p>
+          <p class="brand-meta">A simpler way to find stories.</p>
         </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
@@ -30,17 +30,14 @@
         </nav>
       </header>
 
-      <p class="archive-notice">
-        Theme-results prototype: archive rows stay readable, warnings stay visible, and each result
-        gives a short reason for the match.
-      </p>
+      <p class="archive-notice">Theme results show broad matches and short explanations.</p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Theme Results</p>
-            <h1 class="page-title">Results for "magic school + found family + slow burn".</h1>
-            <p class="page-summary">This is the `FindStoryByTheme` path.</p>
+            <h1 class="page-title">Theme results</h1>
+            <p class="page-summary">Results for: magic school + found family + slow burn</p>
           </div>
 
           <aside class="search-panel">
@@ -60,10 +57,10 @@
               <h2 id="theme-results-title">Theme filters</h2>
             </div>
             <div class="filter-block">
-              <p class="meta-label">Fandom</p>
+              <p class="meta-label">Category</p>
               <ul class="filter-list">
-                <li>School Fantasy Fandom</li>
-                <li>Court Drama Fandom</li>
+                <li>Fantasy School</li>
+                <li>Court Drama</li>
               </ul>
             </div>
             <div class="filter-block">
@@ -74,7 +71,7 @@
               </ul>
             </div>
             <div class="filter-block">
-              <p class="meta-label">Warnings</p>
+              <p class="meta-label">Content notes</p>
               <ul class="filter-list">
                 <li>General or Teen</li>
                 <li>No hidden heavy content</li>
@@ -86,8 +83,8 @@
             <article class="work-card">
               <div class="work-topline">
                 <div>
-                  <h2 class="work-title">Result A</h2>
-                  <p class="byline">by Author A</p>
+                  <h2 class="work-title">Story Title Placeholder</h2>
+                  <p class="byline">by Author Name</p>
                 </div>
                 <p class="eyebrow">Primary match</p>
               </div>
@@ -95,8 +92,8 @@
                 <div class="cover-placeholder" aria-hidden="true">Cover</div>
                 <div class="work-meta-grid">
                   <div class="meta-group">
-                    <p class="meta-label">Fandom</p>
-                    <p class="meta-value">School Fantasy Fandom</p>
+                    <p class="meta-label">Category</p>
+                    <p class="meta-value">Fantasy School</p>
                   </div>
                   <div class="meta-group">
                     <p class="meta-label">Rating / warnings</p>
@@ -104,7 +101,7 @@
                   </div>
                   <div class="meta-group">
                     <p class="meta-label">Relationship</p>
-                    <p class="meta-value">Student A / Student B</p>
+                    <p class="meta-value">Character A / Character B</p>
                   </div>
                   <div class="meta-group">
                     <p class="meta-label">Tags</p>
@@ -116,12 +113,12 @@
                   </div>
                 </div>
               </div>
-              <p class="summary-text">Short summary placeholder for a quiet school story with trust-building.</p>
+              <p class="summary-text">Short summary placeholder for a softer school story with trust-building.</p>
               <p class="match-note">Why this matches: same setting, same tone, same relationship pace.</p>
               <div class="stats-row">
-                <span>Words: 20k</span>
-                <span>Chapters: 8/12</span>
-                <span>Bookmarks: 90</span>
+                <span>15k words</span>
+                <span>8 chapters</span>
+                <span>Saved 90 times</span>
               </div>
               <div class="action-row">
                 <a class="button-link" href="story.html#theme-work">Open work page</a>
@@ -132,8 +129,8 @@
             <article class="work-card">
               <div class="work-topline">
                 <div>
-                  <h2 class="work-title">Result B</h2>
-                  <p class="byline">by Author B</p>
+                  <h2 class="work-title">Story Title Placeholder</h2>
+                  <p class="byline">by Author Name</p>
                 </div>
                 <p class="eyebrow">Secondary match</p>
               </div>
@@ -141,8 +138,8 @@
                 <div class="cover-placeholder" aria-hidden="true">Cover</div>
                 <div class="work-meta-grid">
                   <div class="meta-group">
-                    <p class="meta-label">Fandom</p>
-                    <p class="meta-value">School Fantasy Fandom</p>
+                    <p class="meta-label">Category</p>
+                    <p class="meta-value">Fantasy School</p>
                   </div>
                   <div class="meta-group">
                     <p class="meta-label">Rating / warnings</p>
@@ -150,7 +147,7 @@
                   </div>
                   <div class="meta-group">
                     <p class="meta-label">Relationship</p>
-                    <p class="meta-value">Student A &amp; Student C</p>
+                    <p class="meta-value">Character A &amp; Character C</p>
                   </div>
                   <div class="meta-group">
                     <p class="meta-label">Tags</p>
@@ -164,9 +161,9 @@
               <p class="summary-text">Short summary placeholder for an easier-entry ensemble story.</p>
               <p class="match-note">Why this matches: softer pacing and clearer tags for beginner users.</p>
               <div class="stats-row">
-                <span>Words: 12k</span>
-                <span>Chapters: 4/4</span>
-                <span>Bookmarks: 50</span>
+                <span>12k words</span>
+                <span>4 chapters</span>
+                <span>Saved 50 times</span>
               </div>
               <div class="action-row">
                 <a class="button-link" href="story.html#theme-work">Open work page</a>

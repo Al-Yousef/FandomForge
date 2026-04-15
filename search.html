@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FandomForge | Prototype Search</title>
+    <title>FandomForge | Search</title>
     <meta
       name="description"
-      content="Low-fidelity AO3-inspired search entry prototype for FandomForge."
+      content="FandomForge search screen with theme mode and similar-story mode."
     >
     <meta name="theme-color" content="#8b2437">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
       <header class="app-topbar">
         <div class="brand-lockup">
           <a class="brand-mark" href="index.html">FandomForge</a>
-          <p class="brand-meta">Low-fidelity clickable prototype based on simplified AO3 archive flow.</p>
+          <p class="brand-meta">A simpler way to find stories.</p>
         </div>
         <nav class="site-nav" aria-label="Primary">
           <a class="nav-link" href="index.html">Home</a>
@@ -30,24 +30,20 @@
         </nav>
       </header>
 
-      <p class="archive-notice">
-        Search prototype: the first choice is not a filter. The first choice is whether the user
-        wants a broad theme match or a close story match.
-      </p>
+      <p class="archive-notice">Pick a search mode, then refine from there.</p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Search</p>
-            <h1 class="page-title">Choose the search route first.</h1>
+            <h1 class="page-title">Choose a search mode.</h1>
             <p class="page-summary">
-              This page demonstrates the two test tasks from the report. It is intentionally simple
-              so the user does not have to decode a full archive filter screen immediately.
+              Start with a broad theme search or a more specific similarity search.
             </p>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Prototype field</p>
+            <p class="eyebrow">Search</p>
             <h2>Example input</h2>
             <div class="search-input">rivals to allies + protective team + race week</div>
           </aside>
@@ -61,9 +57,9 @@
 
           <div class="task-grid">
             <article id="theme-task" class="task-card">
-              <p class="eyebrow">Task 1</p>
-              <h3>FindStoryByTheme</h3>
-              <p class="helper-copy">Broad prompt. Best for tone, trope, or setting.</p>
+              <p class="eyebrow">Mode</p>
+              <h3>Search by theme</h3>
+              <p class="helper-copy">Best for tone, trope, or setting.</p>
               <div class="tag-list">
                 <span class="tag-link chip--gold">magic school</span>
                 <span class="tag-link chip--pine">found family</span>
@@ -73,9 +69,9 @@
             </article>
 
             <article id="similar-task" class="task-card">
-              <p class="eyebrow">Task 2</p>
-              <h3>FindSimilarStory</h3>
-              <p class="helper-copy">Specific prompt. Best for dynamic, pacing, or story shape.</p>
+              <p class="eyebrow">Mode</p>
+              <h3>Search similar stories</h3>
+              <p class="helper-copy">Best for dynamic, pacing, or story shape.</p>
               <div class="tag-list">
                 <span class="tag-link chip--sky">rivals to allies</span>
                 <span class="tag-link chip--pine">protective team</span>
