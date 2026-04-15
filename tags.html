@@ -6,7 +6,7 @@
     <title>FandomForge | Tags</title>
     <meta
       name="description"
-      content="FandomForge tag guide with plain-language definitions and filtering help."
+      content="FandomForge tag guide with plain-language definitions, starter sets, and visible content note help."
     >
     <meta name="theme-color" content="#8b2437">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -21,30 +21,68 @@
           <a class="brand-mark" href="index.html">FandomForge</a>
           <p class="brand-meta">A simpler way to find stories.</p>
         </div>
-        <nav class="site-nav" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="discover.html">Discover</a>
-          <a class="nav-link" href="search.html">Search</a>
-          <a class="nav-link is-active" href="tags.html" aria-current="page">Tags</a>
-          <a class="nav-link" href="recommendations.html">Recommendations</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="discover.html">Discover</a>
+            <a class="nav-link" href="search.html">Search</a>
+          </nav>
+          <nav class="support-nav" aria-label="Support">
+            <a class="support-link is-active" href="tags.html" aria-current="page">Tag guide</a>
+            <a class="support-link" href="recommendations.html">Next reads</a>
+          </nav>
+        </div>
       </header>
-
-      <p class="archive-notice">Tags are explained in plain language before users filter with them.</p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
-            <p class="page-kicker">Tags</p>
-            <h1 class="page-title">Tag guide</h1>
-            <p class="page-summary">Use this page to understand common tags before filtering.</p>
+            <p class="page-kicker">Tag Guide</p>
+            <h1 class="page-title">Check a tag, then go back to browsing.</h1>
+            <p class="page-summary">
+              Use this page when a label is unfamiliar. Most readers only need one setting tag,
+              one feeling tag, and a visible content note before they pick a story.
+            </p>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Start here</p>
-            <h2 id="new-to-tags">Read tags as guidance.</h2>
-            <p class="muted-note">Users should understand what a tag means before using it in a filter.</p>
+            <p class="eyebrow">Start Here</p>
+            <h2 id="new-to-tags">Check one label, then go back to the card you were reading.</h2>
+            <ol class="step-list">
+              <li>Pick one setting tag and one feeling tag.</li>
+              <li>Add a visible content note if comfort matters.</li>
+              <li>Open the result card with the clearest match note.</li>
+            </ol>
+            <div class="support-row">
+              <a class="text-link" href="discover.html#browse-by-mood">Back to shelves</a>
+              <a class="text-link" href="search.html#task-chooser-title">Back to search</a>
+            </div>
           </aside>
+        </section>
+
+        <section id="starter-sets" class="page-section" aria-labelledby="starter-sets-title">
+          <div class="section-heading">
+            <p class="eyebrow">Starter Sets</p>
+            <h2 id="starter-sets-title">Three tag bundles that are easy to understand.</h2>
+          </div>
+
+          <div class="quick-grid">
+            <article class="example-panel">
+              <h3>Warm and safe</h3>
+              <p class="helper-copy">Use: Found Family, Comfort Read, Visible Content Notes.</p>
+              <a class="text-link" href="search-theme.html#theme-results">Open a gentle result shelf</a>
+            </article>
+            <article class="example-panel">
+              <h3>Specific chemistry</h3>
+              <p class="helper-copy">Use: Slow Burn, Rivals to Allies, Late-night Confession.</p>
+              <a class="text-link" href="search-similar.html#specific-results">Open a dynamic-first shelf</a>
+            </article>
+            <article class="example-panel">
+              <h3>Structured drama</h3>
+              <p class="helper-copy">Use: Epistolary, Soft Politics, Magic School.</p>
+              <a class="text-link" href="story.html#crownfall-work">Open a guided story example</a>
+            </article>
+          </div>
         </section>
 
         <section class="page-section" aria-labelledby="tag-families-title">
@@ -56,63 +94,102 @@
           <div class="glossary-grid">
             <article id="magic-school" class="definition-card">
               <h3>Magic School</h3>
-              <p class="helper-copy">The story is set in a school with magical training or magical daily life.</p>
+              <p class="helper-copy">The story happens in a school where magic shapes class life, friendships, and conflicts.</p>
             </article>
             <article id="found-family" class="definition-card">
               <h3>Found Family</h3>
-              <p class="helper-copy">Characters become a chosen support group.</p>
+              <p class="helper-copy">Characters become a chosen support system instead of staying emotionally alone.</p>
             </article>
             <article id="slow-burn" class="definition-card">
               <h3>Slow Burn</h3>
-              <p class="helper-copy">The relationship develops slowly over time.</p>
+              <p class="helper-copy">The relationship builds gradually across scenes or chapters instead of becoming immediate.</p>
             </article>
             <article id="comfort-read" class="definition-card">
               <h3>Comfort Read</h3>
-              <p class="helper-copy">The tone stays gentle and emotionally safe.</p>
+              <p class="helper-copy">The tone stays gentle or emotionally safe even if the story still has tension.</p>
+            </article>
+            <article id="harbor-mystery" class="definition-card">
+              <h3>Harbor Mystery</h3>
+              <p class="helper-copy">A mystery story with docks, ships, glowing ports, or coastal magic rather than harsher thriller energy.</p>
             </article>
             <article id="team-rivalry" class="definition-card">
               <h3>Rivals to Allies</h3>
-              <p class="helper-copy">Characters start in conflict and move toward trust.</p>
+              <p class="helper-copy">Characters begin in conflict and slowly move toward trust, teamwork, or care.</p>
             </article>
             <article id="protective-team" class="definition-card">
               <h3>Protective Team</h3>
-              <p class="helper-copy">Teammates cover for or defend each other.</p>
+              <p class="helper-copy">Teammates cover for one another, defend each other, or stay loyal under pressure.</p>
             </article>
             <article id="high-pressure" class="definition-card">
               <h3>High-pressure Week</h3>
-              <p class="helper-copy">A short stressful time frame shapes the story.</p>
+              <p class="helper-copy">A short, intense event window drives the pacing, tension, and emotional stakes.</p>
             </article>
             <article id="late-night-confession" class="definition-card">
               <h3>Late-night Confession</h3>
-              <p class="helper-copy">A key emotional scene happens late at night.</p>
+              <p class="helper-copy">A major emotional reveal happens in a quieter after-hours scene.</p>
             </article>
             <article id="epistolary" class="definition-card">
               <h3>Epistolary</h3>
-              <p class="helper-copy">The story uses letters, notes, or messages.</p>
+              <p class="helper-copy">The story uses letters, notes, journals, or messages as part of how the plot unfolds.</p>
             </article>
             <article id="soft-politics" class="definition-card">
               <h3>Soft Politics</h3>
-              <p class="helper-copy">There is court or power tension, but the tone stays less harsh.</p>
+              <p class="helper-copy">There is court or power tension, but the tone stays more character-focused than brutal.</p>
+            </article>
+            <article id="visible-content-notes" class="definition-card">
+              <h3>Visible Content Notes</h3>
+              <p class="helper-copy">Warnings are shown directly on cards and story pages instead of being hidden behind shorthand.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="content-notes" class="page-section" aria-labelledby="content-notes-title">
+          <div class="section-heading">
+            <p class="eyebrow">Safety Guide</p>
+            <h2 id="content-notes-title">Content notes should show up early.</h2>
+          </div>
+
+          <div class="quick-grid">
+            <article class="detail-card">
+              <h3>General</h3>
+              <p class="helper-copy">Good for readers who want the softest entry and fewer intense themes.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Teen</h3>
+              <p class="helper-copy">Allows more tension or romance, but still keeps warnings readable before opening the story.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Visible warnings</h3>
+              <p class="helper-copy">A story card should state things like storm danger, crash anxiety, or panic spells directly.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Comfort-first browsing</h3>
+              <p class="helper-copy">If you want lighter results, pair a comfort tag with an explicit content note instead of guessing.</p>
             </article>
           </div>
         </section>
 
         <section class="page-section" aria-labelledby="include-exclude-title">
           <div class="section-heading">
-            <p class="eyebrow">Include / Exclude</p>
-            <h2 id="include-exclude-title">Filter examples.</h2>
+            <p class="eyebrow">Use Case Examples</p>
+            <h2 id="include-exclude-title">How these tags work in practice.</h2>
           </div>
 
           <div class="quick-grid">
             <article class="example-panel">
               <h3>Theme path example</h3>
-              <p class="helper-copy">Include: Magic School, Found Family</p>
-              <p class="helper-copy">Exclude: Graphic Violence</p>
+              <p class="helper-copy">Include: Magic School, Found Family, Visible Content Notes.</p>
+              <p class="helper-copy">Good for: a safer first read with an easy emotional payoff.</p>
             </article>
             <article class="example-panel">
               <h3>Similar-story example</h3>
-              <p class="helper-copy">Include: Rivals to Allies, Protective Team</p>
-              <p class="helper-copy">Exclude: Major Character Death</p>
+              <p class="helper-copy">Include: Rivals to Allies, Protective Team, High-pressure Week.</p>
+              <p class="helper-copy">Good for: readers who know the dynamic they want and want closer match explanations.</p>
+            </article>
+            <article class="example-panel">
+              <h3>Drama example</h3>
+              <p class="helper-copy">Include: Epistolary, Slow Burn, Soft Politics.</p>
+              <p class="helper-copy">Good for: emotional intensity without an unreadable wall of metadata.</p>
             </article>
           </div>
         </section>

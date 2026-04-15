@@ -6,7 +6,7 @@
     <title>FandomForge | Discover</title>
     <meta
       name="description"
-      content="FandomForge discover screen with grouped categories and browse shortcuts."
+      content="FandomForge discover screen with visual shelves, starter routes, and beginner-friendly category browsing."
     >
     <meta name="theme-color" content="#8b2437">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -21,117 +21,195 @@
           <a class="brand-mark" href="index.html">FandomForge</a>
           <p class="brand-meta">A simpler way to find stories.</p>
         </div>
-        <nav class="site-nav" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link is-active" href="discover.html" aria-current="page">Discover</a>
-          <a class="nav-link" href="search.html">Search</a>
-          <a class="nav-link" href="tags.html">Tags</a>
-          <a class="nav-link" href="recommendations.html">Recommendations</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link is-active" href="discover.html" aria-current="page">Discover</a>
+            <a class="nav-link" href="search.html">Search</a>
+          </nav>
+          <nav class="support-nav" aria-label="Support">
+            <a class="support-link" href="tags.html">Tag guide</a>
+            <a class="support-link" href="recommendations.html">Next reads</a>
+          </nav>
+        </div>
       </header>
-
-      <p class="archive-notice">Browse by category, then open a result list.</p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
             <p class="page-kicker">Discover</p>
-            <h1 class="page-title">Browse categories.</h1>
+            <h1 class="page-title">Browse by vibe instead of by giant directory.</h1>
             <p class="page-summary">
-              Pick a category, then move into a result list.
+              Pick a shelf that feels right, then move into story cards with clear notes and
+              fewer decisions on screen at once.
             </p>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Browse</p>
-            <h2>Go to a category first.</h2>
-            <div class="mini-list">
-              <a class="text-link" href="#media-directory">Media groups</a>
-              <a class="text-link" href="#starter-fandoms">Starter fandoms</a>
-              <a class="text-link" href="#new-reader-routes">New reader routes</a>
-            </div>
+            <p class="eyebrow">How to Browse</p>
+            <h2>Start with a feeling.</h2>
+            <ol class="step-list">
+              <li>Choose a mood shelf.</li>
+              <li>Open only the category that looks right.</li>
+              <li>Refine with simple tag bundles after that.</li>
+            </ol>
+            <p class="mini-note">
+              If a label is unfamiliar, use the <a class="text-link" href="tags.html#starter-sets">tag guide</a> as a lookup, not a starting screen.
+            </p>
           </aside>
+        </section>
+
+        <section id="browse-by-mood" class="page-section" aria-labelledby="browse-by-mood-title">
+          <div class="section-heading">
+            <p class="eyebrow">Mood Shelves</p>
+            <h2 id="browse-by-mood-title">Four easier entry points.</h2>
+          </div>
+
+          <div class="category-grid">
+            <article id="gentle-shelf" class="browse-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-moonwake-lanterns.svg"
+                alt="Moonwake Academy decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Gentle Magic</p>
+                <h3>Fantasy school stories with warmth.</h3>
+                <p class="helper-copy">Low barrier entry for readers who want friendship, trust building, and a soft magical atmosphere.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
+                  <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="search-theme.html#theme-results">Open shelf</a>
+                </div>
+              </div>
+            </article>
+
+            <article id="harbor-shelf" class="browse-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-witchlight-tide.svg"
+                alt="Witchlight Harbor decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Harbor Mystery</p>
+                <h3>Softer suspense with glowing settings.</h3>
+                <p class="helper-copy">Good when you want a mystery hook without the intensity of harsher thriller tags.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--pine" href="tags.html#comfort-read">Comfort Read</a>
+                  <a class="tag-link" href="tags.html#harbor-mystery">Harbor Mystery</a>
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="search-theme.html#theme-results">Open shelf</a>
+                </div>
+              </div>
+            </article>
+
+            <article id="court-shelf" class="browse-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-crownfall-letters.svg"
+                alt="Crownfall Court decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Court Secrets</p>
+                <h3>Letters, tension, and emotional strategy.</h3>
+                <p class="helper-copy">For readers who want drama and intimacy but still need clear summaries and visible content notes.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--gold" href="tags.html#epistolary">Epistolary</a>
+                  <a class="tag-link" href="tags.html#soft-politics">Soft Politics</a>
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="search-theme.html#theme-results">Open shelf</a>
+                </div>
+              </div>
+            </article>
+
+            <article id="team-shelf" class="browse-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-starcircuit-sparks.svg"
+                alt="Star Circuit decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Team Heat</p>
+                <h3>Competitive stories with strong dynamics.</h3>
+                <p class="helper-copy">Built for readers who know they want rivalry, pressure, and teammates protecting each other.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--sky" href="tags.html#team-rivalry">Rivals to Allies</a>
+                  <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="search-similar.html#specific-results">Open shelf</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="media-directory" class="page-section" aria-labelledby="media-directory-title">
           <div class="section-heading">
-            <p class="eyebrow">Media Groups</p>
-            <h2 id="media-directory-title">Directory categories.</h2>
+            <p class="eyebrow">Curated Categories</p>
+            <h2 id="media-directory-title">Browse from what you already understand.</h2>
           </div>
 
           <div class="directory-columns">
             <article class="directory-group">
-              <h3>TV and Streaming</h3>
+              <h3>World type</h3>
               <ul class="directory-list">
-                <li><a href="#school-fantasy">Fantasy School</a></li>
-                <li><a href="#team-racing">Team Competition</a></li>
+                <li><a href="#gentle-shelf">Fantasy School</a></li>
+                <li><a href="#harbor-shelf">Harbor Mystery</a></li>
+                <li><a href="#court-shelf">Court Drama</a></li>
+                <li><a href="#team-shelf">Team Competition</a></li>
               </ul>
             </article>
             <article class="directory-group">
-              <h3>Books and Comics</h3>
+              <h3>Reading feel</h3>
               <ul class="directory-list">
-                <li><a href="#court-drama">Court Drama</a></li>
-                <li><a href="#harbor-mystery">Harbor Mystery</a></li>
+                <li><a href="search-theme.html#theme-results">Gentle and hopeful</a></li>
+                <li><a href="search-theme.html#theme-results">Slow and emotional</a></li>
+                <li><a href="search-similar.html#specific-results">Fast and intense</a></li>
+                <li><a href="tags.html#starter-sets">Beginner-friendly tags</a></li>
               </ul>
             </article>
             <article class="directory-group">
-              <h3>Quick links</h3>
+              <h3>Comfort level</h3>
               <ul class="directory-list">
-                <li><a href="search-theme.html#theme-results">Theme results</a></li>
-                <li><a href="search-similar.html#specific-results">Similar results</a></li>
+                <li><a href="tags.html#content-notes">Visible content notes</a></li>
+                <li><a href="search.html#starter-filters-title">Shorter first reads</a></li>
+                <li><a href="recommendations.html#safe-start-lane">Safer follow-up picks</a></li>
+                <li><a href="story.html#moonwake-work">Open a gentle example</a></li>
               </ul>
             </article>
-          </div>
-        </section>
-
-        <section id="starter-fandoms" class="page-section" aria-labelledby="starter-fandoms-title">
-          <div class="section-heading">
-            <p class="eyebrow">Categories</p>
-            <h2 id="starter-fandoms-title">Sample browse categories.</h2>
-          </div>
-
-          <div class="category-grid">
-            <a id="school-fantasy" class="category-card" href="search-theme.html#theme-results">
-              <p class="eyebrow">Category</p>
-              <h3>Fantasy School</h3>
-              <p class="helper-copy">Stories with school settings, slower pacing, and group dynamics.</p>
-            </a>
-            <a id="team-racing" class="category-card" href="search-similar.html#specific-results">
-              <p class="eyebrow">Category</p>
-              <h3>Team Competition</h3>
-              <p class="helper-copy">Stories with rivalry, pressure, and teammate protection.</p>
-            </a>
-            <a id="court-drama" class="category-card" href="search-theme.html#theme-results">
-              <p class="eyebrow">Category</p>
-              <h3>Court Drama</h3>
-              <p class="helper-copy">Stories with emotional tension, power imbalance, and letters.</p>
-            </a>
-            <a id="harbor-mystery" class="category-card" href="search-theme.html#theme-results">
-              <p class="eyebrow">Category</p>
-              <h3>Harbor Mystery</h3>
-              <p class="helper-copy">Stories with softer mystery pacing and lower-intensity fantasy.</p>
-            </a>
           </div>
         </section>
 
         <section id="new-reader-routes" class="page-section" aria-labelledby="new-reader-title">
           <div class="section-heading">
             <p class="eyebrow">Suggested Paths</p>
-            <h2 id="new-reader-title">Try one of these first.</h2>
+            <h2 id="new-reader-title">If you are new, start here.</h2>
           </div>
 
           <div class="quick-grid">
-            <article class="notice-card">
-              <h3>Start with a theme</h3>
-              <a class="text-link" href="search-theme.html#theme-results">Open theme results</a>
+            <article class="guide-card">
+              <h3>I know a mood</h3>
+              <p class="helper-copy">Open a shelf first, then keep only the tags you recognize.</p>
+              <a class="text-link" href="#browse-by-mood">Go to mood shelves</a>
             </article>
-            <article class="notice-card">
-              <h3>Start with a similar story</h3>
-              <a class="text-link" href="search-similar.html#specific-results">Open similar-story results</a>
+            <article class="guide-card">
+              <h3>I know a story shape</h3>
+              <p class="helper-copy">Use the similar-story path if you already know the relationship dynamic or pacing you want.</p>
+              <a class="text-link" href="search.html#similar-task">Open similar-story mode</a>
             </article>
-            <article class="notice-card">
-              <h3>Read tag help first</h3>
-              <a class="text-link" href="tags.html#new-to-tags">Open tag guide</a>
+            <article class="guide-card">
+              <h3>I want lighter content</h3>
+              <p class="helper-copy">Read the content note guide first and stay inside safer story cards with visible warnings.</p>
+              <a class="text-link" href="tags.html#content-notes">Open safety guide</a>
             </article>
           </div>
         </section>

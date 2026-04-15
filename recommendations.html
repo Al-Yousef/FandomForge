@@ -6,7 +6,7 @@
     <title>FandomForge | Recommendations</title>
     <meta
       name="description"
-      content="FandomForge recommendations screen with follow-up story suggestions."
+      content="FandomForge recommendations screen with explainable follow-up suggestions and safer next-step discovery."
     >
     <meta name="theme-color" content="#8b2437">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -21,52 +21,91 @@
           <a class="brand-mark" href="index.html">FandomForge</a>
           <p class="brand-meta">A simpler way to find stories.</p>
         </div>
-        <nav class="site-nav" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="discover.html">Discover</a>
-          <a class="nav-link" href="search.html">Search</a>
-          <a class="nav-link" href="tags.html">Tags</a>
-          <a class="nav-link is-active" href="recommendations.html" aria-current="page">Recommendations</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="discover.html">Discover</a>
+            <a class="nav-link" href="search.html">Search</a>
+          </nav>
+          <nav class="support-nav" aria-label="Support">
+            <a class="support-link" href="tags.html">Tag guide</a>
+            <a class="support-link is-active" href="recommendations.html" aria-current="page">Next reads</a>
+          </nav>
+        </div>
       </header>
-
-      <p class="archive-notice">Recommendations appear after you open a story or result.</p>
 
       <main id="main" class="app-main">
         <section class="page-hero">
           <div>
-            <p class="page-kicker">Recommendations</p>
-            <h1 class="page-title">Recommendations</h1>
-            <p class="page-summary">Follow-up suggestions based on what you just opened.</p>
+            <p class="page-kicker">Next Reads</p>
+            <h1 class="page-title">Pick up the next story without restarting your search.</h1>
+            <p class="page-summary">
+              These follow-up picks are meant to be opened after a result card or story page,
+              with the reason for each suggestion written directly on the card.
+            </p>
           </div>
 
           <aside class="search-panel">
-            <p class="eyebrow">Prototype rule</p>
-            <h2>Explain why the result was suggested.</h2>
-            <p class="muted-note">Each recommendation keeps a short reason line instead of a black-box feel.</p>
+            <p class="eyebrow">How To Use It</p>
+            <h2>Every suggestion needs a reason line.</h2>
+            <ol class="step-list">
+              <li>Show the closest story match.</li>
+              <li>Explain the shared tags or tone.</li>
+              <li>Keep safety notes visible on the next click too.</li>
+            </ol>
+            <div class="support-row">
+              <a class="text-link" href="search.html#task-chooser-title">Back to search</a>
+              <a class="text-link" href="story.html#moonwake-work">Open a story page</a>
+            </div>
           </aside>
         </section>
 
         <section id="because-theme" class="page-section" aria-labelledby="because-theme-title">
           <div class="section-heading">
-            <p class="eyebrow">After theme search</p>
-            <h2 id="because-theme-title">Related results for the gentler path.</h2>
+            <p class="eyebrow">After a Theme Search</p>
+            <h2 id="because-theme-title">What to read after a gentle magic result.</h2>
           </div>
 
-          <div class="work-list">
-            <article class="work-card">
-              <div class="work-topline">
-                <div>
-                  <h3 class="work-title">Story Title Placeholder</h3>
-                  <p class="byline">by Author Name</p>
+          <div class="recommendation-grid">
+            <article class="recommendation-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-witchlight-tide.svg"
+                alt="Witchlight Harbor decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Soft mystery follow-up</p>
+                <h3>Witchlight Harbor: Tidebound</h3>
+                <p class="helper-copy">Suggested because it keeps found-family warmth but swaps school life for a glow-lit harbor mystery.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--pine" href="tags.html#comfort-read">Comfort Read</a>
+                  <a class="tag-link" href="tags.html#harbor-mystery">Harbor Mystery</a>
                 </div>
-                <p class="eyebrow">Theme follow-up</p>
+                <div class="action-row">
+                  <a class="button-link" href="story.html#witchlight-work">Open story</a>
+                </div>
               </div>
-              <p class="summary-text">Short summary placeholder for a related gentle result.</p>
-              <p class="match-note">Why this was suggested: similar tone, similar tags, easier entry.</p>
-              <div class="tag-list">
-                <a class="tag-link chip--gold" href="tags.html#magic-school">Magic School</a>
-                <a class="tag-link chip--pine" href="tags.html#found-family">Found Family</a>
+            </article>
+
+            <article class="recommendation-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-crownfall-letters.svg"
+                alt="Crownfall Court decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Slow-burn follow-up</p>
+                <h3>Crownfall Court: Letters at Dawn</h3>
+                <p class="helper-copy">Suggested because the emotional pace and readable tags stay familiar even though the setting changes.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--gold" href="tags.html#epistolary">Epistolary</a>
+                  <a class="tag-link" href="tags.html#slow-burn">Slow Burn</a>
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="story.html#crownfall-work">Open story</a>
+                </div>
               </div>
             </article>
           </div>
@@ -74,25 +113,73 @@
 
         <section id="because-similar" class="page-section" aria-labelledby="because-similar-title">
           <div class="section-heading">
-            <p class="eyebrow">After similar-story search</p>
-            <h2 id="because-similar-title">Related results for the more specific path.</h2>
+            <p class="eyebrow">After a Similar-Story Search</p>
+            <h2 id="because-similar-title">What to read after a rivalry-heavy result.</h2>
           </div>
 
-          <div class="work-list">
-            <article class="work-card">
-              <div class="work-topline">
-                <div>
-                  <h3 class="work-title">Story Title Placeholder</h3>
-                  <p class="byline">by Author Name</p>
+          <div class="recommendation-grid">
+            <article class="recommendation-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-starcircuit-sparks.svg"
+                alt="Star Circuit decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Softer alternate</p>
+                <h3>Star Circuit: Sparks Between Us</h3>
+                <p class="helper-copy">Suggested because it keeps the team pressure and protective dynamic, but lands in a gentler emotional place.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
+                  <a class="tag-link" href="tags.html#late-night-confession">Late-night Confession</a>
                 </div>
-                <p class="eyebrow">Specific follow-up</p>
+                <div class="action-row">
+                  <a class="button-link" href="story.html#star-work">Open story</a>
+                </div>
               </div>
-              <p class="summary-text">Short summary placeholder for a related rivalry result.</p>
-              <p class="match-note">Why this was suggested: same dynamic and similar pressure level.</p>
-              <div class="tag-list">
-                <a class="tag-link chip--sky" href="tags.html#team-rivalry">Rivals to Allies</a>
-                <a class="tag-link chip--pine" href="tags.html#protective-team">Protective Team</a>
+            </article>
+
+            <article class="recommendation-card">
+              <img
+                class="story-cover"
+                src="assets/covers/cover-neon-rivalry.svg"
+                alt="Neon Knights decorative cover art"
+                loading="lazy"
+              >
+              <div>
+                <p class="eyebrow">Exact-dynamic option</p>
+                <h3>Neon Knights: Static Hearts</h3>
+                <p class="helper-copy">Suggested because the rivalry arc and event-week structure are almost a direct mirror of the search prompt.</p>
+                <div class="tag-list">
+                  <a class="tag-link chip--sky" href="tags.html#team-rivalry">Rivals to Allies</a>
+                  <a class="tag-link" href="tags.html#high-pressure">High-pressure Week</a>
+                </div>
+                <div class="action-row">
+                  <a class="button-link" href="story.html#neon-work">Open story</a>
+                </div>
               </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="safe-start-lane" class="page-section" aria-labelledby="safe-start-title">
+          <div class="section-heading">
+            <p class="eyebrow">Safe Start Lane</p>
+            <h2 id="safe-start-title">Why these recommendations feel easier than restarting from scratch.</h2>
+          </div>
+
+          <div class="quick-grid">
+            <article class="detail-card">
+              <h3>Fewer next-step options</h3>
+              <p class="helper-copy">Recommendations are intentionally narrow so the reader is not forced back into a huge choice set.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Explainable logic</h3>
+              <p class="helper-copy">Each card says whether it matches tone, tags, setting, or relationship dynamic.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Visible safety cues</h3>
+              <p class="helper-copy">Ratings and content notes remain visible on the follow-up path as well, not just on the first result page.</p>
             </article>
           </div>
         </section>
